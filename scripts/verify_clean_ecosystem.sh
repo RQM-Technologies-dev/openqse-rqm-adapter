@@ -44,9 +44,20 @@ for sibling in "${SIBLINGS[@]}"; do
   clone_or_update "${sibling}"
 done
 
+create_venv() {
+  local dest="$1"
+  if "${PYTHON_BIN}" -c "import ensurepip" >/dev/null 2>&1; then
+    "${PYTHON_BIN}" -m venv "${dest}"
+    return
+  fi
+  log "ensurepip is unavailable; falling back to virtualenv"
+  "${PYTHON_BIN}" -m pip install --user virtualenv
+  "${PYTHON_BIN}" -m virtualenv "${dest}"
+}
+
 VENV="${ROOT}/.venv-clean-ecosystem"
 rm -rf "${VENV}"
-"${PYTHON_BIN}" -m venv "${VENV}"
+create_venv "${VENV}"
 # shellcheck disable=SC1091
 source "${VENV}/bin/activate"
 python -m pip install --upgrade pip wheel setuptools
