@@ -3,9 +3,9 @@
 ## Local setup
 
 ```bash
-python -m pip install -e ".[dev]"
-pytest
-python scripts/run_demo.py
+python3 -m pip install -e ".[dev]"
+python3 -m pytest
+python3 scripts/run_demo.py
 ```
 
 The package uses a `src/` layout. Install it before importing
@@ -14,8 +14,8 @@ The package uses a `src/` layout. Install it before importing
 ## Testing
 
 ```bash
-pytest
-pytest tests/test_end_to_end.py -v
+python3 -m pytest
+python3 -m pytest tests/test_end_to_end.py -v
 ```
 
 Tests cover IR construction, JSON round-trip, validation failures, pass order,
@@ -77,7 +77,7 @@ beside this JSON payload, not replacements for the RQM IR.
 - Inspect `payload.diagnostics` and `payload.provenance.pipeline`
 - Compare IR `attributes.quaternion` with payload instructions to confirm the
   boundary strip
-- Run `python examples/openqse/run.py` to print both sides of the handoff
+- Run `python3 examples/openqse/run.py` to print both sides of the handoff
 
 If a construct is unsupported, fail closed with a diagnostic. Do not silently
 drop operations.

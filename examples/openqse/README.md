@@ -20,5 +20,5 @@ The saved JSON file is an experimental RQM payload. It is not an official
 OpenQSE schema.
 
 ```bash
-python examples/openqse/run.py
+python3 examples/openqse/run.py
 ```

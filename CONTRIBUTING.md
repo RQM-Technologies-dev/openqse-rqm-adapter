@@ -6,9 +6,9 @@ context. Contributions should keep that boundary explicit.
 ## Local setup
 
 ```bash
-python -m pip install -e ".[dev]"
-pytest
-python scripts/run_demo.py
+python3 -m pip install -e ".[dev]"
+python3 -m pytest
+python3 scripts/run_demo.py
 ```
 
 ## Design rules
@@ -31,7 +31,7 @@ backend, or adapter translation.
 New behavior needs tests that check results, not just imports. Run:
 
 ```bash
-pytest
+python3 -m pytest
 ```
 
 ## Pull requests

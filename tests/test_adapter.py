@@ -25,10 +25,14 @@ def test_adapter_emit_has_expected_artifact_structure() -> None:
     assert data["status"] == "experimental"
     assert "not an official OpenQSE" in data["disclaimer"].lower() or "Not an official OpenQSE" in data["disclaimer"]
     assert data["circuit"]["num_qubits"] == 1
-    assert data["circuit"]["instructions"][0]["op"] == "unitary"
-    assert data["circuit"]["instructions"][0]["origin"] == "u1q"
-    assert "unitary" in data["circuit"]["instructions"][0]
+    first = data["circuit"]["instructions"][0]
+    assert first["op"] == "unitary"
+    assert first["origin"] == "u1q"
+    assert "unitary" in first
+    assert "params" not in first
+    assert "quaternion" not in first
     assert data["resources"]["qubit_count"] == 1
+    assert "unitary" in data["resources"]["required_operations"]
     assert data["target"]["name"] == "rqm-local-statevector"
     assert data["provenance"]["owner"] == "RQM Technologies"
     assert data["provenance"]["pipeline"] == ["validate", "canonicalize", "lower"]

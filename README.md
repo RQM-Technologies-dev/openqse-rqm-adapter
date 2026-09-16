@@ -71,28 +71,28 @@ Python 3.10+ is required. Numpy is the only runtime dependency.
 ```bash
 git clone https://github.com/RQM-Technologies-dev/openqse-rqm-adapter.git
 cd openqse-rqm-adapter
-python -m pip install -e ".[dev]"
+python3 -m pip install -e ".[dev]"
 ```
 
 Run the tests:
 
 ```bash
-pytest
+python3 -m pytest
 ```
 
 Run a bundled example:
 
 ```bash
-python examples/basic_quaternionic/run.py
-python examples/bell/run.py
-python examples/openqse/run.py
+python3 examples/basic_quaternionic/run.py
+python3 examples/bell/run.py
+python3 examples/openqse/run.py
 ```
 
 Generate and inspect an OpenQSE-compatible adapter artifact:
 
 ```bash
-python scripts/run_demo.py openqse --save /tmp/rqm-openqse-artifacts
-python -m json.tool /tmp/rqm-openqse-artifacts/openqse-payload.json
+python3 scripts/run_demo.py openqse --save /tmp/rqm-openqse-artifacts
+python3 -m json.tool /tmp/rqm-openqse-artifacts/openqse-payload.json
 ```
 
 Minimal Python usage:

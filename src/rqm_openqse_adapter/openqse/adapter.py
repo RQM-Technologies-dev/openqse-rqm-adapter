@@ -94,6 +94,10 @@ class OpenQSEAdapter:
 
     def _payload_from_module(self, module: Module, context: PassContext) -> OpenQSEPayload:
         instructions = [_instruction_from_operation(op, self.config) for op in module.operations]
+        resources = resource_metadata(module)
+        resources["required_operations"] = [
+            "unitary" if name == "u1q" else name for name in resources["required_operations"]
+        ]
         circuit = {
             "name": module.name,
             "num_qubits": module.num_qubits,
@@ -108,7 +112,7 @@ class OpenQSEAdapter:
         return OpenQSEPayload(
             circuit=circuit,
             target=self.target.to_dict(),
-            resources=resource_metadata(module),
+            resources=resources,
             diagnostics=context.diagnostics.to_list(),
             provenance=default_provenance(pipeline=list(context.applied)),
             metadata={
@@ -156,7 +160,7 @@ def _instruction_from_operation(operation: Operation, config: AdapterConfig) -> 
             instruction["qubits"] = targets
         if controls:
             instruction["controls"] = controls
-    if operation.parameters:
+    if operation.parameters and operation.name != "u1q":
         instruction["params"] = {p.name: p.value for p in operation.parameters}
     if config.include_unitaries_in_payload and operation.attributes.get("su2") is not None:
         instruction["unitary"] = operation.attributes.get("su2")
@@ -164,5 +168,6 @@ def _instruction_from_operation(operation: Operation, config: AdapterConfig) -> 
         instruction["op"] = "unitary"
         instruction["origin"] = "u1q"
         instruction["unitary"] = operation.attributes.get("su2")
+        instruction.pop("params", None)
     # Quaternion components are intentionally omitted from the payload.
     return instruction

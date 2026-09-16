@@ -15,5 +15,5 @@ for `H+CX` on `|00>`. This repository does not introduce a separate
 quaternionic entanglement primitive.
 
 ```bash
-python examples/bell/run.py
+python3 examples/bell/run.py
 ```

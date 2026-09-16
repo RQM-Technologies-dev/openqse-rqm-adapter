@@ -8,5 +8,5 @@ OpenQSE-compatible payload. The local simulator then reports computational-basis
 probabilities, which should be approximately `0.5` / `0.5` for `|0>` / `|1>`.
 
 ```bash
-python examples/basic_quaternionic/run.py
+python3 examples/basic_quaternionic/run.py
 ```
