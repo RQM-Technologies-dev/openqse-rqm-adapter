@@ -1,121 +1,96 @@
 # RQM OpenQSE Adapter
 
-Experimental RQM implementation demonstrating integration of quaternionic compilation with the OpenQSE compiler/tool-pipeline architecture.
+**Experimental alternative-IR interoperability test for the openQSE compiler/tool-pipeline architecture.**
 
-RQM owns this implementation. OpenQSE is the architectural and interoperability context. This repository is an experimental integration point that compiler researchers can clone, run, inspect, and discuss. It is **not** an official OpenQSE compiler, standard, or endorsed reference implementation.
-
-## What it does
-
-This package is a compiler/tool-pipeline adapter:
-
-- **Quaternionic frontend** accepts a small explicit RQM program (named gates, native `u1q` unit-quaternion operations, measurement, metadata).
-- **Quaternionic IR** stores modules, qubits, operations, operands, parameters, attributes, and target requirements.
-- **Compiler passes** run a real but intentionally simple pipeline: validate → canonicalize → lower.
-- **Target model** records architecture, qubit capacity, supported operations, connectivity, and accepted payload formats. It does not schedule resources.
-- **OpenQSE adapter** emits an OpenQSE-compatible JSON artifact: standard named operations or explicit unitaries, resource metadata, diagnostics, and provenance.
-- **Local simulator backend** executes the emitted payload with an ideal statevector so the pipeline produces observable computational-basis probabilities.
-
-Quaternionic mathematics stay inside the adapter. The OpenQSE-facing artifact does not require a downstream runtime to understand quaternions.
-
-## What it does not do
-
-- Implement the OpenQSE runtime
-- Replace vendor compilers
-- Implement resource scheduling or allocation
-- Implement hardware control electronics
-- Define the OpenQSE architecture
-- Claim official OpenQSE status, approval, or standardization
-- Provide a complete quaternionic programming language
-- Implement mid-circuit feed-forward, QEC, or FTQC compilation
-
-## Architecture
-
-```
-Application / RQM Quaternionic Program
-                |
-                v
-      Quaternionic Frontend
-                |
-                v
-        Quaternionic IR
-                |
-                v
-      RQM Compiler Passes
-         validate
-         canonicalize
-         lower
-                |
-                v
-      RQM OpenQSE Adapter
-                |
-                v
-   OpenQSE-compatible payload
-     (named ops, unitaries,
-      target metadata, diagnostics)
-                |
-                v
-   Existing compiler/backend
-     (local statevector in this repo)
-                |
-                v
-             QPU
-         or simulator
-```
-
-See [docs/architecture.md](docs/architecture.md) and [docs/openqse-integration.md](docs/openqse-integration.md).
-
-## Clean ecosystem demonstration
-
-The interoperability demonstration is a separate, fail-closed path:
-
-```
+```text
 OpenQASM 3
-  → rqm-qiskit import
-  → rqm-circuits
-  → rqm-compiler (to_u1q, merge_u1q, sign_canon, cancel_2q)
-  → rqm-core quaternion mathematics
-  → rqm-entanglement AxisHinge / CartanRelation
-  → semantic verification
-  → named-gate lowering
-  → OpenQASM 3
+    -> openQSE-facing pass/artifact boundary
+    -> openqse-rqm-adapter
+    -> real RQM compiler ecosystem
+       rqm-circuits -> rqm-compiler <-> rqm-entanglement
+              |             |               |
+           rqm-core        u1q       AxisHinge / CartanRelation
+              |                             |
+              +---- verified lowering ------+
+    -> OpenQASM 3
 ```
 
-It does not reimplement sibling mathematics. A capability is recorded only when
-it is installed, imported, executed, and verified. Required capabilities that
-were only imported fail the run.
+The question this repository tests is deliberately narrow: **can an independently developed compiler use materially different internal mathematical representations while interoperating through recognizable exchange artifacts and stable compiler boundaries?**
 
-From a completely fresh environment:
+RQM owns this implementation. OpenQSE is the architectural/interoperability context. This repository does **not** propose RQM's quaternionic IR, `u1q`, `AxisHinge`, `CartanRelation`, or QuaternionCartan as openQSE standards, and it is not an official OpenQSE compiler or endorsed reference implementation.
+
+## Reproduce the clean ecosystem demonstration
 
 ```bash
 ./scripts/verify_clean_ecosystem.sh
 ```
 
-That script clones the sibling RQM repositories, creates a clean virtualenv,
-installs them from source in dependency order, runs import checks, the adapter
-test suite, `examples/conformance/run.py`, and the sibling package tests.
+The gate creates a fresh virtual environment, installs the real sibling RQM packages from source, executes the OpenQASM 3 round trip, records installed/imported/executed/verified capability evidence, and runs the required adapter and sibling test suites. It fails closed when a required capability is not actually exercised or verified.
 
-`rqm-optimize` is exercised only after Qiskit lowering, as backend-adjacent
-compression. It is not injected into the backend-neutral compiler path.
+**Recorded clean result:** 1,874 passed, 11 skipped, 0 failed across 1,885 collected tests. GitHub Actions independently reproduced the merged integration successfully on `main` (`Clean ecosystem integration`, run `35153527075`). See [`docs/CONFORMANCE_EVIDENCE.md`](docs/CONFORMANCE_EVIDENCE.md).
 
-## Quick start
+## Real ecosystem path
 
-Python 3.10+ is required for the standalone adapter. The ecosystem demonstration
-requires Python 3.11+ because the sibling RQM packages do. Numpy is the only
-runtime dependency of the adapter itself.
+The fail-closed demonstration executes:
+
+```text
+OpenQASM 3
+  -> rqm-qiskit import
+  -> rqm-circuits
+  -> rqm-compiler
+       normalize
+       canonicalize
+       flatten
+       to_u1q
+       merge_u1q
+       sign_canon
+       cancel_2q
+  -> rqm-core quaternion mathematics
+  <-> rqm-entanglement
+       BellHinge
+       AxisHinge
+       AxisHinge -> CartanRelation promotion
+       CartanRelation compose/minimize
+       QuaternionCartan reconstruction
+  -> semantic verification
+  -> conventional named-gate lowering
+  -> OpenQASM 3 export/re-import verification
+```
+
+`rqm-optimize` is exercised separately after Qiskit lowering, in its intended backend-adjacent role rather than being injected into the backend-neutral compiler path.
+
+The clean demonstration records compiler equivalence as **VERIFIED** and export/re-import equivalence as **VERIFIED**. It demonstrates real representation promotion/lowering without requiring the external exchange boundary to understand those internal representations.
+
+## Experimental pass/artifact contract
+
+The repository also implements a machine-readable experimental pass contract inspired by the openQSE Compiler Working Group's pass/artifact-contract discussion. The principal exchange encoding is OpenQASM 3; RQM-native representations remain implementation details.
+
+See:
+
+- [`docs/pass-contract.md`](docs/pass-contract.md)
+- [`docs/CONFORMANCE_EVIDENCE.md`](docs/CONFORMANCE_EVIDENCE.md)
+- [`docs/ORNL_QSC_OPENQSE_CONTEXT.md`](docs/ORNL_QSC_OPENQSE_CONTEXT.md)
+- [`docs/openqse-integration.md`](docs/openqse-integration.md)
+- [`examples/conformance/`](examples/conformance/)
+
+## Standalone prototype
+
+The repository retains a small standalone adapter prototype for inspection and development. It contains a local quaternionic frontend/IR, validation/canonicalization/lowering passes, target model, JSON payload, and ideal local simulator. That standalone path is **not** the evidence used for the cross-repository interoperability claim; the clean ecosystem demonstration above uses the real sibling RQM packages.
+
+The standalone prototype does not implement the OpenQSE runtime, resource scheduling, hardware control, QEC/FTQC compilation, or a complete quaternionic programming language.
+
+## Quick start for standalone development
+
+Python 3.10+ is required for the standalone adapter. The clean ecosystem demonstration requires Python 3.11+ because the sibling RQM packages do.
 
 ```bash
 git clone https://github.com/RQM-Technologies-dev/openqse-rqm-adapter.git
 cd openqse-rqm-adapter
 python3 -m pip install -e ".[dev]"
-```
-
-Run the tests:
-
-```bash
 python3 -m pytest
 ```
 
-Run a bundled example:
+Bundled standalone examples:
 
 ```bash
 python3 examples/basic_quaternionic/run.py
@@ -123,52 +98,22 @@ python3 examples/bell/run.py
 python3 examples/openqse/run.py
 ```
 
-Generate and inspect an OpenQSE-compatible adapter artifact:
-
-```bash
-python3 scripts/run_demo.py openqse --save /tmp/rqm-openqse-artifacts
-python3 -m json.tool /tmp/rqm-openqse-artifacts/openqse-payload.json
-```
-
-Minimal Python usage:
-
-```python
-from rqm_openqse_adapter import compile, local_simulator_target
-from rqm_openqse_adapter.frontend import QuaternionicProgram
-
-program = QuaternionicProgram(name="bell", num_qubits=2, num_clbits=2)
-program.h(0)
-program.cx(0, 1)
-program.measure_all()
-
-result = compile(program, local_simulator_target(), execute=True)
-print(result.payload.to_json())
-print(result.execution.probabilities)
-```
-
 ## Current status
 
-This repository is an **experimental prototype**.
+This is an **experimental prototype intended for interoperability discussion and reproducible testing**, not production hardware submission.
 
-The baseline is intentionally small: a documented quaternionic IR, three compiler passes, an OpenQSE-compatible JSON payload, and a local simulator. It is suitable for inspection and interoperability discussion, not production compilation or hardware submission.
-
-The previous contents of this repository were OpenQSE Compiler Working Group notes. Those notes are preserved under [`legacy/openqse-working-group/`](legacy/openqse-working-group/) and are not part of the adapter implementation.
+The previous OpenQSE Compiler Working Group notes are preserved under [`legacy/openqse-working-group/`](legacy/openqse-working-group/).
 
 ## Roadmap
 
-- Richer quaternionic IR (control flow, mid-circuit measurement, extra native ops)
-- Additional RQM compiler passes (fusion, commutation, mapping)
-- Qiskit integration
-- OpenQASM integration where technically appropriate
-- MLIR integration
-- Richer target capability handling
-- Additional simulator and backend support
-- QPU integration
-- Hybrid classical/quantum support
-- Error correction / FTQC-aware compilation
-- OpenQSE interoperability experiments with ORNL, HPE, and other compiler groups
+- continue aligning the experimental pass/artifact contract with Compiler Working Group decisions;
+- broaden OpenQASM 3 coverage without weakening fail-closed semantics;
+- test richer target/backend capability contracts;
+- evaluate QIR/MLIR boundaries where they answer a working-group interoperability question;
+- extend hybrid, QEC, and FTQC experiments when corresponding contracts are defined;
+- test compatibility with QHPC/orchestration and reference-implementation interfaces as those interfaces become concrete.
 
-The standalone adapter still compiles a small quaternionic IR for OpenQSE-compatible payloads. Production math and backend bridges belong to the sibling packages (`rqm-core`, `rqm-circuits`, `rqm-compiler`, `rqm-entanglement`, `rqm-qiskit`, `rqm-optimize`). The clean-ecosystem demonstration uses those packages as the real compilation path.
+Production mathematics and backend bridges belong to the sibling packages: `rqm-core`, `rqm-circuits`, `rqm-compiler`, `rqm-entanglement`, `rqm-qiskit`, and `rqm-optimize`.
 
 ## License
 
