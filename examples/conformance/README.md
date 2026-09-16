@@ -17,6 +17,11 @@ OpenQASM 3
 It records each capability as installed, imported, executed, and verified.
 Required capabilities that were only imported, not executed, fail the run.
 
+`input.qasm` is the OpenQASM 3 source. `rxx`/`ryy` are not in `stdgates.inc`, so
+the source includes the same gate definitions Qiskit emits. Import still yields
+compiler `rxx`/`ryy` operations, which is what `cancel_2q` compresses through
+AxisHinge → CartanRelation.
+
 ```bash
 python3 examples/conformance/run.py
 ```

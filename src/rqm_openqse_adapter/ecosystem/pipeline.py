@@ -35,6 +35,29 @@ REQUIRED_CORE = [
 
 CONFORMANCE_OPENQASM = """OPENQASM 3.0;
 include "stdgates.inc";
+gate rxx(p0) _gate_q_0, _gate_q_1 {
+  h _gate_q_0;
+  h _gate_q_1;
+  cx _gate_q_0, _gate_q_1;
+  rz(p0) _gate_q_1;
+  cx _gate_q_0, _gate_q_1;
+  h _gate_q_1;
+  h _gate_q_0;
+}
+gate sxdg _gate_q_0 {
+  s _gate_q_0;
+  h _gate_q_0;
+  s _gate_q_0;
+}
+gate ryy(p0) _gate_q_0, _gate_q_1 {
+  sxdg _gate_q_0;
+  sxdg _gate_q_1;
+  cx _gate_q_0, _gate_q_1;
+  rz(p0) _gate_q_1;
+  cx _gate_q_0, _gate_q_1;
+  sx _gate_q_0;
+  sx _gate_q_1;
+}
 qubit[2] q;
 h q[0];
 rx(0.4) q[0];
@@ -245,8 +268,7 @@ def run_clean_demonstration(
                 raise AdapterError("u1q quaternion is not unit.")
             if matrix.shape != (2, 2):
                 raise AdapterError("rqm-core SU(2) matrix has unexpected shape.")
-        ledger.mark_executed("rqm-core", u1q_count=len(u1q_ops), zyz_calls=probe.count("rqm_core.quaternion_to_zyz"))
-        ledger.mark_verified("rqm-core", unit_quaternion=True, su2_matrices=probe.count("Quaternion.to_su2_matrix"))
+        ledger.mark_executed("rqm-core", u1q_count=len(u1q_ops))
 
         if probe.count("compose_relations") < 1 and probe.count("compose_relations.module") < 1:
             raise AdapterError("rqm-entanglement.compose_relations was never called during compilation.")
@@ -307,7 +329,7 @@ def run_clean_demonstration(
         if coupling.get("is_entangled") is not True:
             raise AdapterError(f"rqm-entanglement did not measure Bell entanglement: {coupling}")
         ledger.inherit_from_package("BellHinge", "rqm-entanglement", module="rqm_entanglement.relational")
-        ledger.mark_executed("BellHinge", name=hinge.name)
+        ledger.mark_executed("BellHinge", hinge_name=hinge.name)
         ledger.mark_verified("BellHinge", concurrence=coupling.get("pair_metrics"))
         relational.append("BellHinge")
 
@@ -316,6 +338,17 @@ def run_clean_demonstration(
             raise AdapterError("Backend lowering left u1q operations in the export IR.")
         if probe.count("rqm_core.quaternion_to_zyz") < 1:
             raise AdapterError("u1q lowering did not call rqm-core quaternion_to_zyz.")
+        ledger.mark_executed(
+            "rqm-core",
+            u1q_count=len(u1q_ops),
+            zyz_calls=probe.count("rqm_core.quaternion_to_zyz"),
+        )
+        ledger.mark_verified(
+            "rqm-core",
+            unit_quaternion=True,
+            su2_matrices=probe.count("Quaternion.to_su2_matrix"),
+            zyz_calls=probe.count("rqm_core.quaternion_to_zyz"),
+        )
         export = export_openqasm3(lowered)
         if export.status != "EXPORTED" or not export.source:
             raise AdapterError(f"OpenQASM 3 export failed: {export.status} {export.error}")

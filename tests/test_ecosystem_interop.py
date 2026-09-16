@@ -1,7 +1,9 @@
 from __future__ import annotations
 
+from pathlib import Path
+
 from rqm_openqse_adapter.ecosystem.bridge import circuits_to_compiler, compiler_to_circuits
-from rqm_openqse_adapter.ecosystem.pipeline import REQUIRED_CORE, run_clean_demonstration
+from rqm_openqse_adapter.ecosystem.pipeline import CONFORMANCE_OPENQASM, REQUIRED_CORE, run_clean_demonstration
 
 
 def test_ecosystem_packages_import() -> None:
@@ -27,6 +29,11 @@ def test_circuits_compiler_roundtrip_is_verified() -> None:
     restored = circuits_to_compiler(compiler_to_circuits(source))
     report = verify_equivalence(source, restored)
     assert report.verified is True
+
+
+def test_conformance_openqasm_matches_checked_in_source() -> None:
+    source = Path(__file__).resolve().parents[1] / "examples/conformance/input.qasm"
+    assert source.read_text(encoding="utf-8") == CONFORMANCE_OPENQASM
 
 
 def test_clean_demonstration_executes_required_capabilities() -> None:
