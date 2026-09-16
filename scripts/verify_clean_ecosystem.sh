@@ -9,18 +9,13 @@ REPORTS_DIR="${ROOT}/.ecosystem-reports"
 SKIP_CLONE="${SKIP_CLONE:-0}"
 SIBLINGS=(rqm-core rqm-circuits rqm-entanglement rqm-compiler rqm-qiskit rqm-optimize)
 
-log() {
-  printf '%s\n' "$*"
-}
+log() { printf '%s\n' "$*"; }
 
 clone_or_update() {
   local name="$1"
   local dest="${ECOSYSTEM_ROOT}/${name}"
   if [[ "${SKIP_CLONE}" == "1" ]]; then
-    if [[ ! -f "${dest}/pyproject.toml" ]]; then
-      log "SKIP_CLONE=1 but ${dest} is missing pyproject.toml"
-      exit 1
-    fi
+    [[ -f "${dest}/pyproject.toml" ]] || { log "SKIP_CLONE=1 but ${dest} is missing pyproject.toml"; exit 1; }
     log "Using pre-checked-out ${name} at ${dest}"
     return 0
   fi
@@ -39,25 +34,11 @@ clone_or_update() {
 }
 
 mkdir -p "${ECOSYSTEM_ROOT}" "${REPORTS_DIR}"
-for sibling in "${SIBLINGS[@]}"; do
-  log "Preparing ${sibling}"
-  clone_or_update "${sibling}"
-done
-
-create_venv() {
-  local dest="$1"
-  if "${PYTHON_BIN}" -c "import ensurepip" >/dev/null 2>&1; then
-    "${PYTHON_BIN}" -m venv "${dest}"
-    return
-  fi
-  log "ensurepip is unavailable; falling back to virtualenv"
-  "${PYTHON_BIN}" -m pip install --user virtualenv
-  "${PYTHON_BIN}" -m virtualenv "${dest}"
-}
+for sibling in "${SIBLINGS[@]}"; do clone_or_update "${sibling}"; done
 
 VENV="${ROOT}/.venv-clean-ecosystem"
 rm -rf "${VENV}"
-create_venv "${VENV}"
+"${PYTHON_BIN}" -m venv "${VENV}"
 # shellcheck disable=SC1091
 source "${VENV}/bin/activate"
 python -m pip install --upgrade pip wheel setuptools
@@ -66,27 +47,18 @@ python -m pip install -e "${ECOSYSTEM_ROOT}/rqm-core"
 python -m pip install -e "${ECOSYSTEM_ROOT}/rqm-circuits"
 python -m pip install -e "${ECOSYSTEM_ROOT}/rqm-entanglement"
 python -m pip install -e "${ECOSYSTEM_ROOT}/rqm-compiler"
+# Let rqm-qiskit's declared dependency range resolve Qiskit naturally.
 python -m pip install -e "${ECOSYSTEM_ROOT}/rqm-qiskit[dev]"
-# rqm-qiskit's own candidate installer pins this patch (scripts/install_candidate_wheels.py).
-# The declared range is >=2.5.1,<2.6, but current main tests assert 2.5.1 exactly.
-python -m pip install "qiskit==2.5.1"
 python -m pip install -e "${ECOSYSTEM_ROOT}/rqm-optimize"
 python -m pip install -e "${ROOT}[dev]"
 
 log "Python: $(python -c 'import sys; print(sys.version)')"
+log "Resolved Qiskit: $(python -c 'import qiskit; print(qiskit.__version__)')"
+
 log "Import checks"
 python - <<'PY'
 import importlib
-modules = [
-    "rqm_core",
-    "rqm_circuits",
-    "rqm_compiler",
-    "rqm_entanglement",
-    "rqm_qiskit",
-    "rqm_optimize",
-    "rqm_openqse_adapter",
-]
-for name in modules:
+for name in ["rqm_core","rqm_circuits","rqm_compiler","rqm_entanglement","rqm_qiskit","rqm_optimize","rqm_openqse_adapter"]:
     module = importlib.import_module(name)
     print(f"imported {name} from {module.__file__}")
 PY
@@ -107,36 +79,23 @@ python -m pytest "${ECOSYSTEM_ROOT}/rqm-qiskit/tests" -q --tb=short --junitxml="
 
 log "Recording test counts in conformance report"
 REPORT_PATH="${REPORT_PATH}" REPORTS_DIR="${REPORTS_DIR}" python - <<'PY'
-import json
-import os
-import xml.etree.ElementTree as ET
+import json, os, xml.etree.ElementTree as ET
 from pathlib import Path
-
 report_path = Path(os.environ["REPORT_PATH"])
 reports_dir = Path(os.environ["REPORTS_DIR"])
 payload = json.loads(report_path.read_text(encoding="utf-8"))
 counts = {}
-totals = {"tests": 0, "failures": 0, "errors": 0, "skipped": 0}
+totals = {"tests":0,"failures":0,"errors":0,"skipped":0}
 for xml_path in sorted(reports_dir.glob("*.xml")):
     tree = ET.parse(xml_path)
     tests = failures = errors = skipped = 0
     for suite in tree.iter("testsuite"):
-        tests += int(suite.attrib.get("tests", 0))
-        failures += int(suite.attrib.get("failures", 0))
-        errors += int(suite.attrib.get("errors", 0))
-        skipped += int(suite.attrib.get("skipped", 0))
-    counts[xml_path.stem] = {
-        "tests": tests,
-        "failures": failures,
-        "errors": errors,
-        "skipped": skipped,
-        "passed": tests - failures - errors - skipped,
-    }
-    for key in totals:
-        totals[key] += counts[xml_path.stem][key]
-totals["passed"] = totals["tests"] - totals["failures"] - totals["errors"] - totals["skipped"]
-payload["test_counts"] = {"suites": counts, "totals": totals}
-report_path.write_text(json.dumps(payload, indent=2, sort_keys=True, default=str) + "\n", encoding="utf-8")
+        tests += int(suite.attrib.get("tests",0)); failures += int(suite.attrib.get("failures",0)); errors += int(suite.attrib.get("errors",0)); skipped += int(suite.attrib.get("skipped",0))
+    counts[xml_path.stem] = {"tests":tests,"failures":failures,"errors":errors,"skipped":skipped,"passed":tests-failures-errors-skipped}
+    for key in totals: totals[key] += counts[xml_path.stem][key]
+totals["passed"] = totals["tests"]-totals["failures"]-totals["errors"]-totals["skipped"]
+payload["test_counts"] = {"suites":counts,"totals":totals}
+report_path.write_text(json.dumps(payload, indent=2, sort_keys=True, default=str)+"\n", encoding="utf-8")
 print(json.dumps(payload["test_counts"], indent=2, sort_keys=True))
 PY
 
