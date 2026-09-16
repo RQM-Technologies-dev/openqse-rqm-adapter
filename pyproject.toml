@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rqm-openqse-adapter"
+version = "0.1.0"
+description = "Experimental RQM adapter connecting quaternionic compilation to an OpenQSE-compatible compiler/tool pipeline"
+authors = [{ name = "RQM Technologies" }]
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+keywords = [
+    "quantum",
+    "compiler",
+    "adapter",
+    "openqse",
+    "quaternion",
+    "rqm",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering",
+    "Typing :: Typed",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[project.scripts]
+rqm-openqse-demo = "rqm_openqse_adapter.cli:main"
+
+[project.urls]
+"Homepage" = "https://github.com/RQM-Technologies-dev/openqse-rqm-adapter"
+"Source" = "https://github.com/RQM-Technologies-dev/openqse-rqm-adapter"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+rqm_openqse_adapter = ["py.typed"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--tb=short"
