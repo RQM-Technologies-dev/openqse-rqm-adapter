@@ -1,0 +1,47 @@
+name: Clean RQM ecosystem integration
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  integration:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install RQM ecosystem from GitHub
+        run: |
+          python -m pip install --upgrade pip setuptools wheel
+          python -m pip install \
+            git+https://github.com/RQM-Technologies-dev/rqm-core.git \
+            git+https://github.com/RQM-Technologies-dev/rqm-circuits.git \
+            git+https://github.com/RQM-Technologies-dev/rqm-entanglement.git \
+            git+https://github.com/RQM-Technologies-dev/rqm-compiler.git \
+            git+https://github.com/RQM-Technologies-dev/rqm-qiskit.git \
+            git+https://github.com/RQM-Technologies-dev/rqm-optimize.git
+          python -m pip install -e '.[dev]'
+
+      - name: Verify package imports
+        run: |
+          python - <<'PY'
+          import rqm_core
+          import rqm_circuits
+          import rqm_entanglement
+          import rqm_compiler
+          import rqm_qiskit
+          import rqm_optimize
+          import rqm_openqse_adapter
+          print('all RQM ecosystem imports succeeded')
+          PY
+
+      - name: Run cross-repository conformance demo
+        run: python examples/conformance/run.py
+
+      - name: Run adapter test suite
+        run: python -m pytest -q
