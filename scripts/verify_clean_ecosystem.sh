@@ -67,6 +67,9 @@ python -m pip install -e "${ECOSYSTEM_ROOT}/rqm-circuits"
 python -m pip install -e "${ECOSYSTEM_ROOT}/rqm-entanglement"
 python -m pip install -e "${ECOSYSTEM_ROOT}/rqm-compiler"
 python -m pip install -e "${ECOSYSTEM_ROOT}/rqm-qiskit[dev]"
+# rqm-qiskit's own candidate installer pins this patch (scripts/install_candidate_wheels.py).
+# The declared range is >=2.5.1,<2.6, but current main tests assert 2.5.1 exactly.
+python -m pip install "qiskit==2.5.1"
 python -m pip install -e "${ECOSYSTEM_ROOT}/rqm-optimize"
 python -m pip install -e "${ROOT}[dev]"
 
