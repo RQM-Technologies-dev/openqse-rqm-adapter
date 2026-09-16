@@ -64,9 +64,44 @@ Application / RQM Quaternionic Program
 
 See [docs/architecture.md](docs/architecture.md) and [docs/openqse-integration.md](docs/openqse-integration.md).
 
+## Clean ecosystem demonstration
+
+The interoperability demonstration is a separate, fail-closed path:
+
+```
+OpenQASM 3
+  → rqm-qiskit import
+  → rqm-circuits
+  → rqm-compiler (to_u1q, merge_u1q, sign_canon, cancel_2q)
+  → rqm-core quaternion mathematics
+  → rqm-entanglement AxisHinge / CartanRelation
+  → semantic verification
+  → named-gate lowering
+  → OpenQASM 3
+```
+
+It does not reimplement sibling mathematics. A capability is recorded only when
+it is installed, imported, executed, and verified. Required capabilities that
+were only imported fail the run.
+
+From a completely fresh environment:
+
+```bash
+./scripts/verify_clean_ecosystem.sh
+```
+
+That script clones the sibling RQM repositories, creates a clean virtualenv,
+installs them from source in dependency order, runs import checks, the adapter
+test suite, `examples/conformance/run.py`, and the sibling package tests.
+
+`rqm-optimize` is exercised only after Qiskit lowering, as backend-adjacent
+compression. It is not injected into the backend-neutral compiler path.
+
 ## Quick start
 
-Python 3.10+ is required. Numpy is the only runtime dependency.
+Python 3.10+ is required for the standalone adapter. The ecosystem demonstration
+requires Python 3.11+ because the sibling RQM packages do. Numpy is the only
+runtime dependency of the adapter itself.
 
 ```bash
 git clone https://github.com/RQM-Technologies-dev/openqse-rqm-adapter.git
@@ -133,7 +168,7 @@ The previous contents of this repository were OpenQSE Compiler Working Group not
 - Error correction / FTQC-aware compilation
 - OpenQSE interoperability experiments with ORNL, HPE, and other compiler groups
 
-Related RQM packages (`rqm-core`, `rqm-circuits`, `rqm-compiler`, `rqm-qiskit`) own production math and backend bridges. This adapter currently reuses the documented RQM SU(2) quaternion convention without taking a hard dependency on those packages.
+The standalone adapter still compiles a small quaternionic IR for OpenQSE-compatible payloads. Production math and backend bridges belong to the sibling packages (`rqm-core`, `rqm-circuits`, `rqm-compiler`, `rqm-entanglement`, `rqm-qiskit`, `rqm-optimize`). The clean-ecosystem demonstration uses those packages as the real compilation path.
 
 ## License
 

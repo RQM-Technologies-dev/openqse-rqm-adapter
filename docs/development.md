@@ -6,6 +6,7 @@
 python3 -m pip install -e ".[dev]"
 python3 -m pytest
 python3 scripts/run_demo.py
+./scripts/verify_clean_ecosystem.sh
 ```
 
 The package uses a `src/` layout. Install it before importing
@@ -18,8 +19,13 @@ python3 -m pytest
 python3 -m pytest tests/test_end_to_end.py -v
 ```
 
-Tests cover IR construction, JSON round-trip, validation failures, pass order,
-target checks, adapter payload shape, and an end-to-end Bell compilation.
+Standalone adapter tests cover IR construction, JSON round-trip, validation
+failures, pass order, target checks, adapter payload shape, and an end-to-end
+Bell compilation.
+
+Ecosystem interoperability tests require the sibling RQM packages installed
+from source. Use `scripts/verify_clean_ecosystem.sh` rather than skipping or
+mocking those checks.
 
 ## Adding a compiler pass
 

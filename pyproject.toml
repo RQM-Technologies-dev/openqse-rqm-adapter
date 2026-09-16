@@ -4,14 +4,21 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rqm-openqse-adapter"
-version = "0.2.0"
-description = "Experimental OpenQSE-facing adapter for the RQM quantum compiler ecosystem"
+version = "0.1.1"
+description = "Experimental RQM adapter connecting quaternionic compilation to an OpenQSE-compatible compiler/tool pipeline"
 authors = [{ name = "RQM Technologies" }]
 readme = "README.md"
 license = { file = "LICENSE" }
 requires-python = ">=3.10"
 dependencies = ["numpy>=1.24"]
-keywords = ["quantum", "compiler", "adapter", "openqse", "quaternion", "rqm"]
+keywords = [
+    "quantum",
+    "compiler",
+    "adapter",
+    "openqse",
+    "quaternion",
+    "rqm",
+]
 classifiers = [
     "Development Status :: 3 - Alpha",
     "Intended Audience :: Science/Research",
@@ -26,10 +33,6 @@ classifiers = [
 
 [project.optional-dependencies]
 dev = ["pytest>=7.0"]
-# Install sibling RQM packages from their repositories/editable worktrees for
-# the full ecosystem demonstration. They are kept out of base PyPI resolution
-# until package distribution/version coordination is finalized.
-ecosystem = ["pytest>=7.0"]
 
 [project.scripts]
 rqm-openqse-demo = "rqm_openqse_adapter.cli:main"
@@ -37,12 +40,6 @@ rqm-openqse-demo = "rqm_openqse_adapter.cli:main"
 [project.urls]
 "Homepage" = "https://github.com/RQM-Technologies-dev/openqse-rqm-adapter"
 "Source" = "https://github.com/RQM-Technologies-dev/openqse-rqm-adapter"
-"RQM Core" = "https://github.com/RQM-Technologies-dev/rqm-core"
-"RQM Circuits" = "https://github.com/RQM-Technologies-dev/rqm-circuits"
-"RQM Compiler" = "https://github.com/RQM-Technologies-dev/rqm-compiler"
-"RQM Entanglement" = "https://github.com/RQM-Technologies-dev/rqm-entanglement"
-"RQM Qiskit" = "https://github.com/RQM-Technologies-dev/rqm-qiskit"
-"RQM Optimize" = "https://github.com/RQM-Technologies-dev/rqm-optimize"
 
 [tool.setuptools.packages.find]
 where = ["src"]

@@ -1,4 +1,7 @@
 .venv/
+.venv-clean-ecosystem/
+.ecosystem/
+.ecosystem-reports/
 venv/
 __pycache__/
 *.py[cod]
@@ -13,5 +16,6 @@ htmlcov/
 .ruff_cache/
 examples/**/artifact.json
 examples/**/openqse-artifact.json
+examples/conformance/conformance-report.json
 *.json.bak
 .DS_Store
