@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "rqm-openqse-adapter"
-version = "0.1.0"
+version = "0.1.1"
 description = "Experimental RQM adapter connecting quaternionic compilation to an OpenQSE-compatible compiler/tool pipeline"
 authors = [{ name = "RQM Technologies" }]
 readme = "README.md"

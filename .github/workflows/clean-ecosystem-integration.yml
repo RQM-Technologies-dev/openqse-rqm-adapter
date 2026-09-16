@@ -1,0 +1,67 @@
+name: Clean ecosystem integration
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  clean-ecosystem:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout adapter
+        uses: actions/checkout@v4
+
+      - name: Checkout rqm-core
+        uses: actions/checkout@v4
+        with:
+          repository: RQM-Technologies-dev/rqm-core
+          path: .ecosystem/rqm-core
+
+      - name: Checkout rqm-circuits
+        uses: actions/checkout@v4
+        with:
+          repository: RQM-Technologies-dev/rqm-circuits
+          path: .ecosystem/rqm-circuits
+
+      - name: Checkout rqm-entanglement
+        uses: actions/checkout@v4
+        with:
+          repository: RQM-Technologies-dev/rqm-entanglement
+          path: .ecosystem/rqm-entanglement
+
+      - name: Checkout rqm-compiler
+        uses: actions/checkout@v4
+        with:
+          repository: RQM-Technologies-dev/rqm-compiler
+          path: .ecosystem/rqm-compiler
+
+      - name: Checkout rqm-qiskit
+        uses: actions/checkout@v4
+        with:
+          repository: RQM-Technologies-dev/rqm-qiskit
+          path: .ecosystem/rqm-qiskit
+
+      - name: Checkout rqm-optimize
+        uses: actions/checkout@v4
+        with:
+          repository: RQM-Technologies-dev/rqm-optimize
+          path: .ecosystem/rqm-optimize
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run clean ecosystem verification
+        env:
+          ECOSYSTEM_ROOT: ${{ github.workspace }}/.ecosystem
+          SKIP_CLONE: "1"
+          PYTHON_BIN: python
+        run: |
+          chmod +x scripts/verify_clean_ecosystem.sh
+          ./scripts/verify_clean_ecosystem.sh
