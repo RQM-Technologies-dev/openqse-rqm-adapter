@@ -19,6 +19,41 @@ The question this repository tests is deliberately narrow: **can an independentl
 
 RQM owns this implementation. OpenQSE is the architectural/interoperability context. This repository does **not** propose RQM's quaternionic IR, `u1q`, `AxisHinge`, `CartanRelation`, or QuaternionCartan as openQSE standards, and it is not an official OpenQSE compiler or endorsed reference implementation.
 
+## Computational complexity objective
+
+The computational motivation for RQM's representation hierarchy is straightforward:
+
+> **Use the least-general exact representation for every quantum operation, and promote to a more general representation only when exact closure requires it.**
+
+Instead of immediately expanding every operation into a general dense matrix or fully materialized circuit representation, the RQM path attempts to recognize structured cases, preserve and compose them in compact exact representations, test closure, and materialize a more general form only when necessary.
+
+Conceptually, the increasingly general representation path includes:
+
+```text
+Bell
+  ⊂ AxisHinge
+  ⊂ CartanRelation
+  ⊂ QuaternionCartanBlock
+  ⊂ U(4)
+```
+
+and the intended compilation strategy is:
+
+```text
+conventional artifact
+  -> recognize structured case
+  -> least-general exact RQM representation
+  -> operate / propagate there
+  -> closure test
+  -> promote only when required
+  -> minimize / demote when possible
+  -> conventional materialization only when required
+```
+
+For circuit families that remain closed within structured representations, this approach is intended to reduce intermediate representation size, arithmetic work, decomposition work, and backend-materialization cost. The magnitude and asymptotic character of any reduction must be established by proof and/or benchmark evidence; this repository does **not** assume universal computational-complexity superiority.
+
+See [`docs/COMPLEXITY_MODEL.md`](docs/COMPLEXITY_MODEL.md) for the measurement model, claims discipline, and proposed benchmark program.
+
 ## Reproduce the clean ecosystem demonstration
 
 ```bash
@@ -71,6 +106,7 @@ See:
 - [`docs/CONFORMANCE_EVIDENCE.md`](docs/CONFORMANCE_EVIDENCE.md)
 - [`docs/ORNL_QSC_OPENQSE_CONTEXT.md`](docs/ORNL_QSC_OPENQSE_CONTEXT.md)
 - [`docs/openqse-integration.md`](docs/openqse-integration.md)
+- [`docs/COMPLEXITY_MODEL.md`](docs/COMPLEXITY_MODEL.md)
 - [`examples/conformance/`](examples/conformance/)
 
 ## Standalone prototype
@@ -106,6 +142,8 @@ The previous OpenQSE Compiler Working Group notes are preserved under [`legacy/o
 
 ## Roadmap
 
+- benchmark representation size and per-operation computational work against conventional paths;
+- measure closure duration, promotion/demotion frequency, and avoided materialization across representative circuit families;
 - continue aligning the experimental pass/artifact contract with Compiler Working Group decisions;
 - broaden OpenQASM 3 coverage without weakening fail-closed semantics;
 - test richer target/backend capability contracts;
