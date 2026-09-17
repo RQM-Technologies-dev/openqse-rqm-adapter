@@ -54,6 +54,18 @@ For circuit families that remain closed within structured representations, this 
 
 See [`docs/COMPLEXITY_MODEL.md`](docs/COMPLEXITY_MODEL.md) for the measurement model, claims discipline, and proposed benchmark program.
 
+## Experimental benchmark evidence
+
+The benchmark program now includes representation-owned closure scaling, adversarial/random circuit families, overlapping-entanglement topology tests, a global-information extraction frontier, and an apples-to-apples exact-observable simulation benchmark.
+
+The current end-to-end benchmark compared RQM exact observable propagation against an ordinary exact state-vector implementation on the same GitHub Actions CPU. A comparison counted only when both paths computed the same observable to absolute error `<= 1e-9`, and RQM timing included both compilation and query execution.
+
+**Current bounded result:** 79 of 126 conditions produced valid equal-output comparisons; 22 of those were faster end-to-end with RQM. At 12 qubits, valid conditions had a median measured speedup of **9.67x** and maximum **16.27x**; at 16 qubits, median was **174.25x** and maximum **293.12x**. Another 47 conditions exceeded the configured 250,000-term exact Pauli-expansion budget and were marked unavailable rather than approximated.
+
+These measurements are evidence for a **bounded tractable workload region**, not a claim of efficient arbitrary-circuit simulation. The current benchmark does not establish compact exact extraction of arbitrary amplitudes or full measurement distributions, and the reference baseline is not yet an optimized production simulator such as Qiskit Aer.
+
+See **[`docs/BENCHMARKS.md`](docs/BENCHMARKS.md)** for the full expository summary, methodology, scaling results, limitations, reproducibility information, and claims discipline.
+
 ## Reproduce the clean ecosystem demonstration
 
 ```bash
@@ -107,6 +119,7 @@ See:
 - [`docs/ORNL_QSC_OPENQSE_CONTEXT.md`](docs/ORNL_QSC_OPENQSE_CONTEXT.md)
 - [`docs/openqse-integration.md`](docs/openqse-integration.md)
 - [`docs/COMPLEXITY_MODEL.md`](docs/COMPLEXITY_MODEL.md)
+- [`docs/BENCHMARKS.md`](docs/BENCHMARKS.md)
 - [`examples/conformance/`](examples/conformance/)
 
 ## Standalone prototype
@@ -142,8 +155,10 @@ The previous OpenQSE Compiler Working Group notes are preserved under [`legacy/o
 
 ## Roadmap
 
-- benchmark representation size and per-operation computational work against conventional paths;
-- measure closure duration, promotion/demotion frequency, and avoided materialization across representative circuit families;
+- replicate the exact-observable speedup benchmark with multiple timing repeats and optimized production simulator baselines;
+- characterize which circuit/query families remain within compact exact observable closure and which trigger representation blow-up;
+- extend exact native extraction toward selected amplitudes, marginals, and richer observables without dense state-vector fallback;
+- continue measuring closure duration, promotion/demotion frequency, and avoided materialization across representative circuit families;
 - continue aligning the experimental pass/artifact contract with Compiler Working Group decisions;
 - broaden OpenQASM 3 coverage without weakening fail-closed semantics;
 - test richer target/backend capability contracts;
