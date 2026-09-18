@@ -20,6 +20,8 @@ REQUIRED_CORE = [
     "rqm-circuits",
     "rqm-core",
     "rqm-compiler",
+    "compile_representation_aware",
+    "plan_and_evaluate",
     "rqm-entanglement",
     "rqm-qiskit",
     "to_u1q",
@@ -78,6 +80,8 @@ _PACKAGE_SURFACES = {
     "sign_canon": ("rqm-compiler", "rqm_compiler.passes.sign_canon"),
     "cancel_2q": ("rqm-compiler", "rqm_compiler.passes.cancel_2q"),
     "verify_equivalence": ("rqm-compiler", "rqm_compiler.verification"),
+    "compile_representation_aware": ("rqm-compiler", "rqm_compiler.planner"),
+    "plan_and_evaluate": ("rqm-compiler", "rqm_compiler.planner"),
     "AxisHinge": ("rqm-entanglement", "rqm_entanglement.relational"),
     "AxisHinge.promote": ("rqm-entanglement", "rqm_entanglement.relational"),
     "openqasm3_import": ("rqm-qiskit", "rqm_qiskit.assurance"),
@@ -186,7 +190,7 @@ def run_clean_demonstration(
 
     _bind_surfaces(ledger)
 
-    from rqm_compiler import optimize_circuit, verify_equivalence
+    from rqm_compiler import compile_representation_aware, plan_and_evaluate, verify_equivalence
     from rqm_compiler.compile import lower_circuit_for_backend
     from rqm_core import Quaternion
     from rqm_entanglement import (
@@ -236,7 +240,10 @@ def run_clean_demonstration(
             )
         ledger.mark_verified("rqm-circuits", roundtrip_verified=True)
 
-        optimized, compiler_report = optimize_circuit(compiler_roundtrip)
+        planned = compile_representation_aware(compiler_roundtrip)
+        optimized, compiler_report = planned.circuit, planned.report
+        ledger.mark_executed("compile_representation_aware", representation_complexity=compiler_report.representation_complexity)
+        ledger.mark_verified("compile_representation_aware", public_api=True)
         passes = list(compiler_report.passes_applied)
         if not compiler_report.optimization_applied:
             raise AdapterError(
@@ -246,7 +253,7 @@ def run_clean_demonstration(
         for required_pass in ("to_u1q", "merge_u1q", "sign_canon", "cancel_2q"):
             if required_pass not in passes:
                 raise AdapterError(f"Required compiler pass {required_pass!r} was not applied.")
-            ledger.mark_executed(required_pass, source="optimize_circuit.passes_applied")
+            ledger.mark_executed(required_pass, source="compile_representation_aware.report.passes_applied")
             ledger.mark_verified(required_pass, recorded_by_compiler=True)
 
         ledger.mark_executed("rqm-compiler", passes=passes, optimization_applied=True)
