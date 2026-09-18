@@ -244,6 +244,9 @@ def run_clean_demonstration(
         optimized, compiler_report = planned.circuit, planned.report
         ledger.mark_executed("compile_representation_aware", representation_complexity=compiler_report.representation_complexity)
         ledger.mark_verified("compile_representation_aware", public_api=True)
+        query_result = plan_and_evaluate(planned, "Z" * compiler_roundtrip.num_qubits)
+        ledger.mark_executed("plan_and_evaluate", method=query_result.method, work_units=query_result.work_units)
+        ledger.mark_verified("plan_and_evaluate", exact=query_result.exact, available=query_result.available)
         passes = list(compiler_report.passes_applied)
         if not compiler_report.optimization_applied:
             raise AdapterError(
