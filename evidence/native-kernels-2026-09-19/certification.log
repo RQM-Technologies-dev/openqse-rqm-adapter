@@ -1,0 +1,484 @@
+
+['git', 'clone', '--no-local', '--no-checkout', '/workspace/scratch/fe45cbfc1ffe/rqm-core', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-core']
+Cloning into '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-core'...
+
+['git', 'checkout', '--detach', '4c89792a5f44339f6b0c68871f991d726328491c']
+HEAD is now at 4c89792 Align canonical RQM API identity
+
+['/workspace/scratch/fe45cbfc1ffe/hinge-venv/bin/python', '-m', 'pip', 'wheel', '--no-deps', '--wheel-dir', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/wheels', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-core']
+Processing ./sources/rqm-core
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: rqm-core
+  Building wheel for rqm-core (pyproject.toml): started
+  Building wheel for rqm-core (pyproject.toml): finished with status 'done'
+  Created wheel for rqm-core: filename=rqm_core-0.2.2-py3-none-any.whl size=56561 sha256=a18589a5e38b2f578c4dac3995ddaa7733afcfb3f14ab709b0a2099b1da04c22
+  Stored in directory: /root/.cache/pip/wheels/8b/10/87/c045d1fcf73fde462a821d53755e8ae00f181ac291246fac49
+Successfully built rqm-core
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip
+
+['git', 'clone', '--no-local', '--no-checkout', '/workspace/scratch/fe45cbfc1ffe/rqm-circuits', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-circuits']
+Cloning into '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-circuits'...
+
+['git', 'checkout', '--detach', 'c8f970f222a10cc95a044947c522ec574bae9dab']
+HEAD is now at c8f970f Align canonical RQM API identity
+
+['/workspace/scratch/fe45cbfc1ffe/hinge-venv/bin/python', '-m', 'pip', 'wheel', '--no-deps', '--wheel-dir', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/wheels', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-circuits']
+Processing ./sources/rqm-circuits
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: rqm-circuits
+  Building wheel for rqm-circuits (pyproject.toml): started
+  Building wheel for rqm-circuits (pyproject.toml): finished with status 'done'
+  Created wheel for rqm-circuits: filename=rqm_circuits-0.2.1-py3-none-any.whl size=40636 sha256=b43eae417c1dcddf95ccd614696635cf979207b3721267447f1afe97c4f56de6
+  Stored in directory: /root/.cache/pip/wheels/66/fb/77/adb27b1662e19b3b12e26bfdef71ef57e25a6d6d5d52ceb382
+Successfully built rqm-circuits
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip
+
+['git', 'clone', '--no-local', '--no-checkout', '/workspace/scratch/fe45cbfc1ffe/rqm-entanglement', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-entanglement']
+Cloning into '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-entanglement'...
+
+['git', 'checkout', '--detach', '7c57d0672ef5caa7236d9703e2fd3096fb346ab2']
+HEAD is now at 7c57d06 Add analytic Pauli pair actions and canonical Cartan promotion fast path
+
+['/workspace/scratch/fe45cbfc1ffe/hinge-venv/bin/python', '-m', 'pip', 'wheel', '--no-deps', '--wheel-dir', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/wheels', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-entanglement']
+Processing ./sources/rqm-entanglement
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: rqm-entanglement
+  Building wheel for rqm-entanglement (pyproject.toml): started
+  Building wheel for rqm-entanglement (pyproject.toml): finished with status 'done'
+  Created wheel for rqm-entanglement: filename=rqm_entanglement-0.2.1-py3-none-any.whl size=44331 sha256=c2682a155fd7d4f6c3269c88a16a63fc119b53e28857fa363a111ca43d14edfa
+  Stored in directory: /root/.cache/pip/wheels/7d/f3/74/938740007a590e1f07e2f4a305c86ab93d44615b553f18d090
+Successfully built rqm-entanglement
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip
+
+['git', 'clone', '--no-local', '--no-checkout', '/workspace/scratch/fe45cbfc1ffe/rqm-compiler', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-compiler']
+Cloning into '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-compiler'...
+
+['git', 'checkout', '--detach', '280519b136afe17227204e23bbfeee2246e63277']
+HEAD is now at 280519b Use quaternion observable updates and analytic hinge/frontier transfers
+
+['/workspace/scratch/fe45cbfc1ffe/hinge-venv/bin/python', '-m', 'pip', 'wheel', '--no-deps', '--wheel-dir', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/wheels', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-compiler']
+Processing ./sources/rqm-compiler
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: rqm-compiler
+  Building wheel for rqm-compiler (pyproject.toml): started
+  Building wheel for rqm-compiler (pyproject.toml): finished with status 'done'
+  Created wheel for rqm-compiler: filename=rqm_compiler-0.3.0-py3-none-any.whl size=76724 sha256=d5e40e521ce093c68fc0ee08c6f2d9e73cb361ecb2c396dc9f5643fe999a16ae
+  Stored in directory: /root/.cache/pip/wheels/1f/3b/64/51cb6327b08fe0800bc6d97086ccdfe30bf506063a74f962a1
+Successfully built rqm-compiler
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip
+
+['git', 'clone', '--no-local', '--no-checkout', '/workspace/scratch/fe45cbfc1ffe/rqm-qiskit', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-qiskit']
+Cloning into '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-qiskit'...
+
+['git', 'checkout', '--detach', 'bfd53bec96ea04e8e9d84158014f6ce7217a6099']
+HEAD is now at bfd53be Add bounded IBM real-QPU canary for compiler 0.3.7B
+
+['/workspace/scratch/fe45cbfc1ffe/hinge-venv/bin/python', '-m', 'pip', 'wheel', '--no-deps', '--wheel-dir', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/wheels', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-qiskit']
+Processing ./sources/rqm-qiskit
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: rqm-qiskit
+  Building wheel for rqm-qiskit (pyproject.toml): started
+  Building wheel for rqm-qiskit (pyproject.toml): finished with status 'done'
+  Created wheel for rqm-qiskit: filename=rqm_qiskit-0.4.0-py3-none-any.whl size=81815 sha256=c0dd471b3455fbfb084a76ecb3cc7069e6a8da65a196c9d296c3e34a76a1af2c
+  Stored in directory: /root/.cache/pip/wheels/7b/8e/18/36efb178b9fd1e9a38cf37ef56e52b4565ed36d90416673656
+Successfully built rqm-qiskit
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip
+
+['git', 'clone', '--no-local', '--no-checkout', '/workspace/scratch/fe45cbfc1ffe/rqm-optimize', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-optimize']
+Cloning into '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-optimize'...
+
+['git', 'checkout', '--detach', 'be12b2c9e16477a81f9af0a549189aa61299e7d3']
+HEAD is now at be12b2c Align canonical RQM API identity
+
+['/workspace/scratch/fe45cbfc1ffe/hinge-venv/bin/python', '-m', 'pip', 'wheel', '--no-deps', '--wheel-dir', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/wheels', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-optimize']
+Processing ./sources/rqm-optimize
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: rqm-optimize
+  Building wheel for rqm-optimize (pyproject.toml): started
+  Building wheel for rqm-optimize (pyproject.toml): finished with status 'done'
+  Created wheel for rqm-optimize: filename=rqm_optimize-0.1.3-py3-none-any.whl size=23704 sha256=2f41c3d718b4520d19c7ca4d7307e3fb7100cd4231b3d7617573e8000e05af46
+  Stored in directory: /root/.cache/pip/wheels/94/3e/14/45c5956ec0e3955e6dc43d0a86ee38ebf822fc1c14fcf134b7
+Successfully built rqm-optimize
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip
+
+['git', 'clone', '--no-local', '--no-checkout', '/workspace/scratch/fe45cbfc1ffe/rqm-braket', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-braket']
+Cloning into '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-braket'...
+
+['git', 'checkout', '--detach', 'c9fc7eef0eee7ba4f49e9105d304e37a7c32bf2f']
+HEAD is now at c9fc7ee Align canonical RQM API identity
+
+['/workspace/scratch/fe45cbfc1ffe/hinge-venv/bin/python', '-m', 'pip', 'wheel', '--no-deps', '--wheel-dir', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/wheels', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-braket']
+Processing ./sources/rqm-braket
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: rqm-braket
+  Building wheel for rqm-braket (pyproject.toml): started
+  Building wheel for rqm-braket (pyproject.toml): finished with status 'done'
+  Created wheel for rqm-braket: filename=rqm_braket-0.2.2-py3-none-any.whl size=37419 sha256=3b3522c2b89d48845da98d838d53985fd7c2cc48e3221b04f5f5ac72f29e52b8
+  Stored in directory: /root/.cache/pip/wheels/13/ee/fd/c3c3c2f6e4f3374ff7b3ddcb5315c29a42ce5f88b32fda5076
+Successfully built rqm-braket
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip
+
+['git', 'clone', '--no-local', '--no-checkout', '/workspace/scratch/fe45cbfc1ffe/openqse-rqm-adapter', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/openqse-rqm-adapter']
+Cloning into '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/openqse-rqm-adapter'...
+
+['git', 'checkout', '--detach', '4f20c3a72e17c7a645a29ef91b1c5ddb429b0247']
+HEAD is now at 4f20c3a Pin native kernel candidates and add staged allocation/runtime probes
+
+['/workspace/scratch/fe45cbfc1ffe/hinge-venv/bin/python', '-m', 'pip', 'wheel', '--no-deps', '--wheel-dir', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/wheels', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/openqse-rqm-adapter']
+Processing ./sources/openqse-rqm-adapter
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: rqm-openqse-adapter
+  Building wheel for rqm-openqse-adapter (pyproject.toml): started
+  Building wheel for rqm-openqse-adapter (pyproject.toml): finished with status 'done'
+  Created wheel for rqm-openqse-adapter: filename=rqm_openqse_adapter-0.1.1-py3-none-any.whl size=50591 sha256=7af862ba3a0164130fc9047aa9a338fa2bcf62f421b28c1d9bcfb6580c7fa027
+  Stored in directory: /root/.cache/pip/wheels/27/bf/e1/51bd517ad619e248779ce8a8bfa748615b976e176fd807857b
+Successfully built rqm-openqse-adapter
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: python -m pip install --upgrade pip
+
+['/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/bin/python', '-m', 'pip', 'install', '-c', '/workspace/scratch/fe45cbfc1ffe/openqse-rqm-adapter/candidate-constraints.txt', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/wheels/rqm_braket-0.2.2-py3-none-any.whl', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/wheels/rqm_circuits-0.2.1-py3-none-any.whl', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/wheels/rqm_compiler-0.3.0-py3-none-any.whl', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/wheels/rqm_core-0.2.2-py3-none-any.whl', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/wheels/rqm_entanglement-0.2.1-py3-none-any.whl', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/wheels/rqm_openqse_adapter-0.1.1-py3-none-any.whl', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/wheels/rqm_optimize-0.1.3-py3-none-any.whl', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/wheels/rqm_qiskit-0.4.0-py3-none-any.whl', 'pytest', 'pytest-cov', 'qiskit-aer==0.17.2', 'qiskit-qasm3-import==0.6.0', 'flask']
+Processing ./wheels/rqm_braket-0.2.2-py3-none-any.whl
+Processing ./wheels/rqm_circuits-0.2.1-py3-none-any.whl
+Processing ./wheels/rqm_compiler-0.3.0-py3-none-any.whl
+Processing ./wheels/rqm_core-0.2.2-py3-none-any.whl
+Processing ./wheels/rqm_entanglement-0.2.1-py3-none-any.whl
+Processing ./wheels/rqm_openqse_adapter-0.1.1-py3-none-any.whl
+Processing ./wheels/rqm_optimize-0.1.3-py3-none-any.whl
+Processing ./wheels/rqm_qiskit-0.4.0-py3-none-any.whl
+Collecting pytest
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting pytest-cov
+  Using cached pytest_cov-7.1.0-py3-none-any.whl.metadata (32 kB)
+Collecting qiskit-aer==0.17.2
+  Using cached qiskit_aer-0.17.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (8.3 kB)
+Collecting qiskit-qasm3-import==0.6.0
+  Using cached qiskit_qasm3_import-0.6.0-py3-none-any.whl.metadata (7.2 kB)
+Collecting flask
+  Using cached flask-3.1.3-py3-none-any.whl.metadata (3.2 kB)
+Collecting qiskit>=1.1.0 (from qiskit-aer==0.17.2)
+  Using cached qiskit-2.5.2-cp310-abi3-manylinux_2_28_x86_64.whl.metadata (14 kB)
+Collecting numpy>=1.16.3 (from qiskit-aer==0.17.2)
+  Using cached numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting scipy>=1.0 (from qiskit-aer==0.17.2)
+  Using cached scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl.metadata (62 kB)
+Collecting psutil>=5 (from qiskit-aer==0.17.2)
+  Using cached psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl.metadata (22 kB)
+Collecting python-dateutil>=2.8.0 (from qiskit-aer==0.17.2)
+  Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl.metadata (8.4 kB)
+Collecting openqasm3<2.0,>=0.4 (from openqasm3[parser]<2.0,>=0.4->qiskit-qasm3-import==0.6.0)
+  Using cached openqasm3-1.0.1-py3-none-any.whl.metadata (6.0 kB)
+Collecting amazon-braket-sdk>=1.80.0 (from rqm-braket==0.2.2)
+  Using cached amazon_braket_sdk-1.127.1-py3-none-any.whl.metadata (14 kB)
+Collecting opt_einsum<4,>=3.4 (from rqm-compiler==0.3.0)
+  Using cached opt_einsum-3.4.0-py3-none-any.whl.metadata (6.3 kB)
+Collecting iniconfig>=1.0.1 (from pytest)
+  Using cached iniconfig-2.3.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting packaging>=22 (from pytest)
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pluggy<2,>=1.5 (from pytest)
+  Using cached pluggy-1.6.0-py3-none-any.whl.metadata (4.8 kB)
+Collecting pygments>=2.7.2 (from pytest)
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Collecting coverage>=7.10.6 (from coverage[toml]>=7.10.6->pytest-cov)
+  Using cached coverage-7.16.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl.metadata (8.2 kB)
+Collecting blinker>=1.9.0 (from flask)
+  Using cached blinker-1.9.0-py3-none-any.whl.metadata (1.6 kB)
+Collecting click>=8.1.3 (from flask)
+  Using cached click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting itsdangerous>=2.2.0 (from flask)
+  Using cached itsdangerous-2.2.0-py3-none-any.whl.metadata (1.9 kB)
+Collecting jinja2>=3.1.2 (from flask)
+  Using cached jinja2-3.1.6-py3-none-any.whl.metadata (2.9 kB)
+Collecting markupsafe>=2.1.1 (from flask)
+  Using cached markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl.metadata (2.7 kB)
+Collecting werkzeug>=3.1.0 (from flask)
+  Using cached werkzeug-3.1.8-py3-none-any.whl.metadata (4.0 kB)
+Collecting amazon-braket-schemas>=1.30.0 (from amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached amazon_braket_schemas-1.32.1.post0-py3-none-any.whl.metadata (6.0 kB)
+Collecting amazon-braket-default-simulator>=1.32.0 (from amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached amazon_braket_default_simulator-1.40.2-py3-none-any.whl.metadata (6.4 kB)
+Collecting oqpy~=0.3.7 (from amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached oqpy-0.3.10-py3-none-any.whl.metadata (8.3 kB)
+Collecting backoff (from amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached backoff-2.2.1-py3-none-any.whl.metadata (14 kB)
+Collecting boltons (from amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached boltons-26.2.0-py3-none-any.whl.metadata (7.0 kB)
+Collecting boto3>=1.28.53 (from amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached boto3-1.43.98-py3-none-any.whl.metadata (6.6 kB)
+Collecting cloudpickle==2.2.1 (from amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached cloudpickle-2.2.1-py3-none-any.whl.metadata (6.9 kB)
+Collecting nest-asyncio (from amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached nest_asyncio-1.6.0-py3-none-any.whl.metadata (2.8 kB)
+Collecting networkx (from amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached networkx-3.6.1-py3-none-any.whl.metadata (6.8 kB)
+Collecting openpulse (from amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached openpulse-1.0.1-py3-none-any.whl.metadata (2.0 kB)
+Collecting sympy (from amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached sympy-1.14.0-py3-none-any.whl.metadata (12 kB)
+Collecting antlr4_python3_runtime<4.14,>=4.7 (from openqasm3[parser]<2.0,>=0.4->qiskit-qasm3-import==0.6.0)
+  Using cached antlr4_python3_runtime-4.13.2-py3-none-any.whl.metadata (304 bytes)
+Collecting six>=1.5 (from python-dateutil>=2.8.0->qiskit-aer==0.17.2)
+  Using cached six-1.17.0-py2.py3-none-any.whl.metadata (1.7 kB)
+Collecting rustworkx>=0.15.0 (from qiskit>=1.1.0->qiskit-aer==0.17.2)
+  Using cached rustworkx-0.18.1-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (10 kB)
+Collecting dill>=0.3 (from qiskit>=1.1.0->qiskit-aer==0.17.2)
+  Using cached dill-0.4.1-py3-none-any.whl.metadata (10 kB)
+Collecting stevedore>=3.0.0 (from qiskit>=1.1.0->qiskit-aer==0.17.2)
+  Using cached stevedore-5.9.1-py3-none-any.whl.metadata (2.3 kB)
+Collecting typing-extensions (from qiskit>=1.1.0->qiskit-aer==0.17.2)
+  Using cached typing_extensions-4.16.0-py3-none-any.whl.metadata (3.3 kB)
+Collecting numba (from amazon-braket-default-simulator>=1.32.0->amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached numba-0.63.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (2.9 kB)
+Collecting pydantic>2 (from amazon-braket-default-simulator>=1.32.0->amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached pydantic-2.13.5-py3-none-any.whl.metadata (110 kB)
+Collecting botocore<1.44.0,>=1.43.98 (from boto3>=1.28.53->amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached botocore-1.43.98-py3-none-any.whl.metadata (5.6 kB)
+Collecting jmespath<2.0.0,>=0.7.1 (from boto3>=1.28.53->amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached jmespath-1.1.0-py3-none-any.whl.metadata (7.6 kB)
+Collecting s3transfer<0.20.0,>=0.19.0 (from boto3>=1.28.53->amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached s3transfer-0.19.2-py3-none-any.whl.metadata (1.7 kB)
+Collecting mypy-extensions>=0.2.0 (from oqpy~=0.3.7->amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached mypy_extensions-1.1.0-py3-none-any.whl.metadata (1.1 kB)
+Collecting mpmath<1.4,>=1.1.0 (from sympy->amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached mpmath-1.3.0-py3-none-any.whl.metadata (8.6 kB)
+Collecting urllib3!=2.2.0,<3,>=1.25.4 (from botocore<1.44.0,>=1.43.98->boto3>=1.28.53->amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached urllib3-2.8.0-py3-none-any.whl.metadata (7.4 kB)
+Collecting annotated-types>=0.6.0 (from pydantic>2->amazon-braket-default-simulator>=1.32.0->amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached annotated_types-0.8.0-py3-none-any.whl.metadata (15 kB)
+Collecting pydantic-core==2.46.5 (from pydantic>2->amazon-braket-default-simulator>=1.32.0->amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached pydantic_core-2.46.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (6.6 kB)
+Collecting typing-inspection>=0.4.2 (from pydantic>2->amazon-braket-default-simulator>=1.32.0->amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached typing_inspection-0.4.4-py3-none-any.whl.metadata (2.6 kB)
+Collecting llvmlite<0.47,>=0.46.0dev0 (from numba->amazon-braket-default-simulator>=1.32.0->amazon-braket-sdk>=1.80.0->rqm-braket==0.2.2)
+  Using cached llvmlite-0.46.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (5.0 kB)
+Using cached qiskit_aer-0.17.2-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (12.4 MB)
+Using cached qiskit_qasm3_import-0.6.0-py3-none-any.whl (29 kB)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached pytest_cov-7.1.0-py3-none-any.whl (22 kB)
+Using cached flask-3.1.3-py3-none-any.whl (103 kB)
+Using cached amazon_braket_sdk-1.127.1-py3-none-any.whl (403 kB)
+Using cached cloudpickle-2.2.1-py3-none-any.whl (25 kB)
+Using cached blinker-1.9.0-py3-none-any.whl (8.5 kB)
+Using cached click-8.5.0-py3-none-any.whl (125 kB)
+Using cached coverage-7.16.1-cp312-cp312-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl (258 kB)
+Using cached iniconfig-2.3.0-py3-none-any.whl (7.5 kB)
+Using cached itsdangerous-2.2.0-py3-none-any.whl (16 kB)
+Using cached jinja2-3.1.6-py3-none-any.whl (134 kB)
+Using cached markupsafe-3.0.3-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl (22 kB)
+Using cached numpy-2.3.5-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (16.6 MB)
+Using cached openqasm3-1.0.1-py3-none-any.whl (541 kB)
+Using cached opt_einsum-3.4.0-py3-none-any.whl (71 kB)
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Using cached pluggy-1.6.0-py3-none-any.whl (20 kB)
+Using cached psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl (155 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Using cached python_dateutil-2.9.0.post0-py2.py3-none-any.whl (229 kB)
+Using cached qiskit-2.5.2-cp310-abi3-manylinux_2_28_x86_64.whl (9.8 MB)
+Using cached scipy-1.18.1-cp312-cp312-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl (35.3 MB)
+Using cached werkzeug-3.1.8-py3-none-any.whl (226 kB)
+Using cached amazon_braket_default_simulator-1.40.2-py3-none-any.whl (247 kB)
+Using cached antlr4_python3_runtime-4.13.2-py3-none-any.whl (144 kB)
+Using cached amazon_braket_schemas-1.32.1.post0-py3-none-any.whl (153 kB)
+Using cached boto3-1.43.98-py3-none-any.whl (140 kB)
+Using cached dill-0.4.1-py3-none-any.whl (120 kB)
+Using cached oqpy-0.3.10-py3-none-any.whl (35 kB)
+Using cached openpulse-1.0.1-py3-none-any.whl (537 kB)
+Using cached rustworkx-0.18.1-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (2.4 MB)
+Using cached six-1.17.0-py2.py3-none-any.whl (11 kB)
+Using cached stevedore-5.9.1-py3-none-any.whl (54 kB)
+Using cached backoff-2.2.1-py3-none-any.whl (15 kB)
+Using cached boltons-26.2.0-py3-none-any.whl (199 kB)
+Using cached nest_asyncio-1.6.0-py3-none-any.whl (5.2 kB)
+Using cached networkx-3.6.1-py3-none-any.whl (2.1 MB)
+Using cached sympy-1.14.0-py3-none-any.whl (6.3 MB)
+Using cached typing_extensions-4.16.0-py3-none-any.whl (45 kB)
+Using cached botocore-1.43.98-py3-none-any.whl (15.8 MB)
+Using cached jmespath-1.1.0-py3-none-any.whl (20 kB)
+Using cached mpmath-1.3.0-py3-none-any.whl (536 kB)
+Using cached mypy_extensions-1.1.0-py3-none-any.whl (5.0 kB)
+Using cached pydantic-2.13.5-py3-none-any.whl (472 kB)
+Using cached pydantic_core-2.46.5-cp312-cp312-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.1 MB)
+Using cached s3transfer-0.19.2-py3-none-any.whl (90 kB)
+Using cached numba-0.63.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.8 MB)
+Using cached annotated_types-0.8.0-py3-none-any.whl (13 kB)
+Using cached llvmlite-0.46.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (56.3 MB)
+Using cached typing_inspection-0.4.4-py3-none-any.whl (14 kB)
+Using cached urllib3-2.8.0-py3-none-any.whl (135 kB)
+Installing collected packages: openqasm3, mpmath, antlr4_python3_runtime, urllib3, typing-extensions, sympy, stevedore, six, rqm-circuits, pygments, psutil, pluggy, packaging, opt_einsum, numpy, networkx, nest-asyncio, mypy-extensions, markupsafe, llvmlite, jmespath, itsdangerous, iniconfig, dill, coverage, cloudpickle, click, boltons, blinker, backoff, annotated-types, werkzeug, typing-inspection, scipy, rustworkx, rqm-openqse-adapter, rqm-core, python-dateutil, pytest, pydantic-core, openpulse, numba, jinja2, rqm-entanglement, qiskit, pytest-cov, pydantic, oqpy, flask, botocore, s3transfer, rqm-optimize, rqm-compiler, qiskit-qasm3-import, qiskit-aer, amazon-braket-schemas, rqm-qiskit, boto3, amazon-braket-default-simulator, amazon-braket-sdk, rqm-braket
+Successfully installed amazon-braket-default-simulator-1.40.2 amazon-braket-schemas-1.32.1.post0 amazon-braket-sdk-1.127.1 annotated-types-0.8.0 antlr4_python3_runtime-4.13.2 backoff-2.2.1 blinker-1.9.0 boltons-26.2.0 boto3-1.43.98 botocore-1.43.98 click-8.5.0 cloudpickle-2.2.1 coverage-7.16.1 dill-0.4.1 flask-3.1.3 iniconfig-2.3.0 itsdangerous-2.2.0 jinja2-3.1.6 jmespath-1.1.0 llvmlite-0.46.0 markupsafe-3.0.3 mpmath-1.3.0 mypy-extensions-1.1.0 nest-asyncio-1.6.0 networkx-3.6.1 numba-0.63.1 numpy-2.3.5 openpulse-1.0.1 openqasm3-1.0.1 opt_einsum-3.4.0 oqpy-0.3.10 packaging-26.3 pluggy-1.6.0 psutil-7.2.2 pydantic-2.13.5 pydantic-core-2.46.5 pygments-2.21.0 pytest-9.1.1 pytest-cov-7.1.0 python-dateutil-2.9.0.post0 qiskit-2.5.2 qiskit-aer-0.17.2 qiskit-qasm3-import-0.6.0 rqm-braket-0.2.2 rqm-circuits-0.2.1 rqm-compiler-0.3.0 rqm-core-0.2.2 rqm-entanglement-0.2.1 rqm-openqse-adapter-0.1.1 rqm-optimize-0.1.3 rqm-qiskit-0.4.0 rustworkx-0.18.1 s3transfer-0.19.2 scipy-1.18.1 six-1.17.0 stevedore-5.9.1 sympy-1.14.0 typing-extensions-4.16.0 typing-inspection-0.4.4 urllib3-2.8.0 werkzeug-3.1.8
+
+[notice] A new release of pip is available: 25.0.1 -> 26.2.1
+[notice] To update, run: /workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/bin/python -m pip install --upgrade pip
+
+['/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/bin/python', '-m', 'pip', 'check']
+No broken requirements found.
+
+['/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/bin/python', '-m', 'pytest', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-core/tests', '-q', '--tb=short', '--import-mode=importlib', '-o', 'pythonpath=', '--junitxml=/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/rqm-core.xml']
+........................................................................ [ 15%]
+........................................................................ [ 31%]
+........................................................................ [ 47%]
+........................................................................ [ 63%]
+........................................................................ [ 79%]
+........................................................................ [ 95%]
+...................                                                      [100%]
+451 passed in 0.63s
+
+['/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/bin/python', '-m', 'pytest', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-circuits/tests', '-q', '--tb=short', '--import-mode=importlib', '-o', 'pythonpath=', '--junitxml=/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/rqm-circuits.xml']
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0
+rootdir: /workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-circuits
+configfile: pyproject.toml
+plugins: cov-7.1.0
+collected 262 items
+
+sources/rqm-circuits/tests/test_circuit.py ............................. [ 11%]
+..........                                                               [ 14%]
+sources/rqm-circuits/tests/test_gates.py ............................... [ 26%]
+...........                                                              [ 30%]
+sources/rqm-circuits/tests/test_new_features.py ........................ [ 40%]
+........................                                                 [ 49%]
+sources/rqm-circuits/tests/test_public_boundary.py ..                    [ 50%]
+sources/rqm-circuits/tests/test_schema.py ................ssssssssss...  [ 61%]
+sources/rqm-circuits/tests/test_serialization.py ....................... [ 69%]
+....................                                                     [ 77%]
+sources/rqm-circuits/tests/test_two_qubit_rotations.py ............      [ 82%]
+sources/rqm-circuits/tests/test_validation.py .......................... [ 91%]
+.....................                                                    [100%]
+
+- generated xml file: /workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/rqm-circuits.xml -
+======================= 252 passed, 10 skipped in 0.26s ========================
+
+['/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/bin/python', '-m', 'pytest', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-entanglement/tests', '-q', '--tb=short', '--import-mode=importlib', '-o', 'pythonpath=', '--junitxml=/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/rqm-entanglement.xml']
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0
+rootdir: /workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-entanglement
+configfile: pyproject.toml
+plugins: cov-7.1.0
+collected 162 items
+
+sources/rqm-entanglement/tests/test_adapter.py .s..                      [  2%]
+sources/rqm-entanglement/tests/test_analysis.py ...........              [  9%]
+sources/rqm-entanglement/tests/test_basis.py ........                    [ 14%]
+sources/rqm-entanglement/tests/test_canonical.py ....................... [ 28%]
+....                                                                     [ 30%]
+sources/rqm-entanglement/tests/test_classify.py .............            [ 38%]
+sources/rqm-entanglement/tests/test_compiler_0_4_boundary.py ....        [ 41%]
+sources/rqm-entanglement/tests/test_coupling.py .......                  [ 45%]
+sources/rqm-entanglement/tests/test_measures.py .............            [ 53%]
+sources/rqm-entanglement/tests/test_pauli_transfer.py .................. [ 64%]
+............                                                             [ 72%]
+sources/rqm-entanglement/tests/test_relational.py ......                 [ 75%]
+sources/rqm-entanglement/tests/test_su4.py ..........................    [ 91%]
+sources/rqm-entanglement/tests/test_tensor.py .............              [100%]
+
+- generated xml file: /workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/rqm-entanglement.xml -
+======================== 161 passed, 1 skipped in 0.66s ========================
+
+['/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/bin/python', '-m', 'pytest', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-compiler/tests', '-q', '--tb=short', '--import-mode=importlib', '-o', 'pythonpath=', '--junitxml=/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/rqm-compiler.xml']
+........................................................................ [ 16%]
+........................................................................ [ 33%]
+........................................................................ [ 49%]
+........................................................................ [ 66%]
+........................................................................ [ 82%]
+........................................................................ [ 99%]
+..                                                                       [100%]
+434 passed in 1.49s
+
+['/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/bin/python', '-m', 'pytest', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-qiskit/tests', '-q', '--tb=short', '--import-mode=importlib', '-o', 'pythonpath=', '--junitxml=/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/rqm-qiskit.xml']
+........................................................................ [ 12%]
+........................................................................ [ 25%]
+........................................................................ [ 38%]
+........................................................................ [ 51%]
+........................................................................ [ 64%]
+........................................................................ [ 77%]
+........................................................................ [ 90%]
+........................................................                 [100%]
+560 passed in 3.86s
+
+['/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/bin/python', '-m', 'pytest', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-optimize/tests', '-q', '--tb=short', '--import-mode=importlib', '-o', 'pythonpath=', '--junitxml=/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/rqm-optimize.xml']
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.1.1, pluggy-1.6.0
+rootdir: /workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-optimize
+configfile: pyproject.toml
+plugins: cov-7.1.0
+collected 101 items
+
+sources/rqm-optimize/tests/test_axis_aware.py .......................... [ 25%]
+                                                                         [ 25%]
+sources/rqm-optimize/tests/test_fusion.py .......                        [ 32%]
+sources/rqm-optimize/tests/test_geometry_quaternion.py ................. [ 49%]
+...................                                                      [ 68%]
+sources/rqm-optimize/tests/test_optimize_qiskit.py ..................... [ 89%]
+.....                                                                    [ 94%]
+sources/rqm-optimize/tests/test_public_api.py ......                     [100%]
+
+- generated xml file: /workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/rqm-optimize.xml -
+============================= 101 passed in 0.51s ==============================
+
+['/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/bin/python', '-m', 'pytest', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/rqm-braket/tests', '-q', '--tb=short', '--import-mode=importlib', '-o', 'pythonpath=', '--junitxml=/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/rqm-braket.xml']
+........................................................................ [ 23%]
+........................................................................ [ 46%]
+........................................................................ [ 69%]
+........................................................................ [ 92%]
+......................                                                   [100%]
+
+['/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/bin/python', '-m', 'pytest', '/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/sources/openqse-rqm-adapter/tests', '-q', '--tb=short', '--import-mode=importlib', '-o', 'pythonpath=', '--junitxml=/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/openqse-rqm-adapter.xml']
+.............................................................            [100%]
+61 passed in 2.83s
+
+['/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/bin/python', '-c', 'import json; from pathlib import Path; from rqm_openqse_adapter.ecosystem.pipeline import run_clean_demonstration; r=run_clean_demonstration(ecosystem_root=Path(\'/workspace/scratch/fe45cbfc1ffe\')).to_dict(); r["repository_shas"]={\'rqm-core\': \'4c89792a5f44339f6b0c68871f991d726328491c\', \'rqm-circuits\': \'c8f970f222a10cc95a044947c522ec574bae9dab\', \'rqm-entanglement\': \'7c57d0672ef5caa7236d9703e2fd3096fb346ab2\', \'rqm-compiler\': \'280519b136afe17227204e23bbfeee2246e63277\', \'rqm-qiskit\': \'bfd53bec96ea04e8e9d84158014f6ce7217a6099\', \'rqm-optimize\': \'be12b2c9e16477a81f9af0a549189aa61299e7d3\', \'rqm-braket\': \'c9fc7eef0eee7ba4f49e9105d304e37a7c32bf2f\', \'openqse-rqm-adapter\': \'4f20c3a72e17c7a645a29ef91b1c5ddb429b0247\'}; Path("conformance.json").write_text(json.dumps(r,indent=2,default=str))']
