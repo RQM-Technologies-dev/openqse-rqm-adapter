@@ -61,6 +61,8 @@ class EvidenceLedger:
 
     def mark_verified(self, name: str, **details: Any) -> None:
         cap = self.ensure(name)
+        if not cap.executed:
+            raise AdapterError(f"Cannot verify {name}: capability was not executed.")
         cap.verified = True
         cap.details.update(details)
 

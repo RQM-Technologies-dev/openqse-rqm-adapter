@@ -1,0 +1,9 @@
+{
+  "rqm-core": "4c89792a5f44339f6b0c68871f991d726328491c",
+  "rqm-circuits": "c8f970f222a10cc95a044947c522ec574bae9dab",
+  "rqm-entanglement": "34cb69e37eac021bef68a488a89a2cbe7f5f95c8",
+  "rqm-compiler": "a018f673a8ce2edca44da5c9b4c8a2cc4b6b9b26",
+  "rqm-qiskit": "bfd53bec96ea04e8e9d84158014f6ce7217a6099",
+  "rqm-optimize": "be12b2c9e16477a81f9af0a549189aa61299e7d3",
+  "rqm-braket": "c9fc7eef0eee7ba4f49e9105d304e37a7c32bf2f"
+}

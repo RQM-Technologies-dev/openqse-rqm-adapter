@@ -20,48 +20,85 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: RQM-Technologies-dev/rqm-core
+          ref: 4c89792a5f44339f6b0c68871f991d726328491c
           path: .ecosystem/rqm-core
 
       - name: Checkout rqm-circuits
         uses: actions/checkout@v4
         with:
           repository: RQM-Technologies-dev/rqm-circuits
+          ref: c8f970f222a10cc95a044947c522ec574bae9dab
           path: .ecosystem/rqm-circuits
 
       - name: Checkout rqm-entanglement
         uses: actions/checkout@v4
         with:
           repository: RQM-Technologies-dev/rqm-entanglement
+          ref: 34cb69e37eac021bef68a488a89a2cbe7f5f95c8
           path: .ecosystem/rqm-entanglement
 
       - name: Checkout rqm-compiler
         uses: actions/checkout@v4
         with:
           repository: RQM-Technologies-dev/rqm-compiler
+          ref: a018f673a8ce2edca44da5c9b4c8a2cc4b6b9b26
           path: .ecosystem/rqm-compiler
 
       - name: Checkout rqm-qiskit
         uses: actions/checkout@v4
         with:
           repository: RQM-Technologies-dev/rqm-qiskit
+          ref: bfd53bec96ea04e8e9d84158014f6ce7217a6099
           path: .ecosystem/rqm-qiskit
 
       - name: Checkout rqm-optimize
         uses: actions/checkout@v4
         with:
           repository: RQM-Technologies-dev/rqm-optimize
+          ref: be12b2c9e16477a81f9af0a549189aa61299e7d3
           path: .ecosystem/rqm-optimize
+
+      - name: Checkout rqm-braket
+        uses: actions/checkout@v4
+        with:
+          repository: RQM-Technologies-dev/rqm-braket
+          ref: c9fc7eef0eee7ba4f49e9105d304e37a7c32bf2f
+          path: .ecosystem/rqm-braket
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
-      - name: Run clean ecosystem verification
-        env:
-          ECOSYSTEM_ROOT: ${{ github.workspace }}/.ecosystem
-          SKIP_CLONE: "1"
-          PYTHON_BIN: python
+      - name: Certify installed candidate artifacts
         run: |
-          chmod +x scripts/verify_clean_ecosystem.sh
-          ./scripts/verify_clean_ecosystem.sh
+          ln -s "$GITHUB_WORKSPACE" .ecosystem/openqse-rqm-adapter
+          python - <<'PYCODE'
+          import json, subprocess
+          from pathlib import Path
+          refs = json.loads(Path('candidate-revisions.json').read_text())
+          refs['openqse-rqm-adapter'] = subprocess.check_output(['git','rev-parse','HEAD'], text=True).strip()
+          Path('/tmp/candidate-revisions.json').write_text(json.dumps(refs))
+          PYCODE
+          python scripts/certify_candidate.py --sources .ecosystem --output .certification --revisions /tmp/candidate-revisions.json --constraints candidate-constraints.txt
+
+      - name: Measure scientific query boundary
+        env:
+          OMP_NUM_THREADS: "1"
+          OPENBLAS_NUM_THREADS: "1"
+        run: .certification/venv/bin/python scripts/scientific_boundary_benchmark.py --certification .certification --output .boundary
+
+      - name: Archive scientific evidence and exact wheels
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: scientific-candidate-${{ github.sha }}
+          path: |
+            .certification/manifest.json
+            .certification/certification.log
+            .certification/*.xml
+            .certification/conformance.json
+            .certification/*requirements*.txt
+            .certification/constraints.txt
+            .certification/wheels/*.whl
+            .boundary/*.json

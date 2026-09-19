@@ -136,7 +136,10 @@ def _git_sha(path: Path) -> str:
 
 
 def _discover_shas(ecosystem_root: Path | None) -> dict[str, str]:
-    shas = {"openqse-rqm-adapter": _git_sha(Path(__file__).resolve().parents[3])}
+    adapter_root = Path(__file__).resolve().parents[3]
+    shas = {}
+    if (adapter_root / ".git").exists():
+        shas["openqse-rqm-adapter"] = _git_sha(adapter_root)
     names = {
         "rqm-core": "rqm-core",
         "rqm-circuits": "rqm-circuits",
@@ -167,6 +170,36 @@ def _mark_package(ledger: EvidenceLedger, dist: str, module_name: str) -> Any:
 def _bind_surfaces(ledger: EvidenceLedger) -> None:
     for name, (package, module) in _PACKAGE_SURFACES.items():
         ledger.inherit_from_package(name, package, module=module)
+
+
+def _verify_query(result: Any, reference: complex, *, tolerance: float = 1e-9) -> float:
+    """Require an available exact answer and a finite independent-oracle match."""
+    if not result.available or not result.exact:
+        raise AdapterError("Query verification requires an available exact answer.")
+    value = complex(result.value)
+    reference = complex(reference)
+    if not all(math.isfinite(x) for x in (value.real, value.imag, reference.real, reference.imag)):
+        raise AdapterError("Query verification rejected a non-finite answer/reference.")
+    error = abs(value - reference)
+    if error > tolerance:
+        raise AdapterError(f"Query oracle mismatch: error={error}, tolerance={tolerance}")
+    return float(error)
+
+
+def _verify_qiskit_operators(before: Any, after: Any, *, boundary: str) -> float:
+    """Compare the complete small-fixture operators up to a single global phase."""
+    import numpy as np
+    from qiskit.quantum_info import Operator
+
+    a, b = Operator(before).data, Operator(after).data
+    if a.shape != b.shape or not np.isfinite(a).all() or not np.isfinite(b).all():
+        raise AdapterError(f"{boundary}: invalid operator shape or non-finite values")
+    overlap = np.vdot(a, b)
+    phase = overlap / abs(overlap) if abs(overlap) else 1.0
+    error = float(np.max(np.abs(b - phase * a)))
+    if error > 1e-9:
+        raise AdapterError(f"{boundary}: independent operator mismatch {error}")
+    return error
 
 
 def run_clean_demonstration(
@@ -243,10 +276,26 @@ def run_clean_demonstration(
         planned = compile_representation_aware(compiler_roundtrip)
         optimized, compiler_report = planned.circuit, planned.report
         ledger.mark_executed("compile_representation_aware", representation_complexity=compiler_report.representation_complexity)
-        ledger.mark_verified("compile_representation_aware", public_api=True)
         query_result = plan_and_evaluate(planned, "Z" * compiler_roundtrip.num_qubits)
         ledger.mark_executed("plan_and_evaluate", method=query_result.method, work_units=query_result.work_units)
-        ledger.mark_verified("plan_and_evaluate", exact=query_result.exact, available=query_result.available)
+        # Parse the ORIGINAL QASM independently of the RQM bridge and compiler.
+        from itertools import product
+        from qiskit import qasm3
+        from qiskit.quantum_info import Statevector, Pauli
+
+        oracle_circuit = qasm3.loads(CONFORMANCE_OPENQASM)
+        oracle_state = Statevector.from_instruction(oracle_circuit)
+        query_errors = {}
+        for labels in product("IXYZ", repeat=compiler_roundtrip.num_qubits):
+            observable = "".join(labels)  # RQM uses qubit 0 first; Qiskit uses it last.
+            answer = plan_and_evaluate(planned, observable)
+            reference = oracle_state.expectation_value(Pauli(observable[::-1]))
+            query_errors[observable] = _verify_query(answer, reference)
+        ledger.mark_verified(
+            "plan_and_evaluate", exact=True, available=True,
+            oracle="Qiskit Statevector from original OpenQASM", tolerance=1e-9,
+            observables_checked=len(query_errors), max_abs_error=max(query_errors.values()),
+        )
         passes = list(compiler_report.passes_applied)
         if not compiler_report.optimization_applied:
             raise AdapterError(
@@ -265,6 +314,8 @@ def run_clean_demonstration(
             raise AdapterError("Compiler semantic verification did not return VERIFIED.")
         ledger.mark_verified("verify_equivalence", status=compiler_report.equivalence_status)
         ledger.mark_verified("rqm-compiler", equivalence_status=compiler_report.equivalence_status)
+        ledger.mark_verified("compile_representation_aware", public_api=True,
+                             equivalence_status=compiler_report.equivalence_status)
 
         u1q_ops = [op for op in optimized.operations if op.gate == "u1q"]
         if not u1q_ops:
@@ -378,7 +429,12 @@ def run_clean_demonstration(
 
         qiskit_circuit = compiled_circuit_to_qiskit(lowered)
         ledger.mark_executed("rqm-qiskit", qiskit_instructions=len(qiskit_circuit.data))
-        ledger.mark_verified("rqm-qiskit", qiskit_num_qubits=qiskit_circuit.num_qubits)
+        lowering_error = _verify_qiskit_operators(
+            oracle_circuit, qiskit_circuit, boundary="original QASM to lowered output")
+        exported_error = _verify_qiskit_operators(
+            oracle_circuit, qasm3.loads(export.source), boundary="original QASM to exported QASM")
+        ledger.mark_verified("rqm-qiskit", qiskit_num_qubits=qiskit_circuit.num_qubits,
+                             lowering_oracle_error=lowering_error, export_oracle_error=exported_error)
 
         optional_not: list[dict[str, str]] = []
         optimize_meta: dict[str, Any] | None = None
@@ -395,8 +451,10 @@ def run_clean_demonstration(
                 optimized_gate_count=result.optimized_gate_count,
                 role="backend-adjacent-qiskit-compression",
             )
+            optimizer_error = _verify_qiskit_operators(
+                qiskit_circuit, result.circuit, boundary="rqm-optimize output")
             ledger.mark_verified(
-                "rqm-optimize",
+                "rqm-optimize", oracle_max_abs_error=optimizer_error,
                 fused_runs=result.fused_runs,
                 role="backend-adjacent-qiskit-compression",
             )
