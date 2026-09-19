@@ -1,0 +1,6951 @@
+{
+  "certification_manifest": {
+    "status": "passed",
+    "repositories": {
+      "rqm-core": {
+        "commit": "4c89792a5f44339f6b0c68871f991d726328491c",
+        "tree": "f3b93a9ab337ffa7a90439713df4287032e24e5c"
+      },
+      "rqm-circuits": {
+        "commit": "c8f970f222a10cc95a044947c522ec574bae9dab",
+        "tree": "b104ca8f5ab6d3ff59414ad21d38386e68d0828d"
+      },
+      "rqm-entanglement": {
+        "commit": "34cb69e37eac021bef68a488a89a2cbe7f5f95c8",
+        "tree": "21708ca3d31fff7ccb1bd0824db92d3be51ba8de"
+      },
+      "rqm-compiler": {
+        "commit": "8050d6b8053a66019b248f63628e4d9fed60a5f6",
+        "tree": "ce5b4c68205ca19842a37194a577659f5df0130c"
+      },
+      "rqm-qiskit": {
+        "commit": "bfd53bec96ea04e8e9d84158014f6ce7217a6099",
+        "tree": "5be9d4de1797b8c15ae8133d9c3f2922a572edf1"
+      },
+      "rqm-optimize": {
+        "commit": "be12b2c9e16477a81f9af0a549189aa61299e7d3",
+        "tree": "cce4e582d1b5befe332de6ab4a8281cd6bc0eaaa"
+      },
+      "rqm-braket": {
+        "commit": "c9fc7eef0eee7ba4f49e9105d304e37a7c32bf2f",
+        "tree": "fcba70e26cfa3590014ae8fe116978ae5f71b169"
+      },
+      "openqse-rqm-adapter": {
+        "commit": "d32daaa9dceb097975b7562a057540764cfa6410",
+        "tree": "c8fb9d3c8fb20277bda622a4be58d3ce3a296673"
+      }
+    },
+    "wheels": {
+      "rqm_braket-0.2.2-py3-none-any.whl": "98c38f19157b790c62d3b5c191527ae88c8e430cb0e967d422a2c2abdd7fbb50",
+      "rqm_circuits-0.2.1-py3-none-any.whl": "fabf6d71f5d9090caba60a890ad144a2c1f362e532bae57be197b61de71a8a6f",
+      "rqm_compiler-0.3.0-py3-none-any.whl": "0c53807a2d09030f3787e04736ad222d674f97d2baa4d2190498fb6495bc6f76",
+      "rqm_core-0.2.2-py3-none-any.whl": "bbd09e0ebb9224632670e77d97e38bb36431dd0deeef7006b3ca5fea845a0f4d",
+      "rqm_entanglement-0.2.1-py3-none-any.whl": "afe3df3f61b9e488fe0da9952c11aadf2c69788e565e01d93259023ea42f2d44",
+      "rqm_openqse_adapter-0.1.1-py3-none-any.whl": "e3be0789e82426a28a06dd3ff9600150008f280d4851003e46cc5768d998b496",
+      "rqm_optimize-0.1.3-py3-none-any.whl": "2f41c3d718b4520d19c7ca4d7307e3fb7100cd4231b3d7617573e8000e05af46",
+      "rqm_qiskit-0.4.0-py3-none-any.whl": "dcdcb97a624dd273446374ba3dba390aa8e7346574a06bf4bfd42475a2358ef6"
+    },
+    "hardware_execution": false,
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "installed_modules": {
+      "rqm_core": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/frontier-candidate/venv/lib/python3.12/site-packages/rqm_core/__init__.py",
+      "rqm_circuits": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/frontier-candidate/venv/lib/python3.12/site-packages/rqm_circuits/__init__.py",
+      "rqm_entanglement": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/frontier-candidate/venv/lib/python3.12/site-packages/rqm_entanglement/__init__.py",
+      "rqm_compiler": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/frontier-candidate/venv/lib/python3.12/site-packages/rqm_compiler/__init__.py",
+      "rqm_qiskit": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/frontier-candidate/venv/lib/python3.12/site-packages/rqm_qiskit/__init__.py",
+      "rqm_optimize": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/frontier-candidate/venv/lib/python3.12/site-packages/rqm_optimize/__init__.py",
+      "rqm_braket": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/frontier-candidate/venv/lib/python3.12/site-packages/rqm_braket/__init__.py",
+      "rqm_openqse_adapter": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/frontier-candidate/venv/lib/python3.12/site-packages/rqm_openqse_adapter/__init__.py"
+    },
+    "test_counts": {
+      "rqm-core": {
+        "tests": 451,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 451
+      },
+      "rqm-circuits": {
+        "tests": 262,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 10,
+        "passed": 252
+      },
+      "rqm-entanglement": {
+        "tests": 132,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 1,
+        "passed": 131
+      },
+      "rqm-compiler": {
+        "tests": 416,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 416
+      },
+      "rqm-qiskit": {
+        "tests": 560,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 560
+      },
+      "rqm-optimize": {
+        "tests": 101,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 101
+      },
+      "rqm-braket": {
+        "tests": 310,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 310
+      },
+      "openqse-rqm-adapter": {
+        "tests": 61,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 61
+      }
+    }
+  },
+  "repeats": 5,
+  "seed": 7300,
+  "benchmark_sha256": "82b7e532a45c30b31500e0b9e6aca5b0019b07afee78311926fc23743dea8cb3",
+  "platform": "Linux-6.18.44-x86_64-with-glibc2.39",
+  "processor": "x86_64",
+  "thread_settings": {
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "timing_unit": "nanoseconds",
+  "tolerance": 1e-09,
+  "memory_measure": "tracemalloc traced allocations during query only; not process RSS",
+  "intermediate_note": "Largest individual array/tensor entries or retained Pauli terms, not total memory. Star/chain bound is 16 complex entries; circuit storage remains O(n). Pauli cap is tested after gate expansion and can overshoot. Floating point evaluators prune coefficients below 1e-13; exact denotes the algebraic route.",
+  "baseline": "Qiskit level-3 compilation plus single-thread Aer statevector native expectation; no full statevector export",
+  "rows": [
+    {
+      "family": "star",
+      "n": 4,
+      "query": "global_Z",
+      "pauli": "ZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.9816087531805023,
+      "answer_imag": 0.0,
+      "reference": 0.9816087531805019,
+      "abs_error": 4.440892098500626e-16,
+      "route": "direct_star_relational",
+      "reason": "",
+      "query_work_units": 3,
+      "query_work_unit": "leaf_transfers",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_array_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 25,
+      "query_tracemalloc_peak_bytes": 14312,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 9334
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 401
+        }
+      },
+      "rqm_compile_ns": [
+        2277579,
+        2183860,
+        1980999,
+        2005596,
+        1955892
+      ],
+      "rqm_query_ns": [
+        382026,
+        305533,
+        370059,
+        301648,
+        286185
+      ],
+      "qiskit_compile_ns": [
+        4810787,
+        3905885,
+        3990941,
+        4756367,
+        4051200
+      ],
+      "aer_query_ns": [
+        938182,
+        878112,
+        796191,
+        805085,
+        800027
+      ],
+      "end_to_end_ratio": 2.1012608988940036
+    },
+    {
+      "family": "star",
+      "n": 4,
+      "query": "global_Z",
+      "pauli": "ZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.9816087531805023,
+      "answer_imag": 0.0,
+      "reference": 0.9816087531805019,
+      "abs_error": 4.440892098500626e-16,
+      "route": "direct_star_relational",
+      "reason": "",
+      "query_work_units": 3,
+      "query_work_unit": "leaf_transfers",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_array_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 25,
+      "query_tracemalloc_peak_bytes": 14312,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 9334
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 401
+        }
+      },
+      "rqm_compile_ns": [
+        2277579,
+        2183860,
+        1980999,
+        2005596,
+        1955892
+      ],
+      "rqm_query_ns": [
+        307667,
+        386193,
+        292103,
+        274037,
+        272485
+      ],
+      "qiskit_compile_ns": [
+        4810787,
+        3905885,
+        3990941,
+        4756367,
+        4051200
+      ],
+      "aer_query_ns": [
+        938182,
+        878112,
+        796191,
+        805085,
+        800027
+      ],
+      "end_to_end_ratio": 2.1135427225237073
+    },
+    {
+      "family": "star",
+      "n": 4,
+      "query": "local_X",
+      "pauli": "XIII",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 4.561365726937503e-17,
+      "abs_error": 4.561365726937503e-17,
+      "route": "star_product_transfer",
+      "reason": "",
+      "query_work_units": 3,
+      "query_work_unit": "leaf_transfers",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_array_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 25,
+      "query_tracemalloc_peak_bytes": 14312,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 9334
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 401
+        }
+      },
+      "rqm_compile_ns": [
+        2277579,
+        2183860,
+        1980999,
+        2005596,
+        1955892
+      ],
+      "rqm_query_ns": [
+        357761,
+        292845,
+        281097,
+        305853,
+        275779
+      ],
+      "qiskit_compile_ns": [
+        4810787,
+        3905885,
+        3990941,
+        4756367,
+        4051200
+      ],
+      "aer_query_ns": [
+        847668,
+        821258,
+        780799,
+        787188,
+        807088
+      ],
+      "end_to_end_ratio": 2.11373187303916
+    },
+    {
+      "family": "star",
+      "n": 4,
+      "query": "local_X",
+      "pauli": "XIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 4.561365726937503e-17,
+      "abs_error": 4.561365726937503e-17,
+      "route": "star_product_transfer",
+      "reason": "",
+      "query_work_units": 3,
+      "query_work_unit": "leaf_transfers",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_array_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 25,
+      "query_tracemalloc_peak_bytes": 14312,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 9334
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 401
+        }
+      },
+      "rqm_compile_ns": [
+        2277579,
+        2183860,
+        1980999,
+        2005596,
+        1955892
+      ],
+      "rqm_query_ns": [
+        315508,
+        285954,
+        278653,
+        313586,
+        274107
+      ],
+      "qiskit_compile_ns": [
+        4810787,
+        3905885,
+        3990941,
+        4756367,
+        4051200
+      ],
+      "aer_query_ns": [
+        847668,
+        821258,
+        780799,
+        787188,
+        807088
+      ],
+      "end_to_end_ratio": 2.120088149942179
+    },
+    {
+      "family": "star",
+      "n": 8,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.9602552899516308,
+      "answer_imag": 0.0,
+      "reference": 0.9602552899516307,
+      "abs_error": 1.1102230246251565e-16,
+      "route": "direct_star_relational",
+      "reason": "",
+      "query_work_units": 7,
+      "query_work_unit": "leaf_transfers",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_array_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 53,
+      "query_tracemalloc_peak_bytes": 22888,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 16614
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 360
+        }
+      },
+      "rqm_compile_ns": [
+        2501121,
+        2870128,
+        2500369,
+        2573808,
+        2638925
+      ],
+      "rqm_query_ns": [
+        684496,
+        841328,
+        733708,
+        612689,
+        575504
+      ],
+      "qiskit_compile_ns": [
+        5421393,
+        4634997,
+        5148169,
+        5105134,
+        7410564
+      ],
+      "aer_query_ns": [
+        1518032,
+        1408079,
+        1424133,
+        1417503,
+        1494087
+      ],
+      "end_to_end_ratio": 2.0170929416039756
+    },
+    {
+      "family": "star",
+      "n": 8,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.9602552899516308,
+      "answer_imag": 0.0,
+      "reference": 0.9602552899516307,
+      "abs_error": 1.1102230246251565e-16,
+      "route": "direct_star_relational",
+      "reason": "",
+      "query_work_units": 7,
+      "query_work_unit": "leaf_transfers",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_array_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 53,
+      "query_tracemalloc_peak_bytes": 22888,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 16614
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 360
+        }
+      },
+      "rqm_compile_ns": [
+        2501121,
+        2870128,
+        2500369,
+        2573808,
+        2638925
+      ],
+      "rqm_query_ns": [
+        599790,
+        594853,
+        553021,
+        1648356,
+        785004
+      ],
+      "qiskit_compile_ns": [
+        5421393,
+        4634997,
+        5148169,
+        5105134,
+        7410564
+      ],
+      "aer_query_ns": [
+        1518032,
+        1408079,
+        1424133,
+        1417503,
+        1494087
+      ],
+      "end_to_end_ratio": 2.0709308488346667
+    },
+    {
+      "family": "star",
+      "n": 8,
+      "query": "local_X",
+      "pauli": "XIIIIIII",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": -9.503630217849662e-17,
+      "abs_error": 9.503630217849662e-17,
+      "route": "star_product_transfer",
+      "reason": "",
+      "query_work_units": 7,
+      "query_work_unit": "leaf_transfers",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_array_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 53,
+      "query_tracemalloc_peak_bytes": 22888,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 16614
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 360
+        }
+      },
+      "rqm_compile_ns": [
+        2501121,
+        2870128,
+        2500369,
+        2573808,
+        2638925
+      ],
+      "rqm_query_ns": [
+        796832,
+        636444,
+        676594,
+        661362,
+        659649
+      ],
+      "qiskit_compile_ns": [
+        5421393,
+        4634997,
+        5148169,
+        5105134,
+        7410564
+      ],
+      "aer_query_ns": [
+        1433166,
+        1430984,
+        1451113,
+        1445685,
+        1385776
+      ],
+      "end_to_end_ratio": 2.0343088616672387
+    },
+    {
+      "family": "star",
+      "n": 8,
+      "query": "local_X",
+      "pauli": "XIIIIIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": -9.503630217849662e-17,
+      "abs_error": 9.503630217849662e-17,
+      "route": "star_product_transfer",
+      "reason": "",
+      "query_work_units": 7,
+      "query_work_unit": "leaf_transfers",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_array_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 53,
+      "query_tracemalloc_peak_bytes": 22888,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 16614
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 360
+        }
+      },
+      "rqm_compile_ns": [
+        2501121,
+        2870128,
+        2500369,
+        2573808,
+        2638925
+      ],
+      "rqm_query_ns": [
+        590576,
+        604868,
+        590426,
+        644887,
+        603546
+      ],
+      "qiskit_compile_ns": [
+        5421393,
+        4634997,
+        5148169,
+        5105134,
+        7410564
+      ],
+      "aer_query_ns": [
+        1433166,
+        1430984,
+        1451113,
+        1445685,
+        1385776
+      ],
+      "end_to_end_ratio": 2.0713257005672014
+    },
+    {
+      "family": "star",
+      "n": 12,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.9358731685156887,
+      "answer_imag": 0.0,
+      "reference": 0.9358731685156859,
+      "abs_error": 2.7755575615628914e-15,
+      "route": "direct_star_relational",
+      "reason": "",
+      "query_work_units": 11,
+      "query_work_unit": "leaf_transfers",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_array_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 81,
+      "query_tracemalloc_peak_bytes": 29696,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 8663
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 351
+        }
+      },
+      "rqm_compile_ns": [
+        2652285,
+        2715368,
+        2949006,
+        2897729,
+        2770159
+      ],
+      "rqm_query_ns": [
+        932874,
+        935518,
+        884612,
+        972282,
+        895959
+      ],
+      "qiskit_compile_ns": [
+        5390338,
+        5809749,
+        5536434,
+        4817788,
+        5391278
+      ],
+      "aer_query_ns": [
+        3427525,
+        3396449,
+        3364231,
+        3369829,
+        3354827
+      ],
+      "end_to_end_ratio": 2.3659273357812367
+    },
+    {
+      "family": "star",
+      "n": 12,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.9358731685156887,
+      "answer_imag": 0.0,
+      "reference": 0.9358731685156859,
+      "abs_error": 2.7755575615628914e-15,
+      "route": "direct_star_relational",
+      "reason": "",
+      "query_work_units": 11,
+      "query_work_unit": "leaf_transfers",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_array_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 81,
+      "query_tracemalloc_peak_bytes": 29696,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 8663
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 351
+        }
+      },
+      "rqm_compile_ns": [
+        2652285,
+        2715368,
+        2949006,
+        2897729,
+        2770159
+      ],
+      "rqm_query_ns": [
+        910000,
+        1228513,
+        1045702,
+        904352,
+        878494
+      ],
+      "qiskit_compile_ns": [
+        5390338,
+        5809749,
+        5536434,
+        4817788,
+        5391278
+      ],
+      "aer_query_ns": [
+        3427525,
+        3396449,
+        3364231,
+        3369829,
+        3354827
+      ],
+      "end_to_end_ratio": 2.380632738965898
+    },
+    {
+      "family": "star",
+      "n": 12,
+      "query": "local_X",
+      "pauli": "XIIIIIIIIIII",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 7.257602807698235e-17,
+      "abs_error": 7.257602807698235e-17,
+      "route": "star_product_transfer",
+      "reason": "",
+      "query_work_units": 11,
+      "query_work_unit": "leaf_transfers",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_array_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 81,
+      "query_tracemalloc_peak_bytes": 29696,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 8663
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 351
+        }
+      },
+      "rqm_compile_ns": [
+        2652285,
+        2715368,
+        2949006,
+        2897729,
+        2770159
+      ],
+      "rqm_query_ns": [
+        933735,
+        1011240,
+        883981,
+        925513,
+        864152
+      ],
+      "qiskit_compile_ns": [
+        5390338,
+        5809749,
+        5536434,
+        4817788,
+        5391278
+      ],
+      "aer_query_ns": [
+        3491641,
+        3428246,
+        3613320,
+        3375258,
+        3327357
+      ],
+      "end_to_end_ratio": 2.3864466327098293
+    },
+    {
+      "family": "star",
+      "n": 12,
+      "query": "local_X",
+      "pauli": "XIIIIIIIIIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 7.257602807698235e-17,
+      "abs_error": 7.257602807698235e-17,
+      "route": "star_product_transfer",
+      "reason": "",
+      "query_work_units": 11,
+      "query_work_unit": "leaf_transfers",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_array_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 81,
+      "query_tracemalloc_peak_bytes": 29696,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 8663
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 351
+        }
+      },
+      "rqm_compile_ns": [
+        2652285,
+        2715368,
+        2949006,
+        2897729,
+        2770159
+      ],
+      "rqm_query_ns": [
+        1120803,
+        920335,
+        1046202,
+        916530,
+        884422
+      ],
+      "qiskit_compile_ns": [
+        5390338,
+        5809749,
+        5536434,
+        4817788,
+        5391278
+      ],
+      "aer_query_ns": [
+        3491641,
+        3428246,
+        3613320,
+        3375258,
+        3327357
+      ],
+      "end_to_end_ratio": 2.3897949705378196
+    },
+    {
+      "family": "chain",
+      "n": 4,
+      "query": "global_Z",
+      "pauli": "ZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.9725448189045678,
+      "answer_imag": 0.0,
+      "reference": 0.9725448189045679,
+      "abs_error": 1.1102230246251565e-16,
+      "route": "chain_boundary_transfer",
+      "reason": "",
+      "query_work_units": 3,
+      "query_work_unit": "edge_transfers",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_array_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 25,
+      "query_tracemalloc_peak_bytes": 10605,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 32428
+        },
+        "chain": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 401
+        }
+      },
+      "rqm_compile_ns": [
+        2086416,
+        2225011,
+        1919619,
+        1996682,
+        2039305
+      ],
+      "rqm_query_ns": [
+        1248071,
+        880937,
+        920305,
+        715021,
+        718897
+      ],
+      "qiskit_compile_ns": [
+        4134774,
+        4083148,
+        4006494,
+        4695416,
+        5689712
+      ],
+      "aer_query_ns": [
+        1030519,
+        858374,
+        874177,
+        834949,
+        837432
+      ],
+      "end_to_end_ratio": 1.7098404858227503
+    },
+    {
+      "family": "chain",
+      "n": 4,
+      "query": "global_Z",
+      "pauli": "ZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.9725448189045678,
+      "answer_imag": 0.0,
+      "reference": 0.9725448189045679,
+      "abs_error": 1.1102230246251565e-16,
+      "route": "chain_boundary_transfer",
+      "reason": "",
+      "query_work_units": 3,
+      "query_work_unit": "edge_transfers",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_array_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 25,
+      "query_tracemalloc_peak_bytes": 10652,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 32428
+        },
+        "chain": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 401
+        }
+      },
+      "rqm_compile_ns": [
+        2086416,
+        2225011,
+        1919619,
+        1996682,
+        2039305
+      ],
+      "rqm_query_ns": [
+        865264,
+        714230,
+        1531762,
+        1018170,
+        900676
+      ],
+      "qiskit_compile_ns": [
+        4134774,
+        4083148,
+        4006494,
+        4695416,
+        5689712
+      ],
+      "aer_query_ns": [
+        1030519,
+        858374,
+        874177,
+        834949,
+        837432
+      ],
+      "end_to_end_ratio": 1.698360635663972
+    },
+    {
+      "family": "chain",
+      "n": 4,
+      "query": "local_X",
+      "pauli": "XIII",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": -3.794871716332796e-16,
+      "abs_error": 3.794871716332796e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 3,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 2,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 25,
+      "query_tracemalloc_peak_bytes": 13233,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 32428
+        },
+        "chain": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 401
+        }
+      },
+      "rqm_compile_ns": [
+        2086416,
+        2225011,
+        1919619,
+        1996682,
+        2039305
+      ],
+      "rqm_query_ns": [
+        327455,
+        318182,
+        296870,
+        255389,
+        243011
+      ],
+      "qiskit_compile_ns": [
+        4134774,
+        4083148,
+        4006494,
+        4695416,
+        5689712
+      ],
+      "aer_query_ns": [
+        999103,
+        871213,
+        847708,
+        831002,
+        875809
+      ],
+      "end_to_end_ratio": 2.142813359444391
+    },
+    {
+      "family": "chain",
+      "n": 4,
+      "query": "local_X",
+      "pauli": "XIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": -3.794871716332796e-16,
+      "abs_error": 3.794871716332796e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 3,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 2,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 25,
+      "query_tracemalloc_peak_bytes": 13169,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 32428
+        },
+        "chain": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 401
+        }
+      },
+      "rqm_compile_ns": [
+        2086416,
+        2225011,
+        1919619,
+        1996682,
+        2039305
+      ],
+      "rqm_query_ns": [
+        332764,
+        284512,
+        241558,
+        234458,
+        229570
+      ],
+      "qiskit_compile_ns": [
+        4134774,
+        4083148,
+        4006494,
+        4695416,
+        5689712
+      ],
+      "aer_query_ns": [
+        999103,
+        871213,
+        847708,
+        831002,
+        875809
+      ],
+      "end_to_end_ratio": 2.1947775907627944
+    },
+    {
+      "family": "chain",
+      "n": 8,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.9315168169305212,
+      "answer_imag": 3.4694469519536134e-18,
+      "reference": 0.9315168169305219,
+      "abs_error": 6.661428497319261e-16,
+      "route": "chain_boundary_transfer",
+      "reason": "",
+      "query_work_units": 7,
+      "query_work_unit": "edge_transfers",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_array_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 53,
+      "query_tracemalloc_peak_bytes": 12606,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 38837
+        },
+        "chain": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 531
+        }
+      },
+      "rqm_compile_ns": [
+        2450455,
+        2775047,
+        2655350,
+        5337168,
+        2727126
+      ],
+      "rqm_query_ns": [
+        1914540,
+        1796255,
+        1572543,
+        1554987,
+        1621967
+      ],
+      "qiskit_compile_ns": [
+        6366395,
+        5608816,
+        6532907,
+        5500737,
+        5316888
+      ],
+      "aer_query_ns": [
+        1636969,
+        1687133,
+        1587365,
+        1488549,
+        1436762
+      ],
+      "end_to_end_ratio": 1.6546394846005823
+    },
+    {
+      "family": "chain",
+      "n": 8,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.9315168169305212,
+      "answer_imag": 3.4694469519536134e-18,
+      "reference": 0.9315168169305219,
+      "abs_error": 6.661428497319261e-16,
+      "route": "chain_boundary_transfer",
+      "reason": "",
+      "query_work_units": 7,
+      "query_work_unit": "edge_transfers",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_array_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 53,
+      "query_tracemalloc_peak_bytes": 12512,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 38837
+        },
+        "chain": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 531
+        }
+      },
+      "rqm_compile_ns": [
+        2450455,
+        2775047,
+        2655350,
+        5337168,
+        2727126
+      ],
+      "rqm_query_ns": [
+        1593865,
+        1578092,
+        1574306,
+        1580305,
+        1599443
+      ],
+      "qiskit_compile_ns": [
+        6366395,
+        5608816,
+        6532907,
+        5500737,
+        5316888
+      ],
+      "aer_query_ns": [
+        1636969,
+        1687133,
+        1587365,
+        1488549,
+        1436762
+      ],
+      "end_to_end_ratio": 1.670643360276694
+    },
+    {
+      "family": "chain",
+      "n": 8,
+      "query": "local_X",
+      "pauli": "XIIIIIII",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": -4.899717869719955e-16,
+      "abs_error": 4.899717869719955e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 3,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 2,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 53,
+      "query_tracemalloc_peak_bytes": 15017,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 38837
+        },
+        "chain": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 531
+        }
+      },
+      "rqm_compile_ns": [
+        2450455,
+        2775047,
+        2655350,
+        5337168,
+        2727126
+      ],
+      "rqm_query_ns": [
+        373444,
+        378912,
+        364761,
+        341526,
+        391471
+      ],
+      "qiskit_compile_ns": [
+        6366395,
+        5608816,
+        6532907,
+        5500737,
+        5316888
+      ],
+      "aer_query_ns": [
+        1484192,
+        1547015,
+        1464512,
+        1454558,
+        1558873
+      ],
+      "end_to_end_ratio": 2.287646465004822
+    },
+    {
+      "family": "chain",
+      "n": 8,
+      "query": "local_X",
+      "pauli": "XIIIIIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": -4.899717869719955e-16,
+      "abs_error": 4.899717869719955e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 3,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 2,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 53,
+      "query_tracemalloc_peak_bytes": 15017,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 38837
+        },
+        "chain": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 531
+        }
+      },
+      "rqm_compile_ns": [
+        2450455,
+        2775047,
+        2655350,
+        5337168,
+        2727126
+      ],
+      "rqm_query_ns": [
+        372543,
+        345763,
+        374525,
+        329218,
+        446352
+      ],
+      "qiskit_compile_ns": [
+        6366395,
+        5608816,
+        6532907,
+        5500737,
+        5316888
+      ],
+      "aer_query_ns": [
+        1484192,
+        1547015,
+        1464512,
+        1454558,
+        1558873
+      ],
+      "end_to_end_ratio": 2.2883114293816536
+    },
+    {
+      "family": "chain",
+      "n": 12,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.8856615434925269,
+      "answer_imag": -6.938893903907227e-18,
+      "reference": 0.8856615434925269,
+      "abs_error": 6.938893903907227e-18,
+      "route": "chain_boundary_transfer",
+      "reason": "",
+      "query_work_units": 11,
+      "query_work_unit": "edge_transfers",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_array_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 81,
+      "query_tracemalloc_peak_bytes": 17320,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 58817
+        },
+        "chain": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 470
+        }
+      },
+      "rqm_compile_ns": [
+        2729740,
+        2707767,
+        2658334,
+        2689461,
+        2667768
+      ],
+      "rqm_query_ns": [
+        2465569,
+        2538096,
+        3142803,
+        2438688,
+        2552397
+      ],
+      "qiskit_compile_ns": [
+        5539223,
+        5587540,
+        5871476,
+        5162960,
+        5412510
+      ],
+      "aer_query_ns": [
+        5375386,
+        3779888,
+        3839977,
+        3788521,
+        4101205
+      ],
+      "end_to_end_ratio": 1.7941841667149685
+    },
+    {
+      "family": "chain",
+      "n": 12,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.8856615434925269,
+      "answer_imag": -6.938893903907227e-18,
+      "reference": 0.8856615434925269,
+      "abs_error": 6.938893903907227e-18,
+      "route": "chain_boundary_transfer",
+      "reason": "",
+      "query_work_units": 11,
+      "query_work_unit": "edge_transfers",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_array_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 81,
+      "query_tracemalloc_peak_bytes": 17320,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 58817
+        },
+        "chain": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 470
+        }
+      },
+      "rqm_compile_ns": [
+        2729740,
+        2707767,
+        2658334,
+        2689461,
+        2667768
+      ],
+      "rqm_query_ns": [
+        3026550,
+        4524453,
+        2694377,
+        2511656,
+        2546027
+      ],
+      "qiskit_compile_ns": [
+        5539223,
+        5587540,
+        5871476,
+        5162960,
+        5412510
+      ],
+      "aer_query_ns": [
+        5375386,
+        3779888,
+        3839977,
+        3788521,
+        4101205
+      ],
+      "end_to_end_ratio": 1.7421029384613727
+    },
+    {
+      "family": "chain",
+      "n": 12,
+      "query": "local_X",
+      "pauli": "XIIIIIIIIIII",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": -3.483930907205324e-16,
+      "abs_error": 3.483930907205324e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 3,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 2,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 81,
+      "query_tracemalloc_peak_bytes": 19016,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 58817
+        },
+        "chain": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 470
+        }
+      },
+      "rqm_compile_ns": [
+        2729740,
+        2707767,
+        2658334,
+        2689461,
+        2667768
+      ],
+      "rqm_query_ns": [
+        1033864,
+        611477,
+        600340,
+        443418,
+        430869
+      ],
+      "qiskit_compile_ns": [
+        5539223,
+        5587540,
+        5871476,
+        5162960,
+        5412510
+      ],
+      "aer_query_ns": [
+        3866236,
+        3765186,
+        4020945,
+        3927457,
+        3743134
+      ],
+      "end_to_end_ratio": 2.8589750565459733
+    },
+    {
+      "family": "chain",
+      "n": 12,
+      "query": "local_X",
+      "pauli": "XIIIIIIIIIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": -3.483930907205324e-16,
+      "abs_error": 3.483930907205324e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 3,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 2,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 81,
+      "query_tracemalloc_peak_bytes": 19016,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 58817
+        },
+        "chain": {
+          "rejected": false,
+          "rejection_ns": null
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 470
+        }
+      },
+      "rqm_compile_ns": [
+        2729740,
+        2707767,
+        2658334,
+        2689461,
+        2667768
+      ],
+      "rqm_query_ns": [
+        738896,
+        602834,
+        448145,
+        452672,
+        428136
+      ],
+      "qiskit_compile_ns": [
+        5539223,
+        5587540,
+        5871476,
+        5162960,
+        5412510
+      ],
+      "aer_query_ns": [
+        3866236,
+        3765186,
+        4020945,
+        3927457,
+        3743134
+      ],
+      "end_to_end_ratio": 2.9933357372205442
+    },
+    {
+      "family": "hardware_2",
+      "n": 4,
+      "query": "global_Z",
+      "pauli": "ZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": -0.19878437967636636,
+      "answer_imag": 1.3877787807814457e-17,
+      "reference": -0.19878437967636664,
+      "abs_error": 2.779024842816778e-16,
+      "route": "topology_hardware_1d",
+      "reason": "validated_layers=2",
+      "query_work_units": 16,
+      "query_work_unit": "complex_tensor_entries",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 50,
+      "query_tracemalloc_peak_bytes": 99819,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 39489
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10746
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        2162769,
+        2240364,
+        2212212,
+        2115148,
+        2372930
+      ],
+      "rqm_query_ns": [
+        2870588,
+        2887763,
+        2855525,
+        2845400,
+        2828756
+      ],
+      "qiskit_compile_ns": [
+        4977695,
+        5146725,
+        4797348,
+        4616579,
+        4524553
+      ],
+      "aer_query_ns": [
+        858714,
+        794759,
+        810903,
+        800807,
+        869129
+      ],
+      "end_to_end_ratio": 1.1066578632632278
+    },
+    {
+      "family": "hardware_2",
+      "n": 4,
+      "query": "global_Z",
+      "pauli": "ZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": -0.19878437967636636,
+      "answer_imag": 1.3877787807814457e-17,
+      "reference": -0.19878437967636664,
+      "abs_error": 2.779024842816778e-16,
+      "route": "topology_hardware_1d",
+      "reason": "validated_layers=2",
+      "query_work_units": 16,
+      "query_work_unit": "complex_tensor_entries",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 50,
+      "query_tracemalloc_peak_bytes": 99819,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 39489
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10746
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        2162769,
+        2240364,
+        2212212,
+        2115148,
+        2372930
+      ],
+      "rqm_query_ns": [
+        3279584,
+        2869496,
+        3224743,
+        3073368,
+        2946380
+      ],
+      "qiskit_compile_ns": [
+        4977695,
+        5146725,
+        4797348,
+        4616579,
+        4524553
+      ],
+      "aer_query_ns": [
+        858714,
+        794759,
+        810903,
+        800807,
+        869129
+      ],
+      "end_to_end_ratio": 1.0610474157992122
+    },
+    {
+      "family": "hardware_2",
+      "n": 4,
+      "query": "local_X",
+      "pauli": "XIII",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 1.0928757898653885e-16,
+      "abs_error": 1.0928757898653885e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 7,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 64,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 3,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 50,
+      "query_tracemalloc_peak_bytes": 17585,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 39489
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10746
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        2162769,
+        2240364,
+        2212212,
+        2115148,
+        2372930
+      ],
+      "rqm_query_ns": [
+        552740,
+        452351,
+        474013,
+        443608,
+        565719
+      ],
+      "qiskit_compile_ns": [
+        4977695,
+        5146725,
+        4797348,
+        4616579,
+        4524553
+      ],
+      "aer_query_ns": [
+        896910,
+        983008,
+        845163,
+        796892,
+        1021965
+      ],
+      "end_to_end_ratio": 2.119799346666791
+    },
+    {
+      "family": "hardware_2",
+      "n": 4,
+      "query": "local_X",
+      "pauli": "XIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 1.0928757898653885e-16,
+      "abs_error": 1.0928757898653885e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 7,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 64,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 3,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 50,
+      "query_tracemalloc_peak_bytes": 17585,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 39489
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10746
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        2162769,
+        2240364,
+        2212212,
+        2115148,
+        2372930
+      ],
+      "rqm_query_ns": [
+        509846,
+        541282,
+        453392,
+        431380,
+        624176
+      ],
+      "qiskit_compile_ns": [
+        4977695,
+        5146725,
+        4797348,
+        4616579,
+        4524553
+      ],
+      "aer_query_ns": [
+        896910,
+        983008,
+        845163,
+        796892,
+        1021965
+      ],
+      "end_to_end_ratio": 2.09189444163203
+    },
+    {
+      "family": "hardware_2",
+      "n": 8,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": -0.006573116822825009,
+      "answer_imag": 6.288372600415926e-18,
+      "reference": -0.00657311682282507,
+      "abs_error": 6.104010086934945e-17,
+      "route": "topology_hardware_1d",
+      "reason": "validated_layers=2",
+      "query_work_units": 32,
+      "query_work_unit": "complex_tensor_entries",
+      "largest_intermediate": 32,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 106,
+      "query_tracemalloc_peak_bytes": 220175,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 73869
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10866
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        3815579,
+        3840095,
+        4087822,
+        3988286,
+        3925502
+      ],
+      "rqm_query_ns": [
+        6552368,
+        6556614,
+        6623213,
+        6609422,
+        6768058
+      ],
+      "qiskit_compile_ns": [
+        4578841,
+        4978373,
+        4554555,
+        4873668,
+        4683506
+      ],
+      "aer_query_ns": [
+        1386968,
+        1359327,
+        1350734,
+        1466835,
+        1452715
+      ],
+      "end_to_end_ratio": 0.5762238056961778
+    },
+    {
+      "family": "hardware_2",
+      "n": 8,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": -0.006573116822825009,
+      "answer_imag": 6.288372600415926e-18,
+      "reference": -0.00657311682282507,
+      "abs_error": 6.104010086934945e-17,
+      "route": "topology_hardware_1d",
+      "reason": "validated_layers=2",
+      "query_work_units": 32,
+      "query_work_unit": "complex_tensor_entries",
+      "largest_intermediate": 32,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 106,
+      "query_tracemalloc_peak_bytes": 220175,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 73869
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10866
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        3815579,
+        3840095,
+        4087822,
+        3988286,
+        3925502
+      ],
+      "rqm_query_ns": [
+        6768178,
+        7655714,
+        6826735,
+        6763381,
+        7004148
+      ],
+      "qiskit_compile_ns": [
+        4578841,
+        4978373,
+        4554555,
+        4873668,
+        4683506
+      ],
+      "aer_query_ns": [
+        1386968,
+        1359327,
+        1350734,
+        1466835,
+        1452715
+      ],
+      "end_to_end_ratio": 0.5645777711186983
+    },
+    {
+      "family": "hardware_2",
+      "n": 8,
+      "query": "local_X",
+      "pauli": "XIIIIIII",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 2.6468085535802377e-16,
+      "abs_error": 2.6468085535802377e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 7,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 64,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 3,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 106,
+      "query_tracemalloc_peak_bytes": 24066,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 73869
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10866
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        3815579,
+        3840095,
+        4087822,
+        3988286,
+        3925502
+      ],
+      "rqm_query_ns": [
+        694450,
+        843711,
+        742391,
+        649834,
+        655632
+      ],
+      "qiskit_compile_ns": [
+        4578841,
+        4978373,
+        4554555,
+        4873668,
+        4683506
+      ],
+      "aer_query_ns": [
+        1960247,
+        1442549,
+        1426876,
+        1430892,
+        1359947
+      ],
+      "end_to_end_ratio": 1.3234765209681831
+    },
+    {
+      "family": "hardware_2",
+      "n": 8,
+      "query": "local_X",
+      "pauli": "XIIIIIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 2.6468085535802377e-16,
+      "abs_error": 2.6468085535802377e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 7,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 64,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 3,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 106,
+      "query_tracemalloc_peak_bytes": 24066,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 73869
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10866
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        3815579,
+        3840095,
+        4087822,
+        3988286,
+        3925502
+      ],
+      "rqm_query_ns": [
+        676804,
+        793637,
+        657925,
+        625097,
+        635772
+      ],
+      "qiskit_compile_ns": [
+        4578841,
+        4978373,
+        4554555,
+        4873668,
+        4683506
+      ],
+      "aer_query_ns": [
+        1960247,
+        1442549,
+        1426876,
+        1430892,
+        1359947
+      ],
+      "end_to_end_ratio": 1.334023210143851
+    },
+    {
+      "family": "hardware_2",
+      "n": 12,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.00010991676916675093,
+      "answer_imag": -1.5585406229479126e-19,
+      "reference": 0.00010991676916674497,
+      "abs_error": 5.965148330184924e-18,
+      "route": "topology_hardware_1d",
+      "reason": "validated_layers=2",
+      "query_work_units": 32,
+      "query_work_unit": "complex_tensor_entries",
+      "largest_intermediate": 32,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 162,
+      "query_tracemalloc_peak_bytes": 347109,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 107789
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 12238
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        5699233,
+        5707475,
+        5708316,
+        5977004,
+        5603330
+      ],
+      "rqm_query_ns": [
+        11156056,
+        11766621,
+        10916270,
+        11112671,
+        10675623
+      ],
+      "qiskit_compile_ns": [
+        5043540,
+        4932145,
+        4794230,
+        4525342,
+        5053966
+      ],
+      "aer_query_ns": [
+        3304617,
+        3121830,
+        3069243,
+        3142251,
+        3179496
+      ],
+      "end_to_end_ratio": 0.4800431577704498
+    },
+    {
+      "family": "hardware_2",
+      "n": 12,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.00010991676916675093,
+      "answer_imag": -1.5585406229479126e-19,
+      "reference": 0.00010991676916674497,
+      "abs_error": 5.965148330184924e-18,
+      "route": "topology_hardware_1d",
+      "reason": "validated_layers=2",
+      "query_work_units": 32,
+      "query_work_unit": "complex_tensor_entries",
+      "largest_intermediate": 32,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 162,
+      "query_tracemalloc_peak_bytes": 347109,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 107789
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 12238
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        5699233,
+        5707475,
+        5708316,
+        5977004,
+        5603330
+      ],
+      "rqm_query_ns": [
+        12093176,
+        11343114,
+        11202575,
+        10832145,
+        11123037
+      ],
+      "qiskit_compile_ns": [
+        5043540,
+        4932145,
+        4794230,
+        4525342,
+        5053966
+      ],
+      "aer_query_ns": [
+        3304617,
+        3121830,
+        3069243,
+        3142251,
+        3179496
+      ],
+      "end_to_end_ratio": 0.47749095951815634
+    },
+    {
+      "family": "hardware_2",
+      "n": 12,
+      "query": "local_X",
+      "pauli": "XIIIIIIIIIII",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 2.2787473270098266e-16,
+      "abs_error": 2.2787473270098266e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 7,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 64,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 3,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 162,
+      "query_tracemalloc_peak_bytes": 36368,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 107789
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 12238
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        5699233,
+        5707475,
+        5708316,
+        5977004,
+        5603330
+      ],
+      "rqm_query_ns": [
+        1058680,
+        853997,
+        819405,
+        804824,
+        800367
+      ],
+      "qiskit_compile_ns": [
+        5043540,
+        4932145,
+        4794230,
+        4525342,
+        5053966
+      ],
+      "aer_query_ns": [
+        3712526,
+        3458439,
+        3124774,
+        3412652,
+        39019982
+      ],
+      "end_to_end_ratio": 1.2855428627460594
+    },
+    {
+      "family": "hardware_2",
+      "n": 12,
+      "query": "local_X",
+      "pauli": "XIIIIIIIIIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 2.2787473270098266e-16,
+      "abs_error": 2.2787473270098266e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 7,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 64,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 3,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 162,
+      "query_tracemalloc_peak_bytes": 36368,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 107789
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 12238
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        5699233,
+        5707475,
+        5708316,
+        5977004,
+        5603330
+      ],
+      "rqm_query_ns": [
+        951571,
+        995787,
+        860657,
+        812575,
+        827397
+      ],
+      "qiskit_compile_ns": [
+        5043540,
+        4932145,
+        4794230,
+        4525342,
+        5053966
+      ],
+      "aer_query_ns": [
+        3712526,
+        3458439,
+        3124774,
+        3412652,
+        39019982
+      ],
+      "end_to_end_ratio": 1.2774688450232121
+    },
+    {
+      "family": "hardware_4",
+      "n": 4,
+      "query": "global_Z",
+      "pauli": "ZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": -0.1709840831484906,
+      "answer_imag": 0.0,
+      "reference": -0.1709840831484905,
+      "abs_error": 8.326672684688674e-17,
+      "route": "topology_hardware_1d",
+      "reason": "validated_layers=4",
+      "query_work_units": 16,
+      "query_work_unit": "complex_tensor_entries",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 100,
+      "query_tracemalloc_peak_bytes": 182331,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 69162
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10956
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        4270774,
+        5614687,
+        4736675,
+        4505623,
+        4319156
+      ],
+      "rqm_query_ns": [
+        34686494,
+        5791970,
+        6033749,
+        5520848,
+        5522881
+      ],
+      "qiskit_compile_ns": [
+        6038385,
+        5101766,
+        4342030,
+        4299887,
+        4388539
+      ],
+      "aer_query_ns": [
+        1657598,
+        1249112,
+        1209704,
+        1307679,
+        1269112
+      ],
+      "end_to_end_ratio": 0.5494148972483182
+    },
+    {
+      "family": "hardware_4",
+      "n": 4,
+      "query": "global_Z",
+      "pauli": "ZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": -0.1709840831484906,
+      "answer_imag": 0.0,
+      "reference": -0.1709840831484905,
+      "abs_error": 8.326672684688674e-17,
+      "route": "topology_hardware_1d",
+      "reason": "validated_layers=4",
+      "query_work_units": 16,
+      "query_work_unit": "complex_tensor_entries",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 100,
+      "query_tracemalloc_peak_bytes": 182331,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 69162
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10956
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        4270774,
+        5614687,
+        4736675,
+        4505623,
+        4319156
+      ],
+      "rqm_query_ns": [
+        5588338,
+        5801385,
+        5566335,
+        5693554,
+        5595218
+      ],
+      "qiskit_compile_ns": [
+        6038385,
+        5101766,
+        4342030,
+        4299887,
+        4388539
+      ],
+      "aer_query_ns": [
+        1657598,
+        1249112,
+        1209704,
+        1307679,
+        1269112
+      ],
+      "end_to_end_ratio": 0.5601168259157826
+    },
+    {
+      "family": "hardware_4",
+      "n": 4,
+      "query": "local_X",
+      "pauli": "XIII",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.1822908064772113,
+      "answer_imag": -2.7755575615628914e-17,
+      "reference": 0.18229080647721135,
+      "abs_error": 6.206335383118183e-17,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 27,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 256,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 4,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 100,
+      "query_tracemalloc_peak_bytes": 34297,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 69162
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10956
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        4270774,
+        5614687,
+        4736675,
+        4505623,
+        4319156
+      ],
+      "rqm_query_ns": [
+        1119260,
+        1074474,
+        1059342,
+        1029918,
+        1065200
+      ],
+      "qiskit_compile_ns": [
+        6038385,
+        5101766,
+        4342030,
+        4299887,
+        4388539
+      ],
+      "aer_query_ns": [
+        1451373,
+        1274730,
+        1366777,
+        1250935,
+        1210195
+      ],
+      "end_to_end_ratio": 1.0165946755084483
+    },
+    {
+      "family": "hardware_4",
+      "n": 4,
+      "query": "local_X",
+      "pauli": "XIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.1822908064772113,
+      "answer_imag": -2.7755575615628914e-17,
+      "reference": 0.18229080647721135,
+      "abs_error": 6.206335383118183e-17,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 27,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 256,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 4,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 100,
+      "query_tracemalloc_peak_bytes": 34297,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 69162
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10956
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        4270774,
+        5614687,
+        4736675,
+        4505623,
+        4319156
+      ],
+      "rqm_query_ns": [
+        1066732,
+        1045971,
+        1085039,
+        1026072,
+        1034965
+      ],
+      "qiskit_compile_ns": [
+        6038385,
+        5101766,
+        4342030,
+        4299887,
+        4388539
+      ],
+      "aer_query_ns": [
+        1451373,
+        1274730,
+        1366777,
+        1250935,
+        1210195
+      ],
+      "end_to_end_ratio": 1.0201158442061866
+    },
+    {
+      "family": "hardware_4",
+      "n": 8,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": -0.06853175933310418,
+      "answer_imag": -2.42861286636753e-17,
+      "reference": -0.06853175933310408,
+      "abs_error": 1.0013427371767394e-16,
+      "route": "topology_hardware_1d",
+      "reason": "validated_layers=4",
+      "query_work_units": 512,
+      "query_work_unit": "complex_tensor_entries",
+      "largest_intermediate": 512,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 212,
+      "query_tracemalloc_peak_bytes": 411181,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 134930
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10706
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        7574063,
+        7792507,
+        7854068,
+        7514184,
+        7754941
+      ],
+      "rqm_query_ns": [
+        14406356,
+        14301371,
+        14431062,
+        14251167,
+        14560054
+      ],
+      "qiskit_compile_ns": [
+        5381131,
+        4545272,
+        4354258,
+        4508226,
+        5041006
+      ],
+      "aer_query_ns": [
+        2261464,
+        2302705,
+        3704905,
+        2221365,
+        2226793
+      ],
+      "end_to_end_ratio": 0.30714520003048557
+    },
+    {
+      "family": "hardware_4",
+      "n": 8,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": -0.06853175933310418,
+      "answer_imag": -2.42861286636753e-17,
+      "reference": -0.06853175933310408,
+      "abs_error": 1.0013427371767394e-16,
+      "route": "topology_hardware_1d",
+      "reason": "validated_layers=4",
+      "query_work_units": 512,
+      "query_work_unit": "complex_tensor_entries",
+      "largest_intermediate": 512,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 212,
+      "query_tracemalloc_peak_bytes": 411181,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 134930
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10706
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        7574063,
+        7792507,
+        7854068,
+        7514184,
+        7754941
+      ],
+      "rqm_query_ns": [
+        14078100,
+        14243655,
+        15164050,
+        14716818,
+        15071017
+      ],
+      "qiskit_compile_ns": [
+        5381131,
+        4545272,
+        4354258,
+        4508226,
+        5041006
+      ],
+      "aer_query_ns": [
+        2261464,
+        2302705,
+        3704905,
+        2221365,
+        2226793
+      ],
+      "end_to_end_ratio": 0.3029017888630792
+    },
+    {
+      "family": "hardware_4",
+      "n": 8,
+      "query": "local_X",
+      "pauli": "XIIIIIII",
+      "max_terms": 64,
+      "available": false,
+      "exact_within_tolerance": false,
+      "answer_real": null,
+      "answer_imag": null,
+      "reference": 1.8409752888803865e-16,
+      "abs_error": null,
+      "route": "structured_exact",
+      "reason": "Pauli expansion exceeded max_terms=64 after 64 operations",
+      "query_work_units": 72,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 72,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 1,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 5 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 212,
+      "query_tracemalloc_peak_bytes": 51314,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 134930
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10706
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        7574063,
+        7792507,
+        7854068,
+        7514184,
+        7754941
+      ],
+      "rqm_query_ns": [
+        12023182,
+        13598758,
+        12483234,
+        11503330,
+        11881192
+      ],
+      "qiskit_compile_ns": [
+        5381131,
+        4545272,
+        4354258,
+        4508226,
+        5041006
+      ],
+      "aer_query_ns": [
+        2528320,
+        2679945,
+        2335645,
+        2332440,
+        2548960
+      ],
+      "end_to_end_ratio": null
+    },
+    {
+      "family": "hardware_4",
+      "n": 8,
+      "query": "local_X",
+      "pauli": "XIIIIIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 1.8409752888803865e-16,
+      "abs_error": 1.8409752888803865e-16,
+      "route": "general_pauli_promoted",
+      "reason": "",
+      "query_work_units": 504,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 504,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 1,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 5 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 212,
+      "query_tracemalloc_peak_bytes": 124657,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 134930
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10706
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        7574063,
+        7792507,
+        7854068,
+        7514184,
+        7754941
+      ],
+      "rqm_query_ns": [
+        26858384,
+        27571051,
+        25939622,
+        25039106,
+        26506913
+      ],
+      "qiskit_compile_ns": [
+        5381131,
+        4545272,
+        4354258,
+        4508226,
+        5041006
+      ],
+      "aer_query_ns": [
+        2528320,
+        2679945,
+        2335645,
+        2332440,
+        2548960
+      ],
+      "end_to_end_ratio": 0.20645677843353136
+    },
+    {
+      "family": "hardware_4",
+      "n": 12,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": -0.0068788865327386725,
+      "answer_imag": -3.7947076036992655e-19,
+      "reference": -0.006878886532738676,
+      "abs_error": 3.490137563248182e-18,
+      "route": "topology_hardware_1d",
+      "reason": "validated_layers=4",
+      "query_work_units": 1024,
+      "query_work_unit": "complex_tensor_entries",
+      "largest_intermediate": 1024,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 324,
+      "query_tracemalloc_peak_bytes": 677535,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 213787
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 14341
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        11015718,
+        11582658,
+        10882721,
+        10869760,
+        11166932
+      ],
+      "rqm_query_ns": [
+        36572892,
+        36626762,
+        43389927,
+        24529651,
+        25901835
+      ],
+      "qiskit_compile_ns": [
+        5149016,
+        5166613,
+        5433398,
+        5176287,
+        5178571
+      ],
+      "aer_query_ns": [
+        6101009,
+        5999969,
+        5637802,
+        5734665,
+        5628017
+      ],
+      "end_to_end_ratio": 0.22927654327369512
+    },
+    {
+      "family": "hardware_4",
+      "n": 12,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": -0.0068788865327386725,
+      "answer_imag": -3.7947076036992655e-19,
+      "reference": -0.006878886532738676,
+      "abs_error": 3.490137563248182e-18,
+      "route": "topology_hardware_1d",
+      "reason": "validated_layers=4",
+      "query_work_units": 1024,
+      "query_work_unit": "complex_tensor_entries",
+      "largest_intermediate": 1024,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": null,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 324,
+      "query_tracemalloc_peak_bytes": 675279,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 213787
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 14341
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        11015718,
+        11582658,
+        10882721,
+        10869760,
+        11166932
+      ],
+      "rqm_query_ns": [
+        25718183,
+        25718684,
+        27319498,
+        26424712,
+        25522884
+      ],
+      "qiskit_compile_ns": [
+        5149016,
+        5166613,
+        5433398,
+        5176287,
+        5178571
+      ],
+      "aer_query_ns": [
+        6101009,
+        5999969,
+        5637802,
+        5734665,
+        5628017
+      ],
+      "end_to_end_ratio": 0.2970227200105231
+    },
+    {
+      "family": "hardware_4",
+      "n": 12,
+      "query": "local_X",
+      "pauli": "XIIIIIIIIIII",
+      "max_terms": 64,
+      "available": false,
+      "exact_within_tolerance": false,
+      "answer_real": null,
+      "answer_imag": null,
+      "reference": 1.5124620306172787e-16,
+      "abs_error": null,
+      "route": "structured_exact",
+      "reason": "Pauli expansion exceeded max_terms=64 after 100 operations",
+      "query_work_units": 72,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 72,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 1,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 5 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 324,
+      "query_tracemalloc_peak_bytes": 85732,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 213787
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 14341
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        11015718,
+        11582658,
+        10882721,
+        10869760,
+        11166932
+      ],
+      "rqm_query_ns": [
+        16936279,
+        25636528,
+        25322136,
+        15772672,
+        14970974
+      ],
+      "qiskit_compile_ns": [
+        5149016,
+        5166613,
+        5433398,
+        5176287,
+        5178571
+      ],
+      "aer_query_ns": [
+        6167207,
+        5927562,
+        5986388,
+        5638543,
+        5878779
+      ],
+      "end_to_end_ratio": null
+    },
+    {
+      "family": "hardware_4",
+      "n": 12,
+      "query": "local_X",
+      "pauli": "XIIIIIIIIIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 1.5124620306172787e-16,
+      "abs_error": 1.5124620306172787e-16,
+      "route": "general_pauli_promoted",
+      "reason": "",
+      "query_work_units": 504,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 504,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 1,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 5 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 324,
+      "query_tracemalloc_peak_bytes": 127211,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 213787
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 14341
+        },
+        "hardware": {
+          "rejected": false,
+          "rejection_ns": null
+        }
+      },
+      "rqm_compile_ns": [
+        11015718,
+        11582658,
+        10882721,
+        10869760,
+        11166932
+      ],
+      "rqm_query_ns": [
+        30436181,
+        33130787,
+        31352258,
+        30580175,
+        29759287
+      ],
+      "qiskit_compile_ns": [
+        5149016,
+        5166613,
+        5433398,
+        5176287,
+        5178571
+      ],
+      "aer_query_ns": [
+        6167207,
+        5927562,
+        5986388,
+        5638543,
+        5878779
+      ],
+      "end_to_end_ratio": 0.26694580159632586
+    },
+    {
+      "family": "hardware_5",
+      "n": 4,
+      "query": "global_Z",
+      "pauli": "ZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": -0.3480270488026782,
+      "answer_imag": 7.101524229780054e-18,
+      "reference": -0.34802704880267815,
+      "abs_error": 5.596355561797097e-17,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 47,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 256,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 4,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 125,
+      "query_tracemalloc_peak_bytes": 42233,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 86167
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10706
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 5679
+        }
+      },
+      "rqm_compile_ns": [
+        5129920,
+        5154637,
+        5226613,
+        5152073,
+        5197190
+      ],
+      "rqm_query_ns": [
+        1629677,
+        1549579,
+        1571382,
+        1591922,
+        1674915
+      ],
+      "qiskit_compile_ns": [
+        5337699,
+        4835964,
+        5203359,
+        4732791,
+        4439957
+      ],
+      "aer_query_ns": [
+        1479064,
+        1445464,
+        1469760,
+        1810506,
+        4955161
+      ],
+      "end_to_end_ratio": 0.9360368745015052
+    },
+    {
+      "family": "hardware_5",
+      "n": 4,
+      "query": "global_Z",
+      "pauli": "ZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": -0.3480270488026782,
+      "answer_imag": 7.101524229780054e-18,
+      "reference": -0.34802704880267815,
+      "abs_error": 5.596355561797097e-17,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 47,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 256,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 4,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 125,
+      "query_tracemalloc_peak_bytes": 42233,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 86167
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10706
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 5679
+        }
+      },
+      "rqm_compile_ns": [
+        5129920,
+        5154637,
+        5226613,
+        5152073,
+        5197190
+      ],
+      "rqm_query_ns": [
+        1576799,
+        1578171,
+        1661846,
+        1572713,
+        1656728
+      ],
+      "qiskit_compile_ns": [
+        5337699,
+        4835964,
+        5203359,
+        4732791,
+        4439957
+      ],
+      "aer_query_ns": [
+        1479064,
+        1445464,
+        1469760,
+        1810506,
+        4955161
+      ],
+      "end_to_end_ratio": 0.9379486241104752
+    },
+    {
+      "family": "hardware_5",
+      "n": 4,
+      "query": "local_X",
+      "pauli": "XIII",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": -0.6119453293137415,
+      "answer_imag": -4.163336342344337e-17,
+      "reference": -0.6119453293137415,
+      "abs_error": 4.163336342344337e-17,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 38,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 256,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 4,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 125,
+      "query_tracemalloc_peak_bytes": 39065,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 86167
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10706
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 5679
+        }
+      },
+      "rqm_compile_ns": [
+        5129920,
+        5154637,
+        5226613,
+        5152073,
+        5197190
+      ],
+      "rqm_query_ns": [
+        1473556,
+        1359647,
+        1320459,
+        1363363,
+        1325286
+      ],
+      "qiskit_compile_ns": [
+        5337699,
+        4835964,
+        5203359,
+        4732791,
+        4439957
+      ],
+      "aer_query_ns": [
+        1554445,
+        1483801,
+        1435620,
+        1377003,
+        1418054
+      ],
+      "end_to_end_ratio": 0.9627434112482661
+    },
+    {
+      "family": "hardware_5",
+      "n": 4,
+      "query": "local_X",
+      "pauli": "XIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": -0.6119453293137415,
+      "answer_imag": -4.163336342344337e-17,
+      "reference": -0.6119453293137415,
+      "abs_error": 4.163336342344337e-17,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 38,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 256,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 4,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 125,
+      "query_tracemalloc_peak_bytes": 39065,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 86167
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10706
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 5679
+        }
+      },
+      "rqm_compile_ns": [
+        5129920,
+        5154637,
+        5226613,
+        5152073,
+        5197190
+      ],
+      "rqm_query_ns": [
+        1339978,
+        1540485,
+        1354049,
+        1339057,
+        1440247
+      ],
+      "qiskit_compile_ns": [
+        5337699,
+        4835964,
+        5203359,
+        4732791,
+        4439957
+      ],
+      "aer_query_ns": [
+        1554445,
+        1483801,
+        1435620,
+        1377003,
+        1418054
+      ],
+      "end_to_end_ratio": 0.9635714489837119
+    },
+    {
+      "family": "hardware_5",
+      "n": 8,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZ",
+      "max_terms": 64,
+      "available": false,
+      "exact_within_tolerance": false,
+      "answer_real": null,
+      "answer_imag": null,
+      "reference": -0.11013107677521619,
+      "abs_error": null,
+      "route": "structured_exact",
+      "reason": "Pauli expansion exceeded max_terms=64 after 21 operations",
+      "query_work_units": 81,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 81,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 1,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 8 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 265,
+      "query_tracemalloc_peak_bytes": 68894,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 187438
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10596
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 10796
+        }
+      },
+      "rqm_compile_ns": [
+        9902790,
+        9764455,
+        9574433,
+        9555105,
+        40923569
+      ],
+      "rqm_query_ns": [
+        3236201,
+        3347215,
+        3709172,
+        3957691,
+        3616464
+      ],
+      "qiskit_compile_ns": [
+        6774385,
+        26313445,
+        6361998,
+        85011070,
+        5982435
+      ],
+      "aer_query_ns": [
+        3778054,
+        3032419,
+        2999880,
+        2768457,
+        2964427
+      ],
+      "end_to_end_ratio": null
+    },
+    {
+      "family": "hardware_5",
+      "n": 8,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZ",
+      "max_terms": 4096,
+      "available": false,
+      "exact_within_tolerance": false,
+      "answer_real": null,
+      "answer_imag": null,
+      "reference": -0.11013107677521619,
+      "abs_error": null,
+      "route": "structured_exact",
+      "reason": "Pauli expansion exceeded max_terms=4096 after 42 operations",
+      "query_work_units": 4617,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 4617,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 1,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 8 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 265,
+      "query_tracemalloc_peak_bytes": 1456589,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 187438
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10596
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 10796
+        }
+      },
+      "rqm_compile_ns": [
+        9902790,
+        9764455,
+        9574433,
+        9555105,
+        40923569
+      ],
+      "rqm_query_ns": [
+        18752178,
+        18064388,
+        18775653,
+        21099120,
+        18759469
+      ],
+      "qiskit_compile_ns": [
+        6774385,
+        26313445,
+        6361998,
+        85011070,
+        5982435
+      ],
+      "aer_query_ns": [
+        3778054,
+        3032419,
+        2999880,
+        2768457,
+        2964427
+      ],
+      "end_to_end_ratio": null
+    },
+    {
+      "family": "hardware_5",
+      "n": 8,
+      "query": "local_X",
+      "pauli": "XIIIIIII",
+      "max_terms": 64,
+      "available": false,
+      "exact_within_tolerance": false,
+      "answer_real": null,
+      "answer_imag": null,
+      "reference": 3.0097452308197603e-16,
+      "abs_error": null,
+      "route": "structured_exact",
+      "reason": "Pauli expansion exceeded max_terms=64 after 64 operations",
+      "query_work_units": 72,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 72,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 1,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 6 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 265,
+      "query_tracemalloc_peak_bytes": 68726,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 187438
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10596
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 10796
+        }
+      },
+      "rqm_compile_ns": [
+        9902790,
+        9764455,
+        9574433,
+        9555105,
+        40923569
+      ],
+      "rqm_query_ns": [
+        11879242,
+        11893824,
+        12049936,
+        11899273,
+        12156834
+      ],
+      "qiskit_compile_ns": [
+        6774385,
+        26313445,
+        6361998,
+        85011070,
+        5982435
+      ],
+      "aer_query_ns": [
+        3011287,
+        2674878,
+        2988343,
+        2914384,
+        9035754
+      ],
+      "end_to_end_ratio": null
+    },
+    {
+      "family": "hardware_5",
+      "n": 8,
+      "query": "local_X",
+      "pauli": "XIIIIIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 3.0097452308197603e-16,
+      "abs_error": 3.0097452308197603e-16,
+      "route": "general_pauli_promoted",
+      "reason": "",
+      "query_work_units": 2040,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 2040,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 1,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 6 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 265,
+      "query_tracemalloc_peak_bytes": 635697,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 187438
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10596
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 10796
+        }
+      },
+      "rqm_compile_ns": [
+        9902790,
+        9764455,
+        9574433,
+        9555105,
+        40923569
+      ],
+      "rqm_query_ns": [
+        53027303,
+        54731011,
+        52676293,
+        54061127,
+        55052467
+      ],
+      "qiskit_compile_ns": [
+        6774385,
+        26313445,
+        6361998,
+        85011070,
+        5982435
+      ],
+      "aer_query_ns": [
+        3011287,
+        2674878,
+        2988343,
+        2914384,
+        9035754
+      ],
+      "end_to_end_ratio": 0.15295948260996664
+    },
+    {
+      "family": "hardware_5",
+      "n": 12,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZZZZZ",
+      "max_terms": 64,
+      "available": false,
+      "exact_within_tolerance": false,
+      "answer_real": null,
+      "answer_imag": null,
+      "reference": -0.015716726896201336,
+      "abs_error": null,
+      "route": "structured_exact",
+      "reason": "Pauli expansion exceeded max_terms=64 after 25 operations",
+      "query_work_units": 81,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 81,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 1,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 12 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 405,
+      "query_tracemalloc_peak_bytes": 107102,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 299444
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10826
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 15743
+        }
+      },
+      "rqm_compile_ns": [
+        13513387,
+        14492930,
+        13449011,
+        13308022,
+        14035090
+      ],
+      "rqm_query_ns": [
+        4822564,
+        4597350,
+        4566144,
+        4785109,
+        4811738
+      ],
+      "qiskit_compile_ns": [
+        5783400,
+        5101327,
+        4869864,
+        5220555,
+        5414532
+      ],
+      "aer_query_ns": [
+        7253130,
+        7062717,
+        7010410,
+        6982758,
+        6950491
+      ],
+      "end_to_end_ratio": null
+    },
+    {
+      "family": "hardware_5",
+      "n": 12,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZZZZZ",
+      "max_terms": 4096,
+      "available": false,
+      "exact_within_tolerance": false,
+      "answer_real": null,
+      "answer_imag": null,
+      "reference": -0.015716726896201336,
+      "abs_error": null,
+      "route": "structured_exact",
+      "reason": "Pauli expansion exceeded max_terms=4096 after 52 operations",
+      "query_work_units": 4860,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 4860,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 1,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 12 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 405,
+      "query_tracemalloc_peak_bytes": 1643809,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 299444
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10826
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 15743
+        }
+      },
+      "rqm_compile_ns": [
+        13513387,
+        14492930,
+        13449011,
+        13308022,
+        14035090
+      ],
+      "rqm_query_ns": [
+        28876778,
+        28219643,
+        28088949,
+        29114251,
+        28554840
+      ],
+      "qiskit_compile_ns": [
+        5783400,
+        5101327,
+        4869864,
+        5220555,
+        5414532
+      ],
+      "aer_query_ns": [
+        7253130,
+        7062717,
+        7010410,
+        6982758,
+        6950491
+      ],
+      "end_to_end_ratio": null
+    },
+    {
+      "family": "hardware_5",
+      "n": 12,
+      "query": "local_X",
+      "pauli": "XIIIIIIIIIII",
+      "max_terms": 64,
+      "available": false,
+      "exact_within_tolerance": false,
+      "answer_real": null,
+      "answer_imag": null,
+      "reference": 1.9060274192295168e-16,
+      "abs_error": null,
+      "route": "structured_exact",
+      "reason": "Pauli expansion exceeded max_terms=64 after 100 operations",
+      "query_work_units": 72,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 72,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 1,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 6 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 405,
+      "query_tracemalloc_peak_bytes": 106934,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 299444
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10826
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 15743
+        }
+      },
+      "rqm_compile_ns": [
+        13513387,
+        14492930,
+        13449011,
+        13308022,
+        14035090
+      ],
+      "rqm_query_ns": [
+        19382653,
+        16890907,
+        17415185,
+        16600316,
+        17669182
+      ],
+      "qiskit_compile_ns": [
+        5783400,
+        5101327,
+        4869864,
+        5220555,
+        5414532
+      ],
+      "aer_query_ns": [
+        6944522,
+        6854639,
+        6870472,
+        6894177,
+        6881708
+      ],
+      "end_to_end_ratio": null
+    },
+    {
+      "family": "hardware_5",
+      "n": 12,
+      "query": "local_X",
+      "pauli": "XIIIIIIIIIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 1.9060274192295168e-16,
+      "abs_error": 1.9060274192295168e-16,
+      "route": "general_pauli_promoted",
+      "reason": "",
+      "query_work_units": 2040,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 2040,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 1,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 6 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 405,
+      "query_tracemalloc_peak_bytes": 703409,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 299444
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10826
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 15743
+        }
+      },
+      "rqm_compile_ns": [
+        13513387,
+        14492930,
+        13449011,
+        13308022,
+        14035090
+      ],
+      "rqm_query_ns": [
+        62917796,
+        64647161,
+        64545620,
+        63106345,
+        65021496
+      ],
+      "qiskit_compile_ns": [
+        5783400,
+        5101327,
+        4869864,
+        5220555,
+        5414532
+      ],
+      "aer_query_ns": [
+        6944522,
+        6854639,
+        6870472,
+        6894177,
+        6881708
+      ],
+      "end_to_end_ratio": 0.15503993024149026
+    },
+    {
+      "family": "interleaved_star",
+      "n": 4,
+      "query": "global_Z",
+      "pauli": "ZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.9557594560149805,
+      "answer_imag": 0.0,
+      "reference": 0.9557594560149811,
+      "abs_error": 6.661338147750939e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 10,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 2,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 29,
+      "query_tracemalloc_peak_bytes": 18223,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 25598
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 9294
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 551
+        }
+      },
+      "rqm_compile_ns": [
+        2349695,
+        3156412,
+        2290718,
+        2982955,
+        2576092
+      ],
+      "rqm_query_ns": [
+        540211,
+        535394,
+        459331,
+        1135335,
+        1617991
+      ],
+      "qiskit_compile_ns": [
+        6305224,
+        5362675,
+        5038354,
+        4378865,
+        5301314
+      ],
+      "aer_query_ns": [
+        1210436,
+        1201642,
+        891282,
+        983078,
+        787498
+      ],
+      "end_to_end_ratio": 2.016617767912812
+    },
+    {
+      "family": "interleaved_star",
+      "n": 4,
+      "query": "global_Z",
+      "pauli": "ZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.9557594560149805,
+      "answer_imag": 0.0,
+      "reference": 0.9557594560149811,
+      "abs_error": 6.661338147750939e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 10,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 2,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 29,
+      "query_tracemalloc_peak_bytes": 18223,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 25598
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 9294
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 551
+        }
+      },
+      "rqm_compile_ns": [
+        2349695,
+        3156412,
+        2290718,
+        2982955,
+        2576092
+      ],
+      "rqm_query_ns": [
+        503858,
+        523447,
+        458640,
+        566770,
+        590516
+      ],
+      "qiskit_compile_ns": [
+        6305224,
+        5362675,
+        5038354,
+        4378865,
+        5301314
+      ],
+      "aer_query_ns": [
+        1210436,
+        1201642,
+        891282,
+        983078,
+        787498
+      ],
+      "end_to_end_ratio": 2.0275247383562522
+    },
+    {
+      "family": "interleaved_star",
+      "n": 4,
+      "query": "local_X",
+      "pauli": "XIII",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 2.930649294205154e-17,
+      "abs_error": 2.930649294205154e-17,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 10,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 2,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 29,
+      "query_tracemalloc_peak_bytes": 17928,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 25598
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 9294
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 551
+        }
+      },
+      "rqm_compile_ns": [
+        2349695,
+        3156412,
+        2290718,
+        2982955,
+        2576092
+      ],
+      "rqm_query_ns": [
+        967275,
+        469677,
+        469256,
+        433423,
+        434825
+      ],
+      "qiskit_compile_ns": [
+        6305224,
+        5362675,
+        5038354,
+        4378865,
+        5301314
+      ],
+      "aer_query_ns": [
+        836221,
+        957170,
+        768690,
+        779467,
+        980174
+      ],
+      "end_to_end_ratio": 2.0153805082374823
+    },
+    {
+      "family": "interleaved_star",
+      "n": 4,
+      "query": "local_X",
+      "pauli": "XIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 2.930649294205154e-17,
+      "abs_error": 2.930649294205154e-17,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 10,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 2,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 29,
+      "query_tracemalloc_peak_bytes": 17975,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 25598
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 9294
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 551
+        }
+      },
+      "rqm_compile_ns": [
+        2349695,
+        3156412,
+        2290718,
+        2982955,
+        2576092
+      ],
+      "rqm_query_ns": [
+        542335,
+        520962,
+        595974,
+        541403,
+        447103
+      ],
+      "qiskit_compile_ns": [
+        6305224,
+        5362675,
+        5038354,
+        4378865,
+        5301314
+      ],
+      "aer_query_ns": [
+        836221,
+        957170,
+        768690,
+        779467,
+        980174
+      ],
+      "end_to_end_ratio": 1.9687393243613862
+    },
+    {
+      "family": "interleaved_star",
+      "n": 8,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.9349683064520453,
+      "answer_imag": 0.0,
+      "reference": 0.934968306452046,
+      "abs_error": 6.661338147750939e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 22,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 2,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 57,
+      "query_tracemalloc_peak_bytes": 29051,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 43374
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 8923
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 470
+        }
+      },
+      "rqm_compile_ns": [
+        2582661,
+        2558435,
+        2752393,
+        3792696,
+        2834735
+      ],
+      "rqm_query_ns": [
+        957490,
+        1384524,
+        996949,
+        916279,
+        1017259
+      ],
+      "qiskit_compile_ns": [
+        4891086,
+        5613478,
+        4591231,
+        4382131,
+        4805469
+      ],
+      "aer_query_ns": [
+        1429731,
+        1487607,
+        1376772,
+        1709847,
+        1584060
+      ],
+      "end_to_end_ratio": 1.678448111695332
+    },
+    {
+      "family": "interleaved_star",
+      "n": 8,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.9349683064520453,
+      "answer_imag": 0.0,
+      "reference": 0.934968306452046,
+      "abs_error": 6.661338147750939e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 22,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 2,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 57,
+      "query_tracemalloc_peak_bytes": 29051,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 43374
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 8923
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 470
+        }
+      },
+      "rqm_compile_ns": [
+        2582661,
+        2558435,
+        2752393,
+        3792696,
+        2834735
+      ],
+      "rqm_query_ns": [
+        935578,
+        1025391,
+        1106872,
+        967826,
+        972613
+      ],
+      "qiskit_compile_ns": [
+        4891086,
+        5613478,
+        4591231,
+        4382131,
+        4805469
+      ],
+      "aer_query_ns": [
+        1429731,
+        1487607,
+        1376772,
+        1709847,
+        1584060
+      ],
+      "end_to_end_ratio": 1.6894136546357241
+    },
+    {
+      "family": "interleaved_star",
+      "n": 8,
+      "query": "local_X",
+      "pauli": "XIIIIIII",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": -3.8382757770560694e-17,
+      "abs_error": 3.8382757770560694e-17,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 22,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 2,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 57,
+      "query_tracemalloc_peak_bytes": 28724,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 43374
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 8923
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 470
+        }
+      },
+      "rqm_compile_ns": [
+        2582661,
+        2558435,
+        2752393,
+        3792696,
+        2834735
+      ],
+      "rqm_query_ns": [
+        1023408,
+        932142,
+        959023,
+        921177,
+        1029487
+      ],
+      "qiskit_compile_ns": [
+        4891086,
+        5613478,
+        4591231,
+        4382131,
+        4805469
+      ],
+      "aer_query_ns": [
+        1623959,
+        1470502,
+        1616969,
+        1428569,
+        1519234
+      ],
+      "end_to_end_ratio": 1.7041212841675522
+    },
+    {
+      "family": "interleaved_star",
+      "n": 8,
+      "query": "local_X",
+      "pauli": "XIIIIIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": -3.8382757770560694e-17,
+      "abs_error": 3.8382757770560694e-17,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 22,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 2,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 57,
+      "query_tracemalloc_peak_bytes": 28724,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 43374
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 8923
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 470
+        }
+      },
+      "rqm_compile_ns": [
+        2582661,
+        2558435,
+        2752393,
+        3792696,
+        2834735
+      ],
+      "rqm_query_ns": [
+        922639,
+        932083,
+        920876,
+        1177747,
+        1006483
+      ],
+      "qiskit_compile_ns": [
+        4891086,
+        5613478,
+        4591231,
+        4382131,
+        4805469
+      ],
+      "aer_query_ns": [
+        1623959,
+        1470502,
+        1616969,
+        1428569,
+        1519234
+      ],
+      "end_to_end_ratio": 1.7165814080482544
+    },
+    {
+      "family": "interleaved_star",
+      "n": 12,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.911228254170928,
+      "answer_imag": 0.0,
+      "reference": 0.9112282541709272,
+      "abs_error": 7.771561172376096e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 34,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 2,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 85,
+      "query_tracemalloc_peak_bytes": 39030,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 61541
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 8513
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 471
+        }
+      },
+      "rqm_compile_ns": [
+        2976225,
+        2980081,
+        2812302,
+        2787184,
+        2817870
+      ],
+      "rqm_query_ns": [
+        1684529,
+        1289443,
+        2306612,
+        1383403,
+        1285717
+      ],
+      "qiskit_compile_ns": [
+        5213955,
+        5147827,
+        4437383,
+        4415760,
+        4664840
+      ],
+      "aer_query_ns": [
+        3886295,
+        3878954,
+        3826066,
+        3393995,
+        4046032
+      ],
+      "end_to_end_ratio": 2.0336202860418733
+    },
+    {
+      "family": "interleaved_star",
+      "n": 12,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.911228254170928,
+      "answer_imag": 0.0,
+      "reference": 0.9112282541709272,
+      "abs_error": 7.771561172376096e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 34,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 2,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 85,
+      "query_tracemalloc_peak_bytes": 39124,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 61541
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 8513
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 471
+        }
+      },
+      "rqm_compile_ns": [
+        2976225,
+        2980081,
+        2812302,
+        2787184,
+        2817870
+      ],
+      "rqm_query_ns": [
+        1406236,
+        1302433,
+        1722405,
+        1354770,
+        1510471
+      ],
+      "qiskit_compile_ns": [
+        5213955,
+        5147827,
+        4437383,
+        4415760,
+        4664840
+      ],
+      "aer_query_ns": [
+        3886295,
+        3878954,
+        3826066,
+        3393995,
+        4046032
+      ],
+      "end_to_end_ratio": 2.022627746557496
+    },
+    {
+      "family": "interleaved_star",
+      "n": 12,
+      "query": "local_X",
+      "pauli": "XIIIIIIIIIII",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 1.3877787807814457e-17,
+      "reference": -1.5388806248038978e-16,
+      "abs_error": 1.5451255213867602e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 34,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 2,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 85,
+      "query_tracemalloc_peak_bytes": 38953,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 61541
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 8513
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 471
+        }
+      },
+      "rqm_compile_ns": [
+        2976225,
+        2980081,
+        2812302,
+        2787184,
+        2817870
+      ],
+      "rqm_query_ns": [
+        1275933,
+        1319848,
+        1259799,
+        1568046,
+        1415109
+      ],
+      "qiskit_compile_ns": [
+        5213955,
+        5147827,
+        4437383,
+        4415760,
+        4664840
+      ],
+      "aer_query_ns": [
+        3626279,
+        3482896,
+        3339113,
+        3804914,
+        3656544
+      ],
+      "end_to_end_ratio": 2.003790253468216
+    },
+    {
+      "family": "interleaved_star",
+      "n": 12,
+      "query": "local_X",
+      "pauli": "XIIIIIIIIIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 1.3877787807814457e-17,
+      "reference": -1.5388806248038978e-16,
+      "abs_error": 1.5451255213867602e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 34,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 16,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 2,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 85,
+      "query_tracemalloc_peak_bytes": 39047,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 61541
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 8513
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 471
+        }
+      },
+      "rqm_compile_ns": [
+        2976225,
+        2980081,
+        2812302,
+        2787184,
+        2817870
+      ],
+      "rqm_query_ns": [
+        1262814,
+        1341700,
+        1249894,
+        1237245,
+        1462760
+      ],
+      "qiskit_compile_ns": [
+        5213955,
+        5147827,
+        4437383,
+        4415760,
+        4664840
+      ],
+      "aer_query_ns": [
+        3626279,
+        3482896,
+        3339113,
+        3804914,
+        3656544
+      ],
+      "end_to_end_ratio": 2.0317963851158285
+    },
+    {
+      "family": "revisited_star",
+      "n": 4,
+      "query": "global_Z",
+      "pauli": "ZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.9816087531805022,
+      "answer_imag": 0.0,
+      "reference": 0.981608753180502,
+      "abs_error": 2.220446049250313e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 10,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 64,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 3,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 27,
+      "query_tracemalloc_peak_bytes": 19992,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 24627
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 9354
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 440
+        }
+      },
+      "rqm_compile_ns": [
+        1981419,
+        1950904,
+        2413410,
+        2314573,
+        2128588
+      ],
+      "rqm_query_ns": [
+        639980,
+        660560,
+        508414,
+        528203,
+        477007
+      ],
+      "qiskit_compile_ns": [
+        4984264,
+        6531940,
+        4543861,
+        4612762,
+        4873740
+      ],
+      "aer_query_ns": [
+        1627895,
+        967255,
+        904522,
+        860557,
+        834778
+      ],
+      "end_to_end_ratio": 2.174902730399192
+    },
+    {
+      "family": "revisited_star",
+      "n": 4,
+      "query": "global_Z",
+      "pauli": "ZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.9816087531805022,
+      "answer_imag": 0.0,
+      "reference": 0.981608753180502,
+      "abs_error": 2.220446049250313e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 10,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 64,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 3,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 27,
+      "query_tracemalloc_peak_bytes": 19992,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 24627
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 9354
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 440
+        }
+      },
+      "rqm_compile_ns": [
+        1981419,
+        1950904,
+        2413410,
+        2314573,
+        2128588
+      ],
+      "rqm_query_ns": [
+        818715,
+        506852,
+        514403,
+        520152,
+        512721
+      ],
+      "qiskit_compile_ns": [
+        4984264,
+        6531940,
+        4543861,
+        4612762,
+        4873740
+      ],
+      "aer_query_ns": [
+        1627895,
+        967255,
+        904522,
+        860557,
+        834778
+      ],
+      "end_to_end_ratio": 2.1862586743579526
+    },
+    {
+      "family": "revisited_star",
+      "n": 4,
+      "query": "local_X",
+      "pauli": "XIII",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 6.938893903907228e-18,
+      "abs_error": 6.938893903907228e-18,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 10,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 64,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 3,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 27,
+      "query_tracemalloc_peak_bytes": 19744,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 24627
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 9354
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 440
+        }
+      },
+      "rqm_compile_ns": [
+        1981419,
+        1950904,
+        2413410,
+        2314573,
+        2128588
+      ],
+      "rqm_query_ns": [
+        860717,
+        667540,
+        540582,
+        462456,
+        480002
+      ],
+      "qiskit_compile_ns": [
+        4984264,
+        6531940,
+        4543861,
+        4612762,
+        4873740
+      ],
+      "aer_query_ns": [
+        935387,
+        875499,
+        900516,
+        911422,
+        943871
+      ],
+      "end_to_end_ratio": 2.1674011022152952
+    },
+    {
+      "family": "revisited_star",
+      "n": 4,
+      "query": "local_X",
+      "pauli": "XIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 6.938893903907228e-18,
+      "abs_error": 6.938893903907228e-18,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 10,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 64,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 3,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 27,
+      "query_tracemalloc_peak_bytes": 19744,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 24627
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 9354
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 440
+        }
+      },
+      "rqm_compile_ns": [
+        1981419,
+        1950904,
+        2413410,
+        2314573,
+        2128588
+      ],
+      "rqm_query_ns": [
+        682722,
+        481134,
+        473483,
+        460423,
+        433753
+      ],
+      "qiskit_compile_ns": [
+        4984264,
+        6531940,
+        4543861,
+        4612762,
+        4873740
+      ],
+      "aer_query_ns": [
+        935387,
+        875499,
+        900516,
+        911422,
+        943871
+      ],
+      "end_to_end_ratio": 2.223291370604415
+    },
+    {
+      "family": "revisited_star",
+      "n": 8,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.9602552899516301,
+      "answer_imag": 0.0,
+      "reference": 0.9602552899516307,
+      "abs_error": 5.551115123125783e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 22,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 64,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 3,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 55,
+      "query_tracemalloc_peak_bytes": 30820,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 49974
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 9574
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 421
+        }
+      },
+      "rqm_compile_ns": [
+        2495111,
+        2437546,
+        2510895,
+        2699725,
+        2723360
+      ],
+      "rqm_query_ns": [
+        996718,
+        1256624,
+        1045541,
+        962839,
+        944551
+      ],
+      "qiskit_compile_ns": [
+        4873249,
+        4627485,
+        4169234,
+        4535388,
+        4547596
+      ],
+      "aer_query_ns": [
+        2231100,
+        1616438,
+        1557461,
+        1513365,
+        1480617
+      ],
+      "end_to_end_ratio": 1.7405161287747537
+    },
+    {
+      "family": "revisited_star",
+      "n": 8,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.9602552899516301,
+      "answer_imag": 0.0,
+      "reference": 0.9602552899516307,
+      "abs_error": 5.551115123125783e-16,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 22,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 64,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 3,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 55,
+      "query_tracemalloc_peak_bytes": 30773,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 49974
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 9574
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 421
+        }
+      },
+      "rqm_compile_ns": [
+        2495111,
+        2437546,
+        2510895,
+        2699725,
+        2723360
+      ],
+      "rqm_query_ns": [
+        980364,
+        948568,
+        1059422,
+        951391,
+        935377
+      ],
+      "qiskit_compile_ns": [
+        4873249,
+        4627485,
+        4169234,
+        4535388,
+        4547596
+      ],
+      "aer_query_ns": [
+        2231100,
+        1616438,
+        1557461,
+        1513365,
+        1480617
+      ],
+      "end_to_end_ratio": 1.7633023383972324
+    },
+    {
+      "family": "revisited_star",
+      "n": 8,
+      "query": "local_X",
+      "pauli": "XIIIIIII",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": -1.734723475976807e-18,
+      "answer_imag": 6.938893903907228e-18,
+      "reference": -1.0408340855860843e-17,
+      "abs_error": 1.1107649934270853e-17,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 22,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 64,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 3,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 55,
+      "query_tracemalloc_peak_bytes": 30446,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 49974
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 9574
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 421
+        }
+      },
+      "rqm_compile_ns": [
+        2495111,
+        2437546,
+        2510895,
+        2699725,
+        2723360
+      ],
+      "rqm_query_ns": [
+        944211,
+        948647,
+        954125,
+        1152009,
+        959032
+      ],
+      "qiskit_compile_ns": [
+        4873249,
+        4627485,
+        4169234,
+        4535388,
+        4547596
+      ],
+      "aer_query_ns": [
+        1489730,
+        1825087,
+        1649957,
+        1433046,
+        1556639
+      ],
+      "end_to_end_ratio": 1.761673814292558
+    },
+    {
+      "family": "revisited_star",
+      "n": 8,
+      "query": "local_X",
+      "pauli": "XIIIIIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": -1.734723475976807e-18,
+      "answer_imag": 6.938893903907228e-18,
+      "reference": -1.0408340855860843e-17,
+      "abs_error": 1.1107649934270853e-17,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 22,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 64,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 3,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 55,
+      "query_tracemalloc_peak_bytes": 30540,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 49974
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 9574
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 421
+        }
+      },
+      "rqm_compile_ns": [
+        2495111,
+        2437546,
+        2510895,
+        2699725,
+        2723360
+      ],
+      "rqm_query_ns": [
+        969098,
+        946224,
+        981185,
+        963389,
+        909469
+      ],
+      "qiskit_compile_ns": [
+        4873249,
+        4627485,
+        4169234,
+        4535388,
+        4547596
+      ],
+      "aer_query_ns": [
+        1489730,
+        1825087,
+        1649957,
+        1433046,
+        1556639
+      ],
+      "end_to_end_ratio": 1.756976401468619
+    },
+    {
+      "family": "revisited_star",
+      "n": 12,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.935873168515688,
+      "answer_imag": 2.168404344971009e-19,
+      "reference": 0.9358731685156896,
+      "abs_error": 1.5543122496008074e-15,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 34,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 64,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 3,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 83,
+      "query_tracemalloc_peak_bytes": 40893,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 75752
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10135
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 441
+        }
+      },
+      "rqm_compile_ns": [
+        3208149,
+        3106918,
+        3008763,
+        2874203,
+        2738392
+      ],
+      "rqm_query_ns": [
+        1982521,
+        1918405,
+        1543090,
+        1503731,
+        1396001
+      ],
+      "qiskit_compile_ns": [
+        5985960,
+        6782011,
+        6415257,
+        5321444,
+        5551415
+      ],
+      "aer_query_ns": [
+        3804764,
+        4197847,
+        4064910,
+        3616855,
+        3983549
+      ],
+      "end_to_end_ratio": 2.19020891052501
+    },
+    {
+      "family": "revisited_star",
+      "n": 12,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.935873168515688,
+      "answer_imag": 2.168404344971009e-19,
+      "reference": 0.9358731685156896,
+      "abs_error": 1.5543122496008074e-15,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 34,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 64,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 3,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 83,
+      "query_tracemalloc_peak_bytes": 40799,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 75752
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10135
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 441
+        }
+      },
+      "rqm_compile_ns": [
+        3208149,
+        3106918,
+        3008763,
+        2874203,
+        2738392
+      ],
+      "rqm_query_ns": [
+        1633013,
+        1872047,
+        1455890,
+        1591601,
+        1616639
+      ],
+      "qiskit_compile_ns": [
+        5985960,
+        6782011,
+        6415257,
+        5321444,
+        5551415
+      ],
+      "aer_query_ns": [
+        3804764,
+        4197847,
+        4064910,
+        3616855,
+        3983549
+      ],
+      "end_to_end_ratio": 2.1553821700254376
+    },
+    {
+      "family": "revisited_star",
+      "n": 12,
+      "query": "local_X",
+      "pauli": "XIIIIIIIIIII",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 7.806255641895632e-17,
+      "abs_error": 7.806255641895632e-17,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 34,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 64,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 3,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 83,
+      "query_tracemalloc_peak_bytes": 40487,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 75752
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10135
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 441
+        }
+      },
+      "rqm_compile_ns": [
+        3208149,
+        3106918,
+        3008763,
+        2874203,
+        2738392
+      ],
+      "rqm_query_ns": [
+        1438564,
+        1547165,
+        1359257,
+        1377634,
+        1474568
+      ],
+      "qiskit_compile_ns": [
+        5985960,
+        6782011,
+        6415257,
+        5321444,
+        5551415
+      ],
+      "aer_query_ns": [
+        3725697,
+        4019663,
+        3749542,
+        4337705,
+        3642203
+      ],
+      "end_to_end_ratio": 2.189068175108329
+    },
+    {
+      "family": "revisited_star",
+      "n": 12,
+      "query": "local_X",
+      "pauli": "XIIIIIIIIIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.0,
+      "answer_imag": 0.0,
+      "reference": 7.806255641895632e-17,
+      "abs_error": 7.806255641895632e-17,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 34,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 64,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 3,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 83,
+      "query_tracemalloc_peak_bytes": 40816,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 75752
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 10135
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 441
+        }
+      },
+      "rqm_compile_ns": [
+        3208149,
+        3106918,
+        3008763,
+        2874203,
+        2738392
+      ],
+      "rqm_query_ns": [
+        1905867,
+        1384203,
+        1557300,
+        1480967,
+        1380789
+      ],
+      "qiskit_compile_ns": [
+        5985960,
+        6782011,
+        6415257,
+        5321444,
+        5551415
+      ],
+      "aer_query_ns": [
+        3725697,
+        4019663,
+        3749542,
+        4337705,
+        3642203
+      ],
+      "end_to_end_ratio": 2.168393645052152
+    },
+    {
+      "family": "random_noncommuting",
+      "n": 4,
+      "query": "global_Z",
+      "pauli": "ZZZZ",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": -0.06552563959538571,
+      "answer_imag": 1.201296007113939e-16,
+      "reference": -0.06552563959538443,
+      "abs_error": 1.2823955029149297e-15,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 32,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 256,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 4,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 100,
+      "query_tracemalloc_peak_bytes": 41209,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 68622
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 6520
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 401
+        }
+      },
+      "rqm_compile_ns": [
+        8958169,
+        11433120,
+        9006892,
+        11623633,
+        9799137
+      ],
+      "rqm_query_ns": [
+        1775504,
+        1404012,
+        1350774,
+        1317244,
+        1259448
+      ],
+      "qiskit_compile_ns": [
+        5404467,
+        4710898,
+        4618962,
+        4848783,
+        5022842
+      ],
+      "aer_query_ns": [
+        1448469,
+        1416391,
+        1371003,
+        1662266,
+        1362230
+      ],
+      "end_to_end_ratio": 0.5619034986019171
+    },
+    {
+      "family": "random_noncommuting",
+      "n": 4,
+      "query": "global_Z",
+      "pauli": "ZZZZ",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": -0.06552563959538571,
+      "answer_imag": 1.201296007113939e-16,
+      "reference": -0.06552563959538443,
+      "abs_error": 1.2823955029149297e-15,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 32,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 256,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 4,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 100,
+      "query_tracemalloc_peak_bytes": 41209,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 68622
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 6520
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 401
+        }
+      },
+      "rqm_compile_ns": [
+        8958169,
+        11433120,
+        9006892,
+        11623633,
+        9799137
+      ],
+      "rqm_query_ns": [
+        1526254,
+        1447237,
+        1337304,
+        1279408,
+        1280039
+      ],
+      "qiskit_compile_ns": [
+        5404467,
+        4710898,
+        4618962,
+        4848783,
+        5022842
+      ],
+      "aer_query_ns": [
+        1448469,
+        1416391,
+        1371003,
+        1662266,
+        1362230
+      ],
+      "end_to_end_ratio": 0.5625831448305613
+    },
+    {
+      "family": "random_noncommuting",
+      "n": 4,
+      "query": "local_X",
+      "pauli": "XIII",
+      "max_terms": 64,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.20083580630266906,
+      "answer_imag": -2.255140518769849e-16,
+      "reference": 0.20083580630266804,
+      "abs_error": 1.051425615600279e-15,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 26,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 256,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 4,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 100,
+      "query_tracemalloc_peak_bytes": 38401,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 68622
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 6520
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 401
+        }
+      },
+      "rqm_compile_ns": [
+        8958169,
+        11433120,
+        9006892,
+        11623633,
+        9799137
+      ],
+      "rqm_query_ns": [
+        1385436,
+        1244697,
+        1161554,
+        1165559,
+        1131538
+      ],
+      "qiskit_compile_ns": [
+        5404467,
+        4710898,
+        4618962,
+        4848783,
+        5022842
+      ],
+      "aer_query_ns": [
+        1661805,
+        1459826,
+        1409992,
+        1387018,
+        1369451
+      ],
+      "end_to_end_ratio": 0.5708115391434473
+    },
+    {
+      "family": "random_noncommuting",
+      "n": 4,
+      "query": "local_X",
+      "pauli": "XIII",
+      "max_terms": 4096,
+      "available": true,
+      "exact_within_tolerance": true,
+      "answer_real": 0.20083580630266906,
+      "answer_imag": -2.255140518769849e-16,
+      "reference": 0.20083580630266804,
+      "abs_error": 1.051425615600279e-15,
+      "route": "bounded_frontier_transfer",
+      "reason": "",
+      "query_work_units": 26,
+      "query_work_unit": "frontier_operations",
+      "largest_intermediate": 256,
+      "intermediate_unit": "complex_tensor_entries",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": false,
+      "frontier_width": 4,
+      "frontier_rejection": null,
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 100,
+      "query_tracemalloc_peak_bytes": 38401,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 68622
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 6520
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 401
+        }
+      },
+      "rqm_compile_ns": [
+        8958169,
+        11433120,
+        9006892,
+        11623633,
+        9799137
+      ],
+      "rqm_query_ns": [
+        1903328,
+        1227521,
+        1100592,
+        1249083,
+        33382002
+      ],
+      "qiskit_compile_ns": [
+        5404467,
+        4710898,
+        4618962,
+        4848783,
+        5022842
+      ],
+      "aer_query_ns": [
+        1661805,
+        1459826,
+        1409992,
+        1387018,
+        1369451
+      ],
+      "end_to_end_ratio": 0.5664962319722091
+    },
+    {
+      "family": "random_noncommuting",
+      "n": 8,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZ",
+      "max_terms": 64,
+      "available": false,
+      "exact_within_tolerance": false,
+      "answer_real": null,
+      "answer_imag": null,
+      "reference": 0.02552450910074365,
+      "abs_error": null,
+      "route": "structured_exact",
+      "reason": "Pauli expansion exceeded max_terms=64 after 23 operations",
+      "query_work_units": 128,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 128,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 1,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 8 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 224,
+      "query_tracemalloc_peak_bytes": 49458,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 206707
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 11136
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 731
+        }
+      },
+      "rqm_compile_ns": [
+        20130222,
+        18320498,
+        17670723,
+        23831833,
+        25266402
+      ],
+      "rqm_query_ns": [
+        7767372,
+        7706302,
+        7677890,
+        5414267,
+        4844085
+      ],
+      "qiskit_compile_ns": [
+        8627448,
+        7470572,
+        7497182,
+        7275683,
+        7296334
+      ],
+      "aer_query_ns": [
+        3861679,
+        3612620,
+        3363089,
+        3353435,
+        3240838
+      ],
+      "end_to_end_ratio": null
+    },
+    {
+      "family": "random_noncommuting",
+      "n": 8,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZ",
+      "max_terms": 4096,
+      "available": false,
+      "exact_within_tolerance": false,
+      "answer_real": null,
+      "answer_imag": null,
+      "reference": 0.02552450910074365,
+      "abs_error": null,
+      "route": "structured_exact",
+      "reason": "Pauli expansion exceeded max_terms=4096 after 37 operations",
+      "query_work_units": 4536,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 4536,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 1,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 8 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 224,
+      "query_tracemalloc_peak_bytes": 1369297,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 206707
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 11136
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 731
+        }
+      },
+      "rqm_compile_ns": [
+        20130222,
+        18320498,
+        17670723,
+        23831833,
+        25266402
+      ],
+      "rqm_query_ns": [
+        45160572,
+        45351655,
+        45731719,
+        49695864,
+        46344608
+      ],
+      "qiskit_compile_ns": [
+        8627448,
+        7470572,
+        7497182,
+        7275683,
+        7296334
+      ],
+      "aer_query_ns": [
+        3861679,
+        3612620,
+        3363089,
+        3353435,
+        3240838
+      ],
+      "end_to_end_ratio": null
+    },
+    {
+      "family": "random_noncommuting",
+      "n": 8,
+      "query": "local_X",
+      "pauli": "XIIIIIII",
+      "max_terms": 64,
+      "available": false,
+      "exact_within_tolerance": false,
+      "answer_real": null,
+      "answer_imag": null,
+      "reference": 0.36590755770522476,
+      "abs_error": null,
+      "route": "structured_exact",
+      "reason": "Pauli expansion exceeded max_terms=64 after 28 operations",
+      "query_work_units": 76,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 76,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 1,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 7 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 224,
+      "query_tracemalloc_peak_bytes": 49290,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 206707
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 11136
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 731
+        }
+      },
+      "rqm_compile_ns": [
+        20130222,
+        18320498,
+        17670723,
+        23831833,
+        25266402
+      ],
+      "rqm_query_ns": [
+        9713828,
+        9830821,
+        9909828,
+        9780056,
+        9495494
+      ],
+      "qiskit_compile_ns": [
+        8627448,
+        7470572,
+        7497182,
+        7275683,
+        7296334
+      ],
+      "aer_query_ns": [
+        3848548,
+        3486191,
+        4429740,
+        3875528,
+        3393834
+      ],
+      "end_to_end_ratio": null
+    },
+    {
+      "family": "random_noncommuting",
+      "n": 8,
+      "query": "local_X",
+      "pauli": "XIIIIIII",
+      "max_terms": 4096,
+      "available": false,
+      "exact_within_tolerance": false,
+      "answer_real": null,
+      "answer_imag": null,
+      "reference": 0.36590755770522476,
+      "abs_error": null,
+      "route": "structured_exact",
+      "reason": "Pauli expansion exceeded max_terms=4096 after 42 operations",
+      "query_work_units": 4182,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 4182,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 1,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 7 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 224,
+      "query_tracemalloc_peak_bytes": 1384369,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 206707
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 11136
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 731
+        }
+      },
+      "rqm_compile_ns": [
+        20130222,
+        18320498,
+        17670723,
+        23831833,
+        25266402
+      ],
+      "rqm_query_ns": [
+        47293075,
+        46903818,
+        47585018,
+        46575070,
+        46766584
+      ],
+      "qiskit_compile_ns": [
+        8627448,
+        7470572,
+        7497182,
+        7275683,
+        7296334
+      ],
+      "aer_query_ns": [
+        3848548,
+        3486191,
+        4429740,
+        3875528,
+        3393834
+      ],
+      "end_to_end_ratio": null
+    },
+    {
+      "family": "random_noncommuting",
+      "n": 12,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZZZZZ",
+      "max_terms": 64,
+      "available": false,
+      "exact_within_tolerance": false,
+      "answer_real": null,
+      "answer_imag": null,
+      "reference": 0.008159229829416588,
+      "abs_error": null,
+      "route": "structured_exact",
+      "reason": "Pauli expansion exceeded max_terms=64 after 31 operations",
+      "query_work_units": 128,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 128,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 1,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 12 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 336,
+      "query_tracemalloc_peak_bytes": 79104,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 219205
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 6169
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 561
+        }
+      },
+      "rqm_compile_ns": [
+        26389721,
+        22861719,
+        22210653,
+        22518539,
+        22365443
+      ],
+      "rqm_query_ns": [
+        7059881,
+        6841898,
+        6849690,
+        7332265,
+        7045790
+      ],
+      "qiskit_compile_ns": [
+        6823041,
+        8824674,
+        10622525,
+        9412401,
+        7521667
+      ],
+      "aer_query_ns": [
+        10347637,
+        9190081,
+        9462294,
+        9908907,
+        10092129
+      ],
+      "end_to_end_ratio": null
+    },
+    {
+      "family": "random_noncommuting",
+      "n": 12,
+      "query": "global_Z",
+      "pauli": "ZZZZZZZZZZZZ",
+      "max_terms": 4096,
+      "available": false,
+      "exact_within_tolerance": false,
+      "answer_real": null,
+      "answer_imag": null,
+      "reference": 0.008159229829416588,
+      "abs_error": null,
+      "route": "structured_exact",
+      "reason": "Pauli expansion exceeded max_terms=4096 after 37 operations",
+      "query_work_units": 6144,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 6144,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 1,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 12 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 336,
+      "query_tracemalloc_peak_bytes": 2368224,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 219205
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 6169
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 561
+        }
+      },
+      "rqm_compile_ns": [
+        26389721,
+        22861719,
+        22210653,
+        22518539,
+        22365443
+      ],
+      "rqm_query_ns": [
+        15564195,
+        15215998,
+        15494861,
+        14458985,
+        15500681
+      ],
+      "qiskit_compile_ns": [
+        6823041,
+        8824674,
+        10622525,
+        9412401,
+        7521667
+      ],
+      "aer_query_ns": [
+        10347637,
+        9190081,
+        9462294,
+        9908907,
+        10092129
+      ],
+      "end_to_end_ratio": null
+    },
+    {
+      "family": "random_noncommuting",
+      "n": 12,
+      "query": "local_X",
+      "pauli": "XIIIIIIIIIII",
+      "max_terms": 64,
+      "available": false,
+      "exact_within_tolerance": false,
+      "answer_real": null,
+      "answer_imag": null,
+      "reference": 0.1388249892973477,
+      "abs_error": null,
+      "route": "structured_exact",
+      "reason": "structured expansion exceeded max_terms=64",
+      "query_work_units": 66,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 66,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 0,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 11 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 336,
+      "query_tracemalloc_peak_bytes": 78936,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 219205
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 6169
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 561
+        }
+      },
+      "rqm_compile_ns": [
+        26389721,
+        22861719,
+        22210653,
+        22518539,
+        22365443
+      ],
+      "rqm_query_ns": [
+        1689306,
+        1603158,
+        1594555,
+        1581486,
+        1529408
+      ],
+      "qiskit_compile_ns": [
+        6823041,
+        8824674,
+        10622525,
+        9412401,
+        7521667
+      ],
+      "aer_query_ns": [
+        8681175,
+        8850708,
+        9493000,
+        8522239,
+        11825419
+      ],
+      "end_to_end_ratio": null
+    },
+    {
+      "family": "random_noncommuting",
+      "n": 12,
+      "query": "local_X",
+      "pauli": "XIIIIIIIIIII",
+      "max_terms": 4096,
+      "available": false,
+      "exact_within_tolerance": false,
+      "answer_real": null,
+      "answer_imag": null,
+      "reference": 0.1388249892973477,
+      "abs_error": null,
+      "route": "structured_exact",
+      "reason": "Pauli expansion exceeded max_terms=4096 after 49 operations",
+      "query_work_units": 6100,
+      "query_work_unit": "pauli_terms",
+      "largest_intermediate": 6100,
+      "intermediate_unit": "pauli_terms",
+      "query_promotions": 1,
+      "compiler_promotions": 0,
+      "query_fallback": true,
+      "frontier_width": null,
+      "frontier_rejection": "frontier width 11 exceeds cap 4 or unsupported locality",
+      "plan_reused": false,
+      "compilation_fallback": null,
+      "representation_size": 336,
+      "query_tracemalloc_peak_bytes": 2451499,
+      "recognizer_rejections": {
+        "star": {
+          "rejected": true,
+          "rejection_ns": 219205
+        },
+        "chain": {
+          "rejected": true,
+          "rejection_ns": 6169
+        },
+        "hardware": {
+          "rejected": true,
+          "rejection_ns": 561
+        }
+      },
+      "rqm_compile_ns": [
+        26389721,
+        22861719,
+        22210653,
+        22518539,
+        22365443
+      ],
+      "rqm_query_ns": [
+        47103173,
+        47950119,
+        47764634,
+        99331267,
+        102962252
+      ],
+      "qiskit_compile_ns": [
+        6823041,
+        8824674,
+        10622525,
+        9412401,
+        7521667
+      ],
+      "aer_query_ns": [
+        8681175,
+        8850708,
+        9493000,
+        8522239,
+        11825419
+      ],
+      "end_to_end_ratio": null
+    }
+  ]
+}

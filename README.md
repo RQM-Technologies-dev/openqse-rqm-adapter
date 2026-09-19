@@ -1,5 +1,7 @@
 # RQM OpenQSE Adapter
 
+New generalized-query candidate: [hub fix, frontier planning, policy comparisons and reuse](evidence/frontier-candidate-2026-09-19/README.md). 2,282 tests passed; boundary coverage 80/96.
+
 Latest fixed-candidate scientific evidence: [2026-09-19 certification and boundary measurements](evidence/scientific-candidate-2026-09-19/README.md). Eight installed-wheel suites: 2,255 passed, 11 skipped; 74/96 boundary queries available and numerically valid, 22 unavailable under the selected budgets. [Scientific release responsibilities and reproduction](docs/SCIENTIFIC_RELEASE.md).
 
 **Experimental alternative-IR interoperability test for the openQSE compiler/tool-pipeline architecture.**
