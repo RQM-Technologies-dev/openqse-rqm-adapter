@@ -1,0 +1,527 @@
+{
+  "rows": [
+    {
+      "n": 4,
+      "width": 4,
+      "structured": true,
+      "payload_bytes": 2048,
+      "runtime_ns": [
+        434534,
+        517818,
+        410078,
+        576595,
+        418330
+      ],
+      "error": 4.440892098500626e-16,
+      "memory": {
+        "peak_bytes": 25240,
+        "retained_positive_blocks": 175,
+        "retained_positive_bytes": 11192
+      }
+    },
+    {
+      "n": 4,
+      "width": 4,
+      "structured": false,
+      "payload_bytes": 4096,
+      "runtime_ns": [
+        586950,
+        876519,
+        905643,
+        561523,
+        484719
+      ],
+      "error": 9.992134408107927e-16,
+      "memory": {
+        "peak_bytes": 36200,
+        "retained_positive_blocks": 222,
+        "retained_positive_bytes": 17764
+      }
+    },
+    {
+      "n": 6,
+      "width": 6,
+      "structured": true,
+      "payload_bytes": 32768,
+      "runtime_ns": [
+        1620752,
+        992402,
+        972352,
+        902789,
+        1010258
+      ],
+      "error": 5.551115123125783e-17,
+      "memory": {
+        "peak_bytes": 188656,
+        "retained_positive_blocks": 328,
+        "retained_positive_bytes": 21904
+      }
+    },
+    {
+      "n": 6,
+      "width": 6,
+      "structured": false,
+      "payload_bytes": 65536,
+      "runtime_ns": [
+        1643426,
+        1515426,
+        1820629,
+        1361629,
+        1681563
+      ],
+      "error": 5.630231321246648e-17,
+      "memory": {
+        "peak_bytes": 271048,
+        "retained_positive_blocks": 316,
+        "retained_positive_bytes": 22938
+      }
+    },
+    {
+      "n": 8,
+      "width": 8,
+      "structured": true,
+      "payload_bytes": 524288,
+      "runtime_ns": [
+        3725964,
+        3687106,
+        4093238,
+        3775667,
+        4090544
+      ],
+      "error": 1.9949319973733282e-17,
+      "memory": {
+        "peak_bytes": 2461040,
+        "retained_positive_blocks": 446,
+        "retained_positive_bytes": 28896
+      }
+    },
+    {
+      "n": 8,
+      "width": 8,
+      "structured": false,
+      "payload_bytes": 1048576,
+      "runtime_ns": [
+        8462265,
+        7820885,
+        8136302,
+        7792111,
+        7645996
+      ],
+      "error": 6.60296383374517e-17,
+      "memory": {
+        "peak_bytes": 3214544,
+        "retained_positive_blocks": 402,
+        "retained_positive_bytes": 27760
+      }
+    },
+    {
+      "n": 10,
+      "width": 10,
+      "structured": true,
+      "payload_bytes": 8388608,
+      "runtime_ns": [
+        36652436,
+        39446910,
+        41531279,
+        37570177,
+        36724313
+      ],
+      "error": 5.26109104198591e-17,
+      "memory": {
+        "peak_bytes": 37797608,
+        "retained_positive_blocks": 583,
+        "retained_positive_bytes": 36152
+      }
+    }
+  ],
+  "rejections": [
+    {
+      "n": 12,
+      "cap": 4,
+      "width": 12,
+      "runtime_ns": [
+        269209,
+        243050,
+        234448,
+        238904,
+        253325,
+        229991,
+        227427,
+        251653,
+        242099,
+        226135,
+        226486,
+        223692,
+        242810,
+        234277,
+        228789,
+        224783,
+        224954,
+        239125,
+        229771,
+        226536,
+        224432
+      ],
+      "hypothetical_real_payload_bytes": 134217728,
+      "numeric_evaluation": false
+    },
+    {
+      "n": 12,
+      "cap": 8,
+      "width": 12,
+      "runtime_ns": [
+        228008,
+        282318,
+        256069,
+        246715,
+        228779,
+        225825,
+        225645,
+        238193,
+        230251,
+        228429,
+        223361,
+        242790,
+        227518,
+        230862,
+        228459,
+        225364,
+        238624,
+        231784,
+        227828,
+        253937,
+        240336
+      ],
+      "hypothetical_real_payload_bytes": 134217728,
+      "numeric_evaluation": false
+    },
+    {
+      "n": 12,
+      "cap": 10,
+      "width": 12,
+      "runtime_ns": [
+        238013,
+        231613,
+        244413,
+        233967,
+        229791,
+        230982,
+        246826,
+        229199,
+        224873,
+        225605,
+        224062,
+        256420,
+        231574,
+        228408,
+        249329,
+        244884,
+        228699,
+        225795,
+        227968,
+        240116,
+        224563
+      ],
+      "hypothetical_real_payload_bytes": 134217728,
+      "numeric_evaluation": false
+    },
+    {
+      "n": 16,
+      "cap": 4,
+      "width": 16,
+      "runtime_ns": [
+        417208,
+        669512,
+        425470,
+        451309,
+        416307,
+        408276,
+        623955,
+        423909,
+        447964,
+        474684,
+        435676,
+        406313,
+        444930,
+        414204,
+        404620,
+        421515,
+        405230,
+        424699,
+        412302,
+        426242,
+        412782
+      ],
+      "hypothetical_real_payload_bytes": 34359738368,
+      "numeric_evaluation": false
+    },
+    {
+      "n": 16,
+      "cap": 8,
+      "width": 16,
+      "runtime_ns": [
+        416578,
+        431991,
+        417479,
+        417369,
+        424369,
+        412631,
+        430938,
+        481884,
+        464749,
+        414234,
+        407725,
+        443718,
+        407083,
+        419893,
+        407464,
+        405461,
+        428845,
+        445660,
+        425721,
+        403748,
+        420373
+      ],
+      "hypothetical_real_payload_bytes": 34359738368,
+      "numeric_evaluation": false
+    },
+    {
+      "n": 16,
+      "cap": 10,
+      "width": 16,
+      "runtime_ns": [
+        406443,
+        426452,
+        413903,
+        422457,
+        412732,
+        440653,
+        415626,
+        404910,
+        420213,
+        403708,
+        423418,
+        404049,
+        686488,
+        440884,
+        476246,
+        415926,
+        412452,
+        502876,
+        702912,
+        418330,
+        609313
+      ],
+      "hypothetical_real_payload_bytes": 34359738368,
+      "numeric_evaluation": false
+    },
+    {
+      "n": 24,
+      "cap": 4,
+      "width": 24,
+      "runtime_ns": [
+        918201,
+        1224636,
+        973453,
+        954795,
+        959933,
+        938591,
+        949017,
+        945191,
+        943739,
+        940585,
+        966303,
+        944901,
+        941386,
+        950269,
+        939023,
+        975877,
+        951590,
+        940905,
+        939954,
+        958541,
+        942698
+      ],
+      "hypothetical_real_payload_bytes": 2251799813685248,
+      "numeric_evaluation": false
+    },
+    {
+      "n": 24,
+      "cap": 8,
+      "width": 24,
+      "runtime_ns": [
+        958772,
+        1092560,
+        950800,
+        963118,
+        937410,
+        943418,
+        926453,
+        950139,
+        918432,
+        967244,
+        941195,
+        934315,
+        938602,
+        931761,
+        1169303,
+        965211,
+        1036417,
+        969027,
+        937861,
+        929218,
+        942367
+      ],
+      "hypothetical_real_payload_bytes": 2251799813685248,
+      "numeric_evaluation": false
+    },
+    {
+      "n": 24,
+      "cap": 10,
+      "width": 24,
+      "runtime_ns": [
+        938822,
+        1064348,
+        942648,
+        943199,
+        1000022,
+        989407,
+        941145,
+        929518,
+        959592,
+        947575,
+        927225,
+        934155,
+        974485,
+        938251,
+        913875,
+        939182,
+        954335,
+        938271,
+        928687,
+        940825,
+        928887
+      ],
+      "hypothetical_real_payload_bytes": 2251799813685248,
+      "numeric_evaluation": false
+    }
+  ],
+  "note": "Fresh planning and numeric caches per timed call. Complex reference route forced only through width 8. Width 10 is real only; widths 12/16/24 are planning-only rejection probes.",
+  "certification_manifest": {
+    "status": "passed",
+    "repositories": {
+      "rqm-core": {
+        "commit": "4c89792a5f44339f6b0c68871f991d726328491c",
+        "tree": "f3b93a9ab337ffa7a90439713df4287032e24e5c"
+      },
+      "rqm-circuits": {
+        "commit": "c8f970f222a10cc95a044947c522ec574bae9dab",
+        "tree": "b104ca8f5ab6d3ff59414ad21d38386e68d0828d"
+      },
+      "rqm-entanglement": {
+        "commit": "7c57d0672ef5caa7236d9703e2fd3096fb346ab2",
+        "tree": "adf0876689650536e88ef812db7d8b79121e7afc"
+      },
+      "rqm-compiler": {
+        "commit": "280519b136afe17227204e23bbfeee2246e63277",
+        "tree": "45f007963522f84f91a178da5769f465aef76e30"
+      },
+      "rqm-qiskit": {
+        "commit": "bfd53bec96ea04e8e9d84158014f6ce7217a6099",
+        "tree": "5be9d4de1797b8c15ae8133d9c3f2922a572edf1"
+      },
+      "rqm-optimize": {
+        "commit": "be12b2c9e16477a81f9af0a549189aa61299e7d3",
+        "tree": "cce4e582d1b5befe332de6ab4a8281cd6bc0eaaa"
+      },
+      "rqm-braket": {
+        "commit": "c9fc7eef0eee7ba4f49e9105d304e37a7c32bf2f",
+        "tree": "fcba70e26cfa3590014ae8fe116978ae5f71b169"
+      },
+      "openqse-rqm-adapter": {
+        "commit": "4f20c3a72e17c7a645a29ef91b1c5ddb429b0247",
+        "tree": "c7a2fe2f2826c861fd4b4bb48d33253486a1318b"
+      }
+    },
+    "wheels": {
+      "rqm_braket-0.2.2-py3-none-any.whl": "3b3522c2b89d48845da98d838d53985fd7c2cc48e3221b04f5f5ac72f29e52b8",
+      "rqm_circuits-0.2.1-py3-none-any.whl": "b43eae417c1dcddf95ccd614696635cf979207b3721267447f1afe97c4f56de6",
+      "rqm_compiler-0.3.0-py3-none-any.whl": "d5e40e521ce093c68fc0ee08c6f2d9e73cb361ecb2c396dc9f5643fe999a16ae",
+      "rqm_core-0.2.2-py3-none-any.whl": "a18589a5e38b2f578c4dac3995ddaa7733afcfb3f14ab709b0a2099b1da04c22",
+      "rqm_entanglement-0.2.1-py3-none-any.whl": "c2682a155fd7d4f6c3269c88a16a63fc119b53e28857fa363a111ca43d14edfa",
+      "rqm_openqse_adapter-0.1.1-py3-none-any.whl": "7af862ba3a0164130fc9047aa9a338fa2bcf62f421b28c1d9bcfb6580c7fa027",
+      "rqm_optimize-0.1.3-py3-none-any.whl": "2f41c3d718b4520d19c7ca4d7307e3fb7100cd4231b3d7617573e8000e05af46",
+      "rqm_qiskit-0.4.0-py3-none-any.whl": "c0dd471b3455fbfb084a76ecb3cc7069e6a8da65a196c9d296c3e34a76a1af2c"
+    },
+    "hardware_execution": false,
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "installed_modules": {
+      "rqm_core": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/lib/python3.12/site-packages/rqm_core/__init__.py",
+      "rqm_circuits": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/lib/python3.12/site-packages/rqm_circuits/__init__.py",
+      "rqm_entanglement": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/lib/python3.12/site-packages/rqm_entanglement/__init__.py",
+      "rqm_compiler": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/lib/python3.12/site-packages/rqm_compiler/__init__.py",
+      "rqm_qiskit": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/lib/python3.12/site-packages/rqm_qiskit/__init__.py",
+      "rqm_optimize": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/lib/python3.12/site-packages/rqm_optimize/__init__.py",
+      "rqm_braket": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/lib/python3.12/site-packages/rqm_braket/__init__.py",
+      "rqm_openqse_adapter": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/lib/python3.12/site-packages/rqm_openqse_adapter/__init__.py"
+    },
+    "test_counts": {
+      "rqm-core": {
+        "tests": 451,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 451
+      },
+      "rqm-circuits": {
+        "tests": 262,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 10,
+        "passed": 252
+      },
+      "rqm-entanglement": {
+        "tests": 162,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 1,
+        "passed": 161
+      },
+      "rqm-compiler": {
+        "tests": 434,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 434
+      },
+      "rqm-qiskit": {
+        "tests": 560,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 560
+      },
+      "rqm-optimize": {
+        "tests": 101,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 101
+      },
+      "rqm-braket": {
+        "tests": 310,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 310
+      },
+      "openqse-rqm-adapter": {
+        "tests": 61,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 61
+      }
+    }
+  }
+}

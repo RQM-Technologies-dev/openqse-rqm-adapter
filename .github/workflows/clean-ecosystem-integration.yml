@@ -34,14 +34,14 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: RQM-Technologies-dev/rqm-entanglement
-          ref: 7c57d0672ef5caa7236d9703e2fd3096fb346ab2
+          ref: 8b0c4e2e0cfdc3a7bec9ab34a258264cd69bd3c1
           path: .ecosystem/rqm-entanglement
 
       - name: Checkout rqm-compiler
         uses: actions/checkout@v4
         with:
           repository: RQM-Technologies-dev/rqm-compiler
-          ref: 280519b136afe17227204e23bbfeee2246e63277
+          ref: 7b79a2281971afc946ccfd75a7863793d0bd5001
           path: .ecosystem/rqm-compiler
 
       - name: Checkout rqm-qiskit

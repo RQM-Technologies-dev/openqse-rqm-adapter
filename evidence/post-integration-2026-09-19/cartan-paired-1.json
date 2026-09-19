@@ -1,0 +1,981 @@
+{
+  "seed": 1701,
+  "rows": [
+    {
+      "case": "positive_noncanonical",
+      "coordinates": [
+        0.8,
+        0.4,
+        0.2
+      ],
+      "paired_blocks": [
+        {
+          "old": 572390.1,
+          "new": 514560.9
+        },
+        {
+          "old": 561699.75,
+          "new": 544292.45
+        },
+        {
+          "new": 550944.35,
+          "old": 501436.4
+        },
+        {
+          "old": 545814.7,
+          "new": 507978.6
+        },
+        {
+          "new": 523197.7,
+          "old": 574462.7
+        },
+        {
+          "old": 510520.35,
+          "new": 531437.35
+        },
+        {
+          "old": 523853.65,
+          "new": 517302.4
+        },
+        {
+          "old": 553428.0,
+          "new": 551203.7
+        },
+        {
+          "new": 507232.0,
+          "old": 1045415.85
+        },
+        {
+          "old": 484491.3,
+          "new": 721196.75
+        },
+        {
+          "new": 584311.8,
+          "old": 532316.7
+        },
+        {
+          "new": 524980.35,
+          "old": 525639.3
+        },
+        {
+          "new": 486132.75,
+          "old": 533374.25
+        },
+        {
+          "old": 553353.85,
+          "new": 498084.95
+        },
+        {
+          "new": 542870.85,
+          "old": 556790.5
+        },
+        {
+          "new": 526046.4,
+          "old": 473676.25
+        },
+        {
+          "old": 488413.15,
+          "new": 478231.05
+        },
+        {
+          "new": 506606.1,
+          "old": 503935.6
+        },
+        {
+          "new": 475571.55,
+          "old": 507528.0
+        },
+        {
+          "old": 519861.75,
+          "new": 515445.2
+        },
+        {
+          "old": 501069.4,
+          "new": 486215.85
+        },
+        {
+          "old": 480727.7,
+          "new": 475509.0
+        },
+        {
+          "new": 490473.15,
+          "old": 517890.8
+        },
+        {
+          "old": 482356.15,
+          "new": 478181.45
+        },
+        {
+          "old": 518100.65,
+          "new": 533298.15
+        },
+        {
+          "new": 513609.45,
+          "old": 496874.15
+        },
+        {
+          "new": 477569.05,
+          "old": 479983.65
+        },
+        {
+          "old": 509924.0,
+          "new": 523457.55
+        },
+        {
+          "old": 475577.1,
+          "new": 502621.15
+        },
+        {
+          "new": 479331.7,
+          "old": 547798.65
+        },
+        {
+          "old": 581737.45,
+          "new": 499243.65
+        },
+        {
+          "new": 498757.45,
+          "old": 498312.3
+        },
+        {
+          "old": 500465.95,
+          "new": 520690.95
+        },
+        {
+          "old": 499624.25,
+          "new": 631327.5
+        },
+        {
+          "old": 707369.75,
+          "new": 492310.35
+        },
+        {
+          "old": 490560.3,
+          "new": 481247.45
+        },
+        {
+          "old": 646884.1,
+          "new": 507831.85
+        },
+        {
+          "new": 502875.55,
+          "old": 495408.5
+        },
+        {
+          "new": 491598.35,
+          "old": 510941.55
+        },
+        {
+          "old": 545783.2,
+          "new": 523566.2
+        },
+        {
+          "new": 470516.6,
+          "old": 471469.0
+        }
+      ],
+      "median_ratio": 1.0109749762885667,
+      "paired_bootstrap_95_interval": [
+        1.0012551898371054,
+        1.0319815202286933
+      ],
+      "error": 0.0,
+      "memory_old": [
+        {
+          "peak_bytes": 11665,
+          "retained_positive_blocks": 131,
+          "retained_positive_bytes": 7474
+        },
+        {
+          "peak_bytes": 11495,
+          "retained_positive_blocks": 131,
+          "retained_positive_bytes": 7436
+        },
+        {
+          "peak_bytes": 11463,
+          "retained_positive_blocks": 130,
+          "retained_positive_bytes": 7360
+        }
+      ],
+      "memory_new": [
+        {
+          "peak_bytes": 11431,
+          "retained_positive_blocks": 130,
+          "retained_positive_bytes": 7328
+        },
+        {
+          "peak_bytes": 11383,
+          "retained_positive_blocks": 131,
+          "retained_positive_bytes": 7324
+        },
+        {
+          "peak_bytes": 11351,
+          "retained_positive_blocks": 130,
+          "retained_positive_bytes": 7248
+        }
+      ]
+    },
+    {
+      "case": "permuted_noncanonical",
+      "coordinates": [
+        -0.2,
+        -0.8,
+        0.0
+      ],
+      "paired_blocks": [
+        {
+          "new": 513434.7,
+          "old": 587021.85
+        },
+        {
+          "old": 502092.4,
+          "new": 508651.6
+        },
+        {
+          "new": 574863.75,
+          "old": 520831.65
+        },
+        {
+          "new": 483772.75,
+          "old": 486914.9
+        },
+        {
+          "new": 486042.1,
+          "old": 480790.3
+        },
+        {
+          "new": 523545.7,
+          "old": 475447.35
+        },
+        {
+          "old": 479350.15,
+          "new": 514847.8
+        },
+        {
+          "old": 536150.35,
+          "new": 490505.2
+        },
+        {
+          "old": 482664.6,
+          "new": 473770.4
+        },
+        {
+          "new": 480798.3,
+          "old": 501710.85
+        },
+        {
+          "old": 545999.5,
+          "new": 477233.55
+        },
+        {
+          "old": 588728.3,
+          "new": 592650.15
+        },
+        {
+          "new": 528443.95,
+          "old": 520273.35
+        },
+        {
+          "old": 474081.85,
+          "new": 476230.5
+        },
+        {
+          "old": 474582.65,
+          "new": 517679.0
+        },
+        {
+          "new": 551254.25,
+          "old": 519844.2
+        },
+        {
+          "new": 529152.05,
+          "old": 560508.5
+        },
+        {
+          "old": 530126.95,
+          "new": 500200.1
+        },
+        {
+          "new": 495778.0,
+          "old": 507524.95
+        },
+        {
+          "old": 526684.9,
+          "new": 552790.55
+        },
+        {
+          "new": 512817.75,
+          "old": 528346.8
+        },
+        {
+          "old": 491535.75,
+          "new": 522141.1
+        },
+        {
+          "new": 499005.35,
+          "old": 472368.85
+        },
+        {
+          "new": 516221.8,
+          "old": 509341.2
+        },
+        {
+          "old": 519769.1,
+          "new": 509559.95
+        },
+        {
+          "new": 478552.5,
+          "old": 509799.3
+        },
+        {
+          "old": 512699.1,
+          "new": 523208.7
+        },
+        {
+          "old": 514972.5,
+          "new": 480232.95
+        },
+        {
+          "old": 485972.0,
+          "new": 508489.35
+        },
+        {
+          "new": 476498.95,
+          "old": 522466.6
+        },
+        {
+          "new": 522360.45,
+          "old": 481418.25
+        },
+        {
+          "new": 478481.9,
+          "old": 580116.05
+        },
+        {
+          "new": 493565.75,
+          "old": 612277.8
+        },
+        {
+          "old": 748278.4,
+          "new": 849239.05
+        },
+        {
+          "new": 865590.8,
+          "old": 629936.9
+        },
+        {
+          "old": 567041.65,
+          "new": 518171.75
+        },
+        {
+          "new": 487482.7,
+          "old": 534293.15
+        },
+        {
+          "old": 576207.75,
+          "new": 708753.3
+        },
+        {
+          "new": 543569.9,
+          "old": 567404.2
+        },
+        {
+          "old": 605041.05,
+          "new": 630022.05
+        },
+        {
+          "new": 567855.85,
+          "old": 536565.0
+        }
+      ],
+      "median_ratio": 0.9933825208683403,
+      "paired_bootstrap_95_interval": [
+        0.9603490068323799,
+        1.030281810643255
+      ],
+      "error": 0.0,
+      "memory_old": [
+        {
+          "peak_bytes": 11343,
+          "retained_positive_blocks": 128,
+          "retained_positive_bytes": 7128
+        },
+        {
+          "peak_bytes": 11311,
+          "retained_positive_blocks": 128,
+          "retained_positive_bytes": 7096
+        },
+        {
+          "peak_bytes": 11263,
+          "retained_positive_blocks": 128,
+          "retained_positive_bytes": 7048
+        }
+      ],
+      "memory_new": [
+        {
+          "peak_bytes": 11367,
+          "retained_positive_blocks": 134,
+          "retained_positive_bytes": 7240
+        },
+        {
+          "peak_bytes": 11335,
+          "retained_positive_blocks": 134,
+          "retained_positive_bytes": 7208
+        },
+        {
+          "peak_bytes": 11303,
+          "retained_positive_blocks": 134,
+          "retained_positive_bytes": 7176
+        }
+      ]
+    },
+    {
+      "case": "outside_chamber",
+      "coordinates": [
+        -1.5707963367948965,
+        0.0,
+        0.0
+      ],
+      "paired_blocks": [
+        {
+          "new": 528024.45,
+          "old": 484762.8
+        },
+        {
+          "new": 543847.4,
+          "old": 494467.65
+        },
+        {
+          "old": 521583.35,
+          "new": 482333.7
+        },
+        {
+          "new": 486054.2,
+          "old": 697527.25
+        },
+        {
+          "old": 529000.4,
+          "new": 549511.8
+        },
+        {
+          "old": 520060.1,
+          "new": 498411.5
+        },
+        {
+          "old": 517316.05,
+          "new": 504068.35
+        },
+        {
+          "new": 483677.2,
+          "old": 486842.85
+        },
+        {
+          "old": 524747.05,
+          "new": 516439.25
+        },
+        {
+          "old": 479263.65,
+          "new": 485492.35
+        },
+        {
+          "old": 493138.7,
+          "new": 493575.35
+        },
+        {
+          "new": 599262.55,
+          "old": 648971.25
+        },
+        {
+          "old": 545984.5,
+          "new": 546916.95
+        },
+        {
+          "old": 555936.8,
+          "new": 506790.45
+        },
+        {
+          "new": 584016.45,
+          "old": 682777.85
+        },
+        {
+          "old": 646040.4,
+          "new": 538014.75
+        },
+        {
+          "new": 508617.65,
+          "old": 523429.6
+        },
+        {
+          "old": 522933.9,
+          "new": 529539.15
+        },
+        {
+          "old": 519715.1,
+          "new": 513534.95
+        },
+        {
+          "old": 487964.0,
+          "new": 524858.7
+        },
+        {
+          "old": 535782.9,
+          "new": 489366.1
+        },
+        {
+          "new": 646634.3,
+          "old": 683528.5
+        },
+        {
+          "old": 507207.05,
+          "new": 551836.8
+        },
+        {
+          "old": 511030.75,
+          "new": 549907.9
+        },
+        {
+          "new": 565857.5,
+          "old": 531264.2
+        },
+        {
+          "old": 506183.05,
+          "new": 487370.15
+        },
+        {
+          "old": 492777.7,
+          "new": 483450.85
+        },
+        {
+          "new": 535562.1,
+          "old": 484517.95
+        },
+        {
+          "old": 522828.7,
+          "new": 487450.25
+        },
+        {
+          "old": 521427.15,
+          "new": 507259.15
+        },
+        {
+          "new": 583058.0,
+          "old": 492119.7
+        },
+        {
+          "new": 500808.55,
+          "old": 527890.75
+        },
+        {
+          "old": 485520.4,
+          "new": 478662.25
+        },
+        {
+          "old": 478485.45,
+          "new": 492420.65
+        },
+        {
+          "new": 534155.0,
+          "old": 627218.0
+        },
+        {
+          "old": 604285.0,
+          "new": 543667.1
+        },
+        {
+          "new": 482820.4,
+          "old": 472109.5
+        },
+        {
+          "old": 514042.7,
+          "new": 484763.25
+        },
+        {
+          "old": 497393.0,
+          "new": 526436.55
+        },
+        {
+          "new": 527913.75,
+          "old": 506546.1
+        },
+        {
+          "old": 482546.5,
+          "new": 570893.5
+        }
+      ],
+      "median_ratio": 1.0143277436229827,
+      "paired_bootstrap_95_interval": [
+        0.9871703436727686,
+        1.0386008457842566
+      ],
+      "error": 0.0,
+      "memory_old": [
+        {
+          "peak_bytes": 11145,
+          "retained_positive_blocks": 132,
+          "retained_positive_bytes": 7066
+        },
+        {
+          "peak_bytes": 11157,
+          "retained_positive_blocks": 132,
+          "retained_positive_bytes": 7034
+        },
+        {
+          "peak_bytes": 11287,
+          "retained_positive_blocks": 134,
+          "retained_positive_bytes": 7120
+        }
+      ],
+      "memory_new": [
+        {
+          "peak_bytes": 11191,
+          "retained_positive_blocks": 141,
+          "retained_positive_bytes": 7376
+        },
+        {
+          "peak_bytes": 11191,
+          "retained_positive_blocks": 135,
+          "retained_positive_bytes": 7112
+        },
+        {
+          "peak_bytes": 11191,
+          "retained_positive_blocks": 136,
+          "retained_positive_bytes": 7156
+        }
+      ]
+    },
+    {
+      "case": "canonical",
+      "coordinates": [
+        -0.8,
+        -0.4,
+        0.2
+      ],
+      "paired_blocks": [
+        {
+          "old": 702583.75,
+          "new": 174435.65
+        },
+        {
+          "old": 544962.6,
+          "new": 179205.2
+        },
+        {
+          "old": 538445.4,
+          "new": 188980.2
+        },
+        {
+          "old": 525626.85,
+          "new": 170712.6
+        },
+        {
+          "old": 538120.35,
+          "new": 188729.35
+        },
+        {
+          "new": 176292.4,
+          "old": 502097.5
+        },
+        {
+          "new": 172471.75,
+          "old": 485648.15
+        },
+        {
+          "old": 560665.35,
+          "new": 180532.7
+        },
+        {
+          "new": 174273.9,
+          "old": 568633.1
+        },
+        {
+          "old": 500084.55,
+          "new": 170607.45
+        },
+        {
+          "old": 523048.55,
+          "new": 174233.85
+        },
+        {
+          "old": 514278.55,
+          "new": 258469.75
+        },
+        {
+          "new": 172896.85,
+          "old": 489567.95
+        },
+        {
+          "new": 180707.45,
+          "old": 490647.0
+        },
+        {
+          "new": 190698.3,
+          "old": 500946.25
+        },
+        {
+          "old": 534917.15,
+          "new": 185668.3
+        },
+        {
+          "old": 594126.45,
+          "new": 234175.75
+        },
+        {
+          "new": 282354.15,
+          "old": 622681.3
+        },
+        {
+          "new": 187125.95,
+          "old": 553471.15
+        },
+        {
+          "old": 509969.65,
+          "new": 171031.1
+        },
+        {
+          "old": 504588.2,
+          "new": 184898.2
+        },
+        {
+          "old": 518183.85,
+          "new": 187046.35
+        },
+        {
+          "old": 530555.2,
+          "new": 183552.15
+        },
+        {
+          "old": 487079.25,
+          "new": 189233.6
+        },
+        {
+          "old": 535895.1,
+          "new": 175145.2
+        },
+        {
+          "new": 168716.65,
+          "old": 649282.25
+        },
+        {
+          "new": 253486.3,
+          "old": 703517.15
+        },
+        {
+          "old": 527334.9,
+          "new": 177890.25
+        },
+        {
+          "new": 192155.9,
+          "old": 569790.35
+        },
+        {
+          "old": 533105.45,
+          "new": 179632.85
+        },
+        {
+          "old": 736979.25,
+          "new": 181638.8
+        },
+        {
+          "old": 705143.8,
+          "new": 290466.7
+        },
+        {
+          "new": 299488.05,
+          "old": 684711.75
+        },
+        {
+          "new": 172804.7,
+          "old": 583482.15
+        },
+        {
+          "new": 185717.35,
+          "old": 573579.95
+        },
+        {
+          "old": 566213.05,
+          "new": 188922.1
+        },
+        {
+          "new": 167841.85,
+          "old": 591671.35
+        },
+        {
+          "old": 619585.2,
+          "new": 409468.15
+        },
+        {
+          "new": 195756.75,
+          "old": 740459.45
+        },
+        {
+          "old": 653904.55,
+          "new": 207693.45
+        },
+        {
+          "new": 235651.45,
+          "old": 572775.0
+        }
+      ],
+      "median_ratio": 2.9311999563911186,
+      "paired_bootstrap_95_interval": [
+        2.8315608410448196,
+        2.9970715443031812
+      ],
+      "error": 3.0915089113605446e-16,
+      "memory_old": [
+        {
+          "peak_bytes": 11011,
+          "retained_positive_blocks": 129,
+          "retained_positive_bytes": 6908
+        },
+        {
+          "peak_bytes": 11011,
+          "retained_positive_blocks": 129,
+          "retained_positive_bytes": 6908
+        },
+        {
+          "peak_bytes": 11011,
+          "retained_positive_blocks": 129,
+          "retained_positive_bytes": 6908
+        }
+      ],
+      "memory_new": [
+        {
+          "peak_bytes": 6687,
+          "retained_positive_blocks": 98,
+          "retained_positive_bytes": 5088
+        },
+        {
+          "peak_bytes": 6599,
+          "retained_positive_blocks": 97,
+          "retained_positive_bytes": 5044
+        },
+        {
+          "peak_bytes": 6643,
+          "retained_positive_blocks": 98,
+          "retained_positive_bytes": 5088
+        }
+      ]
+    }
+  ],
+  "inner_calls": 20,
+  "blocks": 41,
+  "note": "Same-process alternating order; interval reflects paired block variation, not cross-machine uncertainty. Legacy expression uses the same installed dependencies as the new method.",
+  "certification_manifest": {
+    "status": "passed",
+    "repositories": {
+      "rqm-core": {
+        "commit": "4c89792a5f44339f6b0c68871f991d726328491c",
+        "tree": "f3b93a9ab337ffa7a90439713df4287032e24e5c"
+      },
+      "rqm-circuits": {
+        "commit": "c8f970f222a10cc95a044947c522ec574bae9dab",
+        "tree": "b104ca8f5ab6d3ff59414ad21d38386e68d0828d"
+      },
+      "rqm-entanglement": {
+        "commit": "7c57d0672ef5caa7236d9703e2fd3096fb346ab2",
+        "tree": "adf0876689650536e88ef812db7d8b79121e7afc"
+      },
+      "rqm-compiler": {
+        "commit": "280519b136afe17227204e23bbfeee2246e63277",
+        "tree": "45f007963522f84f91a178da5769f465aef76e30"
+      },
+      "rqm-qiskit": {
+        "commit": "bfd53bec96ea04e8e9d84158014f6ce7217a6099",
+        "tree": "5be9d4de1797b8c15ae8133d9c3f2922a572edf1"
+      },
+      "rqm-optimize": {
+        "commit": "be12b2c9e16477a81f9af0a549189aa61299e7d3",
+        "tree": "cce4e582d1b5befe332de6ab4a8281cd6bc0eaaa"
+      },
+      "rqm-braket": {
+        "commit": "c9fc7eef0eee7ba4f49e9105d304e37a7c32bf2f",
+        "tree": "fcba70e26cfa3590014ae8fe116978ae5f71b169"
+      },
+      "openqse-rqm-adapter": {
+        "commit": "4f20c3a72e17c7a645a29ef91b1c5ddb429b0247",
+        "tree": "c7a2fe2f2826c861fd4b4bb48d33253486a1318b"
+      }
+    },
+    "wheels": {
+      "rqm_braket-0.2.2-py3-none-any.whl": "3b3522c2b89d48845da98d838d53985fd7c2cc48e3221b04f5f5ac72f29e52b8",
+      "rqm_circuits-0.2.1-py3-none-any.whl": "b43eae417c1dcddf95ccd614696635cf979207b3721267447f1afe97c4f56de6",
+      "rqm_compiler-0.3.0-py3-none-any.whl": "d5e40e521ce093c68fc0ee08c6f2d9e73cb361ecb2c396dc9f5643fe999a16ae",
+      "rqm_core-0.2.2-py3-none-any.whl": "a18589a5e38b2f578c4dac3995ddaa7733afcfb3f14ab709b0a2099b1da04c22",
+      "rqm_entanglement-0.2.1-py3-none-any.whl": "c2682a155fd7d4f6c3269c88a16a63fc119b53e28857fa363a111ca43d14edfa",
+      "rqm_openqse_adapter-0.1.1-py3-none-any.whl": "7af862ba3a0164130fc9047aa9a338fa2bcf62f421b28c1d9bcfb6580c7fa027",
+      "rqm_optimize-0.1.3-py3-none-any.whl": "2f41c3d718b4520d19c7ca4d7307e3fb7100cd4231b3d7617573e8000e05af46",
+      "rqm_qiskit-0.4.0-py3-none-any.whl": "c0dd471b3455fbfb084a76ecb3cc7069e6a8da65a196c9d296c3e34a76a1af2c"
+    },
+    "hardware_execution": false,
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "installed_modules": {
+      "rqm_core": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/lib/python3.12/site-packages/rqm_core/__init__.py",
+      "rqm_circuits": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/lib/python3.12/site-packages/rqm_circuits/__init__.py",
+      "rqm_entanglement": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/lib/python3.12/site-packages/rqm_entanglement/__init__.py",
+      "rqm_compiler": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/lib/python3.12/site-packages/rqm_compiler/__init__.py",
+      "rqm_qiskit": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/lib/python3.12/site-packages/rqm_qiskit/__init__.py",
+      "rqm_optimize": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/lib/python3.12/site-packages/rqm_optimize/__init__.py",
+      "rqm_braket": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/lib/python3.12/site-packages/rqm_braket/__init__.py",
+      "rqm_openqse_adapter": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/native-candidate/venv/lib/python3.12/site-packages/rqm_openqse_adapter/__init__.py"
+    },
+    "test_counts": {
+      "rqm-core": {
+        "tests": 451,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 451
+      },
+      "rqm-circuits": {
+        "tests": 262,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 10,
+        "passed": 252
+      },
+      "rqm-entanglement": {
+        "tests": 162,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 1,
+        "passed": 161
+      },
+      "rqm-compiler": {
+        "tests": 434,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 434
+      },
+      "rqm-qiskit": {
+        "tests": 560,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 560
+      },
+      "rqm-optimize": {
+        "tests": 101,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 101
+      },
+      "rqm-braket": {
+        "tests": 310,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 310
+      },
+      "openqse-rqm-adapter": {
+        "tests": 61,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 61
+      }
+    }
+  }
+}

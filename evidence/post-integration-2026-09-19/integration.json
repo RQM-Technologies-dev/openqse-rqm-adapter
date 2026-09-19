@@ -1,0 +1,24 @@
+{
+  "integration": {
+    "rqm-compiler": {
+      "main_commit": "7b79a2281971afc946ccfd75a7863793d0bd5001",
+      "tree": "45f007963522f84f91a178da5769f465aef76e30",
+      "candidate_commit": "280519b136afe17227204e23bbfeee2246e63277",
+      "tree_identical": true
+    },
+    "rqm-entanglement": {
+      "main_commit": "8b0c4e2e0cfdc3a7bec9ab34a258264cd69bd3c1",
+      "tree": "adf0876689650536e88ef812db7d8b79121e7afc",
+      "candidate_commit": "7c57d0672ef5caa7236d9703e2fd3096fb346ab2",
+      "tree_identical": true
+    },
+    "openqse-rqm-adapter": {
+      "main_commit": "e071831c61deada5a1e6debfea51b68a16bbfcc8",
+      "tree": "1854c4c051c933fe62c73e41c08f9076e48beba5",
+      "candidate_commit": "b220dcf9a360e8a82baafa2ab535ff5b4d3fc152",
+      "tree_identical": true
+    }
+  },
+  "tested_artifact_manifest": "../native-kernels-2026-09-19/manifest.json",
+  "driver_sha256": "7d9ce1e59c446b61e40ccc8964830c1874c87b9fc3686a94940102a4ce1f8072"
+}
