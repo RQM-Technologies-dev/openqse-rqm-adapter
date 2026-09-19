@@ -114,6 +114,8 @@ def main():
                         largest_intermediate=answer.largest_intermediate, intermediate_unit=answer.intermediate_unit,
                         query_promotions=answer.query_promotion_count, compiler_promotions=compiled.report.promotion_count,
                         query_fallback=compiled.report.query_fallback_used,
+                        frontier_width=answer.frontier_width, frontier_rejection=answer.frontier_rejection,
+                        plan_reused=answer.plan_reused,
                         compilation_fallback=compiled.report.fallback_reason,
                         representation_size=compiled.closure.minimum_closed_representation_size,
                         query_tracemalloc_peak_bytes=peak, recognizer_rejections=rejection,
