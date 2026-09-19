@@ -1,0 +1,275 @@
+{
+  "basis": [
+    "rz",
+    "sx",
+    "x",
+    "cx"
+  ],
+  "seed_transpiler": 17,
+  "rows": [
+    {
+      "n": 4,
+      "family": "disjoint_pairs",
+      "policy": "safe",
+      "lowered_gate_names": [
+        "cx",
+        "rxx",
+        "ry",
+        "rz"
+      ],
+      "qiskit_level_0_cx": 36,
+      "qiskit_level_0_operations": 284,
+      "qiskit_level_3_cx": 6,
+      "qiskit_level_3_operations": 56
+    },
+    {
+      "n": 4,
+      "family": "disjoint_pairs",
+      "policy": "balanced",
+      "lowered_gate_names": [
+        "cx",
+        "rxx",
+        "ry",
+        "rz",
+        "su4q"
+      ],
+      "qiskit_level_0_cx": 21,
+      "qiskit_level_0_operations": 180,
+      "qiskit_level_3_cx": 6,
+      "qiskit_level_3_operations": 56
+    },
+    {
+      "n": 4,
+      "family": "disjoint_pairs",
+      "policy": "aggressive",
+      "lowered_gate_names": [
+        "ry",
+        "su4q"
+      ],
+      "qiskit_level_0_cx": 6,
+      "qiskit_level_0_operations": 76,
+      "qiskit_level_3_cx": 6,
+      "qiskit_level_3_operations": 56
+    },
+    {
+      "n": 4,
+      "family": "overlapping_pairs",
+      "policy": "safe",
+      "lowered_gate_names": [
+        "cx",
+        "rxx",
+        "ry",
+        "rz"
+      ],
+      "qiskit_level_0_cx": 54,
+      "qiskit_level_0_operations": 416,
+      "qiskit_level_3_cx": 9,
+      "qiskit_level_3_operations": 74
+    },
+    {
+      "n": 4,
+      "family": "overlapping_pairs",
+      "policy": "balanced",
+      "lowered_gate_names": [
+        "cx",
+        "rxx",
+        "ry",
+        "rz",
+        "su4q"
+      ],
+      "qiskit_level_0_cx": 24,
+      "qiskit_level_0_operations": 208,
+      "qiskit_level_3_cx": 9,
+      "qiskit_level_3_operations": 74
+    },
+    {
+      "n": 4,
+      "family": "overlapping_pairs",
+      "policy": "aggressive",
+      "lowered_gate_names": [
+        "ry",
+        "su4q"
+      ],
+      "qiskit_level_0_cx": 9,
+      "qiskit_level_0_operations": 104,
+      "qiskit_level_3_cx": 9,
+      "qiskit_level_3_operations": 74
+    },
+    {
+      "n": 8,
+      "family": "disjoint_pairs",
+      "policy": "safe",
+      "lowered_gate_names": [
+        "cx",
+        "rxx",
+        "ry",
+        "rz"
+      ],
+      "qiskit_level_0_cx": 72,
+      "qiskit_level_0_operations": 568,
+      "qiskit_level_3_cx": 12,
+      "qiskit_level_3_operations": 112
+    },
+    {
+      "n": 8,
+      "family": "disjoint_pairs",
+      "policy": "balanced",
+      "lowered_gate_names": [
+        "cx",
+        "rxx",
+        "ry",
+        "rz",
+        "su4q"
+      ],
+      "qiskit_level_0_cx": 42,
+      "qiskit_level_0_operations": 360,
+      "qiskit_level_3_cx": 12,
+      "qiskit_level_3_operations": 112
+    },
+    {
+      "n": 8,
+      "family": "disjoint_pairs",
+      "policy": "aggressive",
+      "lowered_gate_names": [
+        "ry",
+        "su4q"
+      ],
+      "qiskit_level_0_cx": 12,
+      "qiskit_level_0_operations": 152,
+      "qiskit_level_3_cx": 12,
+      "qiskit_level_3_operations": 112
+    },
+    {
+      "n": 8,
+      "family": "overlapping_pairs",
+      "policy": "safe",
+      "lowered_gate_names": [
+        "cx",
+        "rxx",
+        "ry",
+        "rz"
+      ],
+      "qiskit_level_0_cx": 126,
+      "qiskit_level_0_operations": 964,
+      "qiskit_level_3_cx": 21,
+      "qiskit_level_3_operations": 166
+    },
+    {
+      "n": 8,
+      "family": "overlapping_pairs",
+      "policy": "balanced",
+      "lowered_gate_names": [
+        "cx",
+        "rxx",
+        "ry",
+        "rz",
+        "su4q"
+      ],
+      "qiskit_level_0_cx": 81,
+      "qiskit_level_0_operations": 652,
+      "qiskit_level_3_cx": 21,
+      "qiskit_level_3_operations": 166
+    },
+    {
+      "n": 8,
+      "family": "overlapping_pairs",
+      "policy": "aggressive",
+      "lowered_gate_names": [
+        "ry",
+        "su4q"
+      ],
+      "qiskit_level_0_cx": 21,
+      "qiskit_level_0_operations": 236,
+      "qiskit_level_3_cx": 21,
+      "qiskit_level_3_operations": 166
+    },
+    {
+      "n": 12,
+      "family": "disjoint_pairs",
+      "policy": "safe",
+      "lowered_gate_names": [
+        "cx",
+        "rxx",
+        "ry",
+        "rz"
+      ],
+      "qiskit_level_0_cx": 108,
+      "qiskit_level_0_operations": 852,
+      "qiskit_level_3_cx": 18,
+      "qiskit_level_3_operations": 168
+    },
+    {
+      "n": 12,
+      "family": "disjoint_pairs",
+      "policy": "balanced",
+      "lowered_gate_names": [
+        "cx",
+        "rxx",
+        "ry",
+        "rz",
+        "su4q"
+      ],
+      "qiskit_level_0_cx": 63,
+      "qiskit_level_0_operations": 540,
+      "qiskit_level_3_cx": 18,
+      "qiskit_level_3_operations": 168
+    },
+    {
+      "n": 12,
+      "family": "disjoint_pairs",
+      "policy": "aggressive",
+      "lowered_gate_names": [
+        "ry",
+        "su4q"
+      ],
+      "qiskit_level_0_cx": 18,
+      "qiskit_level_0_operations": 228,
+      "qiskit_level_3_cx": 18,
+      "qiskit_level_3_operations": 168
+    },
+    {
+      "n": 12,
+      "family": "overlapping_pairs",
+      "policy": "safe",
+      "lowered_gate_names": [
+        "cx",
+        "rxx",
+        "ry",
+        "rz"
+      ],
+      "qiskit_level_0_cx": 198,
+      "qiskit_level_0_operations": 1512,
+      "qiskit_level_3_cx": 33,
+      "qiskit_level_3_operations": 258
+    },
+    {
+      "n": 12,
+      "family": "overlapping_pairs",
+      "policy": "balanced",
+      "lowered_gate_names": [
+        "cx",
+        "rxx",
+        "ry",
+        "rz",
+        "su4q"
+      ],
+      "qiskit_level_0_cx": 123,
+      "qiskit_level_0_operations": 992,
+      "qiskit_level_3_cx": 33,
+      "qiskit_level_3_operations": 258
+    },
+    {
+      "n": 12,
+      "family": "overlapping_pairs",
+      "policy": "aggressive",
+      "lowered_gate_names": [
+        "ry",
+        "su4q"
+      ],
+      "qiskit_level_0_cx": 33,
+      "qiskit_level_0_operations": 368,
+      "qiskit_level_3_cx": 33,
+      "qiskit_level_3_operations": 258
+    }
+  ]
+}

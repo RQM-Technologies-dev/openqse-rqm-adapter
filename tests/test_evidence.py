@@ -35,3 +35,8 @@ def test_require_fails_closed_for_unknown_capability() -> None:
     ledger = EvidenceLedger()
     with pytest.raises(AdapterError, match="AxisHinge.promote"):
         ledger.require_executed_and_verified(["AxisHinge.promote"])
+
+
+def test_verification_requires_execution():
+    with pytest.raises(AdapterError, match="not executed"):
+        EvidenceLedger().mark_verified("query", exact=False)

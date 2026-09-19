@@ -1,0 +1,854 @@
+{
+  "certification": {
+    "status": "passed",
+    "repositories": {
+      "rqm-core": {
+        "commit": "4c89792a5f44339f6b0c68871f991d726328491c",
+        "tree": "f3b93a9ab337ffa7a90439713df4287032e24e5c"
+      },
+      "rqm-circuits": {
+        "commit": "c8f970f222a10cc95a044947c522ec574bae9dab",
+        "tree": "b104ca8f5ab6d3ff59414ad21d38386e68d0828d"
+      },
+      "rqm-entanglement": {
+        "commit": "34cb69e37eac021bef68a488a89a2cbe7f5f95c8",
+        "tree": "21708ca3d31fff7ccb1bd0824db92d3be51ba8de"
+      },
+      "rqm-compiler": {
+        "commit": "8050d6b8053a66019b248f63628e4d9fed60a5f6",
+        "tree": "ce5b4c68205ca19842a37194a577659f5df0130c"
+      },
+      "rqm-qiskit": {
+        "commit": "bfd53bec96ea04e8e9d84158014f6ce7217a6099",
+        "tree": "5be9d4de1797b8c15ae8133d9c3f2922a572edf1"
+      },
+      "rqm-optimize": {
+        "commit": "be12b2c9e16477a81f9af0a549189aa61299e7d3",
+        "tree": "cce4e582d1b5befe332de6ab4a8281cd6bc0eaaa"
+      },
+      "rqm-braket": {
+        "commit": "c9fc7eef0eee7ba4f49e9105d304e37a7c32bf2f",
+        "tree": "fcba70e26cfa3590014ae8fe116978ae5f71b169"
+      },
+      "openqse-rqm-adapter": {
+        "commit": "d32daaa9dceb097975b7562a057540764cfa6410",
+        "tree": "c8fb9d3c8fb20277bda622a4be58d3ce3a296673"
+      }
+    },
+    "wheels": {
+      "rqm_braket-0.2.2-py3-none-any.whl": "98c38f19157b790c62d3b5c191527ae88c8e430cb0e967d422a2c2abdd7fbb50",
+      "rqm_circuits-0.2.1-py3-none-any.whl": "fabf6d71f5d9090caba60a890ad144a2c1f362e532bae57be197b61de71a8a6f",
+      "rqm_compiler-0.3.0-py3-none-any.whl": "0c53807a2d09030f3787e04736ad222d674f97d2baa4d2190498fb6495bc6f76",
+      "rqm_core-0.2.2-py3-none-any.whl": "bbd09e0ebb9224632670e77d97e38bb36431dd0deeef7006b3ca5fea845a0f4d",
+      "rqm_entanglement-0.2.1-py3-none-any.whl": "afe3df3f61b9e488fe0da9952c11aadf2c69788e565e01d93259023ea42f2d44",
+      "rqm_openqse_adapter-0.1.1-py3-none-any.whl": "e3be0789e82426a28a06dd3ff9600150008f280d4851003e46cc5768d998b496",
+      "rqm_optimize-0.1.3-py3-none-any.whl": "2f41c3d718b4520d19c7ca4d7307e3fb7100cd4231b3d7617573e8000e05af46",
+      "rqm_qiskit-0.4.0-py3-none-any.whl": "dcdcb97a624dd273446374ba3dba390aa8e7346574a06bf4bfd42475a2358ef6"
+    },
+    "hardware_execution": false,
+    "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+    "installed_modules": {
+      "rqm_core": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/frontier-candidate/venv/lib/python3.12/site-packages/rqm_core/__init__.py",
+      "rqm_circuits": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/frontier-candidate/venv/lib/python3.12/site-packages/rqm_circuits/__init__.py",
+      "rqm_entanglement": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/frontier-candidate/venv/lib/python3.12/site-packages/rqm_entanglement/__init__.py",
+      "rqm_compiler": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/frontier-candidate/venv/lib/python3.12/site-packages/rqm_compiler/__init__.py",
+      "rqm_qiskit": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/frontier-candidate/venv/lib/python3.12/site-packages/rqm_qiskit/__init__.py",
+      "rqm_optimize": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/frontier-candidate/venv/lib/python3.12/site-packages/rqm_optimize/__init__.py",
+      "rqm_braket": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/frontier-candidate/venv/lib/python3.12/site-packages/rqm_braket/__init__.py",
+      "rqm_openqse_adapter": "/workspace/scratch/fe45cbfc1ffe/scientific-certification/frontier-candidate/venv/lib/python3.12/site-packages/rqm_openqse_adapter/__init__.py"
+    },
+    "test_counts": {
+      "rqm-core": {
+        "tests": 451,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 451
+      },
+      "rqm-circuits": {
+        "tests": 262,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 10,
+        "passed": 252
+      },
+      "rqm-entanglement": {
+        "tests": 132,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 1,
+        "passed": 131
+      },
+      "rqm-compiler": {
+        "tests": 416,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 416
+      },
+      "rqm-qiskit": {
+        "tests": 560,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 560
+      },
+      "rqm-optimize": {
+        "tests": 101,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 101
+      },
+      "rqm-braket": {
+        "tests": 310,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 310
+      },
+      "openqse-rqm-adapter": {
+        "tests": 61,
+        "failures": 0,
+        "errors": 0,
+        "skipped": 0,
+        "passed": 61
+      }
+    }
+  },
+  "policies": [
+    {
+      "n": 4,
+      "family": "disjoint_pairs",
+      "policy": "safe",
+      "compile_ns": [
+        6410929,
+        6610525,
+        6414214,
+        9017935,
+        6449886
+      ],
+      "query_batch_ns": [
+        3969437,
+        4037649,
+        4183725,
+        3917019,
+        4056086
+      ],
+      "error": 2.3943111914971673e-16,
+      "input_operations": 52,
+      "compiled_operations": 52,
+      "lowered_operations": 52,
+      "lowered_two_qubit_operations": 24,
+      "input_two_qubit_operations": 24,
+      "promotions": 0,
+      "kak_invocations": 0,
+      "representation_size": 172,
+      "verification": "VERIFIED"
+    },
+    {
+      "n": 4,
+      "family": "disjoint_pairs",
+      "policy": "balanced",
+      "compile_ns": [
+        14914842,
+        14270325,
+        18395935,
+        17363383,
+        17932157
+      ],
+      "query_batch_ns": [
+        3975927,
+        4296372,
+        4220059,
+        3880886,
+        3922408
+      ],
+      "error": 2.0643209364124004e-16,
+      "input_operations": 52,
+      "compiled_operations": 29,
+      "lowered_operations": 29,
+      "lowered_two_qubit_operations": 13,
+      "input_two_qubit_operations": 24,
+      "promotions": 1,
+      "kak_invocations": 1,
+      "representation_size": 113,
+      "verification": "VERIFIED"
+    },
+    {
+      "n": 4,
+      "family": "disjoint_pairs",
+      "policy": "aggressive",
+      "compile_ns": [
+        21159223,
+        22806566,
+        24690766,
+        20992275,
+        24110411
+      ],
+      "query_batch_ns": [
+        4637259,
+        3983848,
+        3821869,
+        5694356,
+        3945593
+      ],
+      "error": 1.942890293094024e-16,
+      "input_operations": 52,
+      "compiled_operations": 6,
+      "lowered_operations": 6,
+      "lowered_two_qubit_operations": 2,
+      "input_two_qubit_operations": 24,
+      "promotions": 2,
+      "kak_invocations": 2,
+      "representation_size": 54,
+      "verification": "VERIFIED"
+    },
+    {
+      "n": 4,
+      "family": "overlapping_pairs",
+      "policy": "safe",
+      "compile_ns": [
+        11226391,
+        11277136,
+        11528579,
+        12032556,
+        12496134
+      ],
+      "query_batch_ns": [
+        5245961,
+        6842229,
+        5540517,
+        6011086,
+        6019518
+      ],
+      "error": 1.388159893277059e-15,
+      "input_operations": 76,
+      "compiled_operations": 76,
+      "lowered_operations": 76,
+      "lowered_two_qubit_operations": 36,
+      "input_two_qubit_operations": 36,
+      "promotions": 0,
+      "kak_invocations": 0,
+      "representation_size": 250,
+      "verification": "VERIFIED"
+    },
+    {
+      "n": 4,
+      "family": "overlapping_pairs",
+      "policy": "balanced",
+      "compile_ns": [
+        37267525,
+        37284991,
+        31498638,
+        33528700,
+        31719436
+      ],
+      "query_batch_ns": [
+        5274914,
+        5552696,
+        5922373,
+        5231099,
+        6243039
+      ],
+      "error": 1.3877787807814457e-15,
+      "input_operations": 76,
+      "compiled_operations": 30,
+      "lowered_operations": 30,
+      "lowered_two_qubit_operations": 14,
+      "input_two_qubit_operations": 36,
+      "promotions": 2,
+      "kak_invocations": 2,
+      "representation_size": 132,
+      "verification": "VERIFIED"
+    },
+    {
+      "n": 4,
+      "family": "overlapping_pairs",
+      "policy": "aggressive",
+      "compile_ns": [
+        41425322,
+        39871517,
+        36624121,
+        37132173,
+        38244795
+      ],
+      "query_batch_ns": [
+        5839071,
+        6200056,
+        7954913,
+        7620097,
+        5313521
+      ],
+      "error": 1.3045192627056816e-15,
+      "input_operations": 76,
+      "compiled_operations": 7,
+      "lowered_operations": 7,
+      "lowered_two_qubit_operations": 3,
+      "input_two_qubit_operations": 36,
+      "promotions": 3,
+      "kak_invocations": 3,
+      "representation_size": 73,
+      "verification": "VERIFIED"
+    },
+    {
+      "n": 8,
+      "family": "disjoint_pairs",
+      "policy": "safe",
+      "compile_ns": [
+        8826871,
+        9027209,
+        8928402,
+        8749848,
+        9836700
+      ],
+      "query_batch_ns": [
+        7391473,
+        7061844,
+        7028084,
+        7100621,
+        7191747
+      ],
+      "error": 5.456938215224257e-17,
+      "input_operations": 104,
+      "compiled_operations": 104,
+      "lowered_operations": 104,
+      "lowered_two_qubit_operations": 48,
+      "input_two_qubit_operations": 48,
+      "promotions": 0,
+      "kak_invocations": 0,
+      "representation_size": 344,
+      "verification": "VERIFIED"
+    },
+    {
+      "n": 8,
+      "family": "disjoint_pairs",
+      "policy": "balanced",
+      "compile_ns": [
+        19164134,
+        20693993,
+        22097605,
+        19856290,
+        19456227
+      ],
+      "query_batch_ns": [
+        7150716,
+        7435538,
+        7849392,
+        7448167,
+        8271118
+      ],
+      "error": 6.603125593230481e-17,
+      "input_operations": 104,
+      "compiled_operations": 58,
+      "lowered_operations": 58,
+      "lowered_two_qubit_operations": 26,
+      "input_two_qubit_operations": 48,
+      "promotions": 2,
+      "kak_invocations": 2,
+      "representation_size": 226,
+      "verification": "VERIFIED"
+    },
+    {
+      "n": 8,
+      "family": "disjoint_pairs",
+      "policy": "aggressive",
+      "compile_ns": [
+        29366917,
+        29792968,
+        30188725,
+        29946856,
+        30164269
+      ],
+      "query_batch_ns": [
+        7313207,
+        7454987,
+        7140661,
+        7613583,
+        7750886
+      ],
+      "error": 5.963132315927723e-17,
+      "input_operations": 104,
+      "compiled_operations": 12,
+      "lowered_operations": 12,
+      "lowered_two_qubit_operations": 4,
+      "input_two_qubit_operations": 48,
+      "promotions": 4,
+      "kak_invocations": 4,
+      "representation_size": 108,
+      "verification": "VERIFIED"
+    },
+    {
+      "n": 8,
+      "family": "overlapping_pairs",
+      "policy": "safe",
+      "compile_ns": [
+        23844155,
+        24015259,
+        79491130,
+        79560203,
+        24892710
+      ],
+      "query_batch_ns": [
+        13752828,
+        12365420,
+        15326007,
+        17882944,
+        18812833
+      ],
+      "error": 4.163544503957544e-15,
+      "input_operations": 176,
+      "compiled_operations": 176,
+      "lowered_operations": 176,
+      "lowered_two_qubit_operations": 84,
+      "input_two_qubit_operations": 84,
+      "promotions": 0,
+      "kak_invocations": 0,
+      "representation_size": 578,
+      "verification": "VERIFIED"
+    },
+    {
+      "n": 8,
+      "family": "overlapping_pairs",
+      "policy": "balanced",
+      "compile_ns": [
+        59336928,
+        54075043,
+        58812540,
+        53446391,
+        55098101
+      ],
+      "query_batch_ns": [
+        13426494,
+        13740430,
+        12950238,
+        12509934,
+        13275521
+      ],
+      "error": 3.0269169999247415e-15,
+      "input_operations": 176,
+      "compiled_operations": 107,
+      "lowered_operations": 107,
+      "lowered_two_qubit_operations": 51,
+      "input_two_qubit_operations": 84,
+      "promotions": 3,
+      "kak_invocations": 3,
+      "representation_size": 401,
+      "verification": "VERIFIED"
+    },
+    {
+      "n": 8,
+      "family": "overlapping_pairs",
+      "policy": "aggressive",
+      "compile_ns": [
+        90614108,
+        83644951,
+        83668046,
+        80981160,
+        75806936
+      ],
+      "query_batch_ns": [
+        11621527,
+        12060108,
+        13580432,
+        12558417,
+        13297392
+      ],
+      "error": 1.6945114204651823e-15,
+      "input_operations": 176,
+      "compiled_operations": 15,
+      "lowered_operations": 15,
+      "lowered_two_qubit_operations": 7,
+      "input_two_qubit_operations": 84,
+      "promotions": 7,
+      "kak_invocations": 7,
+      "representation_size": 165,
+      "verification": "VERIFIED"
+    },
+    {
+      "n": 12,
+      "family": "disjoint_pairs",
+      "policy": "safe",
+      "compile_ns": [
+        12737272,
+        12613698,
+        13183634,
+        12698544,
+        13285345
+      ],
+      "query_batch_ns": [
+        10599501,
+        10527995,
+        10503679,
+        10408287,
+        12478693
+      ],
+      "error": 6.7018841648219365e-18,
+      "input_operations": 156,
+      "compiled_operations": 156,
+      "lowered_operations": 156,
+      "lowered_two_qubit_operations": 72,
+      "input_two_qubit_operations": 72,
+      "promotions": 0,
+      "kak_invocations": 0,
+      "representation_size": 516,
+      "verification": "VERIFIED"
+    },
+    {
+      "n": 12,
+      "family": "disjoint_pairs",
+      "policy": "balanced",
+      "compile_ns": [
+        29184496,
+        29874820,
+        34557920,
+        77418902,
+        30349544
+      ],
+      "query_batch_ns": [
+        10920717,
+        10460956,
+        10597478,
+        10705889,
+        11078361
+      ],
+      "error": 6.703471688362811e-18,
+      "input_operations": 156,
+      "compiled_operations": 87,
+      "lowered_operations": 87,
+      "lowered_two_qubit_operations": 39,
+      "input_two_qubit_operations": 72,
+      "promotions": 3,
+      "kak_invocations": 3,
+      "representation_size": 339,
+      "verification": "VERIFIED"
+    },
+    {
+      "n": 12,
+      "family": "disjoint_pairs",
+      "policy": "aggressive",
+      "compile_ns": [
+        68511186,
+        49164104,
+        49064983,
+        49600116,
+        53082532
+      ],
+      "query_batch_ns": [
+        11838178,
+        11112231,
+        12311781,
+        12081770,
+        12099426
+      ],
+      "error": 6.7018841648219365e-18,
+      "input_operations": 156,
+      "compiled_operations": 18,
+      "lowered_operations": 18,
+      "lowered_two_qubit_operations": 6,
+      "input_two_qubit_operations": 72,
+      "promotions": 6,
+      "kak_invocations": 6,
+      "representation_size": 162,
+      "verification": "VERIFIED"
+    },
+    {
+      "n": 12,
+      "family": "overlapping_pairs",
+      "policy": "safe",
+      "compile_ns": [
+        60900277,
+        41644877,
+        39629088,
+        39509731,
+        40130241
+      ],
+      "query_batch_ns": [
+        18856117,
+        44000872,
+        18516994,
+        18172383,
+        18336076
+      ],
+      "error": 1.734893470548127e-15,
+      "input_operations": 276,
+      "compiled_operations": 276,
+      "lowered_operations": 276,
+      "lowered_two_qubit_operations": 132,
+      "input_two_qubit_operations": 132,
+      "promotions": 0,
+      "kak_invocations": 0,
+      "representation_size": 906,
+      "verification": "VERIFIED"
+    },
+    {
+      "n": 12,
+      "family": "overlapping_pairs",
+      "policy": "balanced",
+      "compile_ns": [
+        84041829,
+        85063305,
+        84861515,
+        84886643,
+        93088027
+      ],
+      "query_batch_ns": [
+        19119227,
+        18492438,
+        19028844,
+        18530644,
+        18789218
+      ],
+      "error": 1.4017639112287167e-15,
+      "input_operations": 276,
+      "compiled_operations": 161,
+      "lowered_operations": 161,
+      "lowered_two_qubit_operations": 77,
+      "input_two_qubit_operations": 132,
+      "promotions": 5,
+      "kak_invocations": 5,
+      "representation_size": 611,
+      "verification": "VERIFIED"
+    },
+    {
+      "n": 12,
+      "family": "overlapping_pairs",
+      "policy": "aggressive",
+      "compile_ns": [
+        131937017,
+        147299147,
+        121824980,
+        125987684,
+        121601998
+      ],
+      "query_batch_ns": [
+        18788897,
+        18542813,
+        18409896,
+        18168848,
+        18568861
+      ],
+      "error": 5.69665863141938e-16,
+      "input_operations": 276,
+      "compiled_operations": 23,
+      "lowered_operations": 23,
+      "lowered_two_qubit_operations": 11,
+      "input_two_qubit_operations": 132,
+      "promotions": 11,
+      "kak_invocations": 11,
+      "representation_size": 257,
+      "verification": "VERIFIED"
+    }
+  ],
+  "reuse": [
+    {
+      "n": 8,
+      "queries": 1,
+      "independent_ns": [
+        960905,
+        855789,
+        822990,
+        869069,
+        910931
+      ],
+      "batch_ns": [
+        824683,
+        846496,
+        813427,
+        821829,
+        799586
+      ],
+      "ratio": 1.0574815442141856,
+      "reused_plans": 0,
+      "max_error": 0.0,
+      "oracle": "Qiskit Statevector",
+      "largest_intermediate": 16
+    },
+    {
+      "n": 8,
+      "queries": 10,
+      "independent_ns": [
+        8676870,
+        9548913,
+        8652443,
+        8561018,
+        9206124
+      ],
+      "batch_ns": [
+        7093942,
+        7097688,
+        7246348,
+        7157847,
+        6756621
+      ],
+      "ratio": 1.2224924510629376,
+      "reused_plans": 9,
+      "max_error": 9.43689570931383e-16,
+      "oracle": "Qiskit Statevector",
+      "largest_intermediate": 16
+    },
+    {
+      "n": 8,
+      "queries": 100,
+      "independent_ns": [
+        82831234,
+        85136403,
+        85773468,
+        83384344,
+        83541397
+      ],
+      "batch_ns": [
+        66604798,
+        66846916,
+        66958503,
+        65705704,
+        67446125
+      ],
+      "ratio": 1.249741977625415,
+      "reused_plans": 99,
+      "max_error": 9.43689570931383e-16,
+      "oracle": "Qiskit Statevector",
+      "largest_intermediate": 16
+    },
+    {
+      "n": 12,
+      "queries": 1,
+      "independent_ns": [
+        1243454,
+        1270985,
+        1193701,
+        1480496,
+        1376702
+      ],
+      "batch_ns": [
+        2006176,
+        1332647,
+        1229784,
+        1319076,
+        1247360
+      ],
+      "ratio": 0.9635419035749266,
+      "reused_plans": 0,
+      "max_error": 0.0,
+      "oracle": "Qiskit Statevector",
+      "largest_intermediate": 16
+    },
+    {
+      "n": 12,
+      "queries": 10,
+      "independent_ns": [
+        13327898,
+        12913883,
+        12745054,
+        12500270,
+        12065225
+      ],
+      "batch_ns": [
+        10005040,
+        9966131,
+        9932181,
+        10268880,
+        10281829
+      ],
+      "ratio": 1.2738633728600786,
+      "reused_plans": 9,
+      "max_error": 6.661338147750939e-15,
+      "oracle": "Qiskit Statevector",
+      "largest_intermediate": 16
+    },
+    {
+      "n": 12,
+      "queries": 100,
+      "independent_ns": [
+        127073283,
+        125435967,
+        123139284,
+        124938383,
+        122645503
+      ],
+      "batch_ns": [
+        105041790,
+        98910068,
+        102978922,
+        102769121,
+        99368709
+      ],
+      "ratio": 1.2157190971790057,
+      "reused_plans": 99,
+      "max_error": 6.661338147750939e-15,
+      "oracle": "Qiskit Statevector",
+      "largest_intermediate": 16
+    },
+    {
+      "n": 32,
+      "queries": 1,
+      "independent_ns": [
+        3331119,
+        3273133,
+        3534651,
+        3198774,
+        3427533
+      ],
+      "batch_ns": [
+        3096792,
+        3088710,
+        3100608,
+        3119436,
+        3217321
+      ],
+      "ratio": 1.074343806118026,
+      "reused_plans": 0,
+      "max_error": null,
+      "oracle": "uncached route agreement only",
+      "largest_intermediate": 16
+    },
+    {
+      "n": 32,
+      "queries": 10,
+      "independent_ns": [
+        31150789,
+        31942833,
+        31418926,
+        31866710,
+        32187897
+      ],
+      "batch_ns": [
+        27417202,
+        26180990,
+        27017441,
+        27640564,
+        28631013
+      ],
+      "ratio": 1.1622889162796408,
+      "reused_plans": 9,
+      "max_error": null,
+      "oracle": "uncached route agreement only",
+      "largest_intermediate": 16
+    },
+    {
+      "n": 32,
+      "queries": 100,
+      "independent_ns": [
+        322264356,
+        319658664,
+        321758507,
+        320946594,
+        317122403
+      ],
+      "batch_ns": [
+        320475860,
+        276146166,
+        284321157,
+        286301794,
+        264072323
+      ],
+      "ratio": 1.1288171354761334,
+      "reused_plans": 99,
+      "max_error": null,
+      "oracle": "uncached route agreement only",
+      "largest_intermediate": 16
+    }
+  ],
+  "repeats": 5,
+  "note": "KAK counts are attempts; promotions are committed replacements. Lowered operation counts are actual Braket-profile descriptors, not hardware duration. At n=32 only cached/uncached agreement is checked."
+}
