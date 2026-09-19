@@ -34,14 +34,14 @@ jobs:
         uses: actions/checkout@v4
         with:
           repository: RQM-Technologies-dev/rqm-entanglement
-          ref: 34cb69e37eac021bef68a488a89a2cbe7f5f95c8
+          ref: 7c57d0672ef5caa7236d9703e2fd3096fb346ab2
           path: .ecosystem/rqm-entanglement
 
       - name: Checkout rqm-compiler
         uses: actions/checkout@v4
         with:
           repository: RQM-Technologies-dev/rqm-compiler
-          ref: 8050d6b8053a66019b248f63628e4d9fed60a5f6
+          ref: 280519b136afe17227204e23bbfeee2246e63277
           path: .ecosystem/rqm-compiler
 
       - name: Checkout rqm-qiskit
@@ -94,6 +94,12 @@ jobs:
           OPENBLAS_NUM_THREADS: "1"
         run: .certification/venv/bin/python scripts/probe_frontier_policies.py --certification .certification --output .frontier-probes
 
+      - name: Measure native kernels
+        env:
+          OMP_NUM_THREADS: "1"
+          OPENBLAS_NUM_THREADS: "1"
+        run: .certification/venv/bin/python scripts/probe_native_kernels.py --label candidate --output .native-probes/results.json
+
       - name: Archive scientific evidence and exact wheels
         if: always()
         uses: actions/upload-artifact@v4
@@ -109,3 +115,4 @@ jobs:
             .certification/wheels/*.whl
             .boundary/*.json
             .frontier-probes/*.json
+            .native-probes/*.json
