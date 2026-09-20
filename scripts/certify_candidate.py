@@ -70,7 +70,8 @@ def main():
         py = envdir / 'bin/python'
         constraints = ['-c', args.constraints.resolve()] if args.constraints else []
         run([py, '-m', 'pip', 'install', *constraints, *sorted(wheels.glob('*.whl')),
-             'pytest', 'pytest-cov', 'qiskit-aer==0.17.2', 'qiskit-qasm3-import==0.6.0', 'flask'], out, log)
+             'pytest', 'pytest-cov', 'qiskit-aer==0.17.2', 'qiskit-qasm3-import==0.6.0',
+             'qiskit-ibm-runtime>=0.48,<0.49', 'flask'], out, log)
         run([py, '-m', 'pip', 'check'], out, log)
         frozen = subprocess.check_output([py, '-m', 'pip', 'freeze'], text=True)
         (out / 'requirements-observed.txt').write_text(frozen)
