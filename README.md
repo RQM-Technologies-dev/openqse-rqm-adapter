@@ -1,6 +1,5 @@
 # RQM OpenQSE Adapter
 
-ORNL QCUP application submitted October 1, 2026: [Project CSC751 — hardware validation proposal and follow-up checklist](docs/ORNL_QCUP_CSC751_APPLICATION.md). Receipt and project-ID assignment are recorded; approval and hardware allocation remain pending.
 
 New generalized-query candidate: [hub fix, frontier planning, policy comparisons and reuse](evidence/frontier-candidate-2026-09-19/README.md). 2,282 tests passed; boundary coverage 80/96.
 

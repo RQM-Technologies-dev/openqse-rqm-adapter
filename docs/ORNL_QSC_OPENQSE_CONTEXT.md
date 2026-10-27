@@ -25,18 +25,8 @@ The slide places the following organizations/projects in one ecosystem:
                            |                |                |
                         Systems         Controls       Orchestration
 
-OLCF -----------------> IQM Testbed
-  |                        |
-  +--------------------> openQSE Community
-                           |
-                    +------+------+
-                    |             |
-             Produces a       Produces a
-              Reference       Specification
-            Implementation
 ```
 
-The slide also shows QSC using OLCF resources and identifies the IQM Testbed and openQSE Community as part of the surrounding QSC/OLCF activity.
 
 ## Statements captured from the slide
 
